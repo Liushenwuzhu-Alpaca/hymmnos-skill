@@ -1,0 +1,3612 @@
+{
+ "entries": [
+  {
+   "word": "Rrha",
+   "class": "E.s. I",
+   "meaning_en": "trance-like, consumed with",
+   "dialect": "Central"
+  },
+  {
+   "word": "Was",
+   "class": "E.s. I",
+   "meaning_en": "very intensely",
+   "dialect": "Central"
+  },
+  {
+   "word": "Wee",
+   "class": "E.s. I",
+   "meaning_en": "fairly, quite",
+   "dialect": "Central"
+  },
+  {
+   "word": "Fou",
+   "class": "E.s. I",
+   "meaning_en": "a little, somewhat",
+   "dialect": "Central"
+  },
+  {
+   "word": "Ma",
+   "class": "E.s. I",
+   "meaning_en": "level-headed, calm (default)",
+   "dialect": "Central"
+  },
+  {
+   "word": "Nn",
+   "class": "E.s. I",
+   "meaning_en": "apathetic, reluctant",
+   "dialect": "Central"
+  },
+  {
+   "word": "i",
+   "class": "E.s. II",
+   "meaning_en": "impatient, irritated",
+   "dialect": "Central"
+  },
+  {
+   "word": "yea",
+   "class": "E.s. II",
+   "meaning_en": "happy",
+   "dialect": "Central"
+  },
+  {
+   "word": "waa",
+   "class": "E.s. II",
+   "meaning_en": "happy",
+   "dialect": "Old Metafalss"
+  },
+  {
+   "word": "paks",
+   "class": "E.s. II",
+   "meaning_en": "nervous, excited",
+   "dialect": "Central"
+  },
+  {
+   "word": "num",
+   "class": "E.s. II",
+   "meaning_en": "nil, nothing (default)",
+   "dialect": "Central"
+  },
+  {
+   "word": "ki",
+   "class": "E.s. II",
+   "meaning_en": "focused, concentrating",
+   "dialect": "Central"
+  },
+  {
+   "word": "wol",
+   "class": "E.s. II",
+   "meaning_en": "fervorous, impassioned",
+   "dialect": "Central"
+  },
+  {
+   "word": "apea",
+   "class": "E.s. II",
+   "meaning_en": "immersed in happiness",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "au",
+   "class": "E.s. II",
+   "meaning_en": "sad",
+   "dialect": "Alpha (Eolia)"
+  },
+  {
+   "word": "granme",
+   "class": "E.s. II",
+   "meaning_en": "wanting to protect, brave",
+   "dialect": "Central"
+  },
+  {
+   "word": "touwaka",
+   "class": "E.s. II",
+   "meaning_en": "hopeful, wishing",
+   "dialect": "Central"
+  },
+  {
+   "word": "quel",
+   "class": "E.s. II",
+   "meaning_en": "eager, desperate",
+   "dialect": "Central"
+  },
+  {
+   "word": "yant",
+   "class": "E.s. II",
+   "meaning_en": "fearful, panicked",
+   "dialect": "Old Metafalss"
+  },
+  {
+   "word": "guwo",
+   "class": "E.s. II",
+   "meaning_en": "angry, resentful",
+   "dialect": "Central"
+  },
+  {
+   "word": "jyel",
+   "class": "E.s. II",
+   "meaning_en": "lonely",
+   "dialect": "Central"
+  },
+  {
+   "word": "zweie",
+   "class": "E.s. II",
+   "meaning_en": "determined, sincere",
+   "dialect": "Central"
+  },
+  {
+   "word": "nyasri",
+   "class": "E.s. II",
+   "meaning_en": "sad, downhearted",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "ga",
+   "class": "E.s. III",
+   "meaning_en": "want this to stop",
+   "dialect": "Central"
+  },
+  {
+   "word": "ra",
+   "class": "E.s. III",
+   "meaning_en": "want this to continue (default)",
+   "dialect": "Central"
+  },
+  {
+   "word": "erra",
+   "class": "E.s. III",
+   "meaning_en": "want this to last forever",
+   "dialect": "Central"
+  },
+  {
+   "word": "wa",
+   "class": "E.s. III",
+   "meaning_en": "accept things as they are",
+   "dialect": "Central"
+  },
+  {
+   "word": "gaya",
+   "class": "E.s. III",
+   "meaning_en": "never want to return to before",
+   "dialect": "Central"
+  },
+  {
+   "word": "gagis",
+   "class": "E.s. III",
+   "meaning_en": "indifferent",
+   "dialect": "Old Metafalss"
+  },
+  {
+   "word": "chs",
+   "class": "v.",
+   "meaning_en": "become",
+   "meaning_jp": "なる",
+   "dialect": "Central"
+  },
+  {
+   "word": "chsee",
+   "class": "v.",
+   "meaning_en": "transform into",
+   "meaning_jp": "～に変化する",
+   "dialect": "Central"
+  },
+  {
+   "word": "sonwe",
+   "class": "v.",
+   "meaning_en": "sing",
+   "meaning_jp": "歌う",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "hymme",
+   "class": "v./n.",
+   "meaning_en": "sing, play, resonate",
+   "meaning_jp": "謳う、奏でる",
+   "dialect": "Central"
+  },
+  {
+   "word": "hyma",
+   "class": "v.",
+   "meaning_en": "listen (to words)",
+   "meaning_jp": "聞く",
+   "dialect": "Central"
+  },
+  {
+   "word": "pagle",
+   "class": "v.",
+   "meaning_en": "talk, speak",
+   "meaning_jp": "話す",
+   "dialect": "Central"
+  },
+  {
+   "word": "irs",
+   "class": "v.",
+   "meaning_en": "exist",
+   "meaning_jp": "いる、存在する",
+   "dialect": "Central"
+  },
+  {
+   "word": "paul",
+   "class": "v.",
+   "meaning_en": "feel, sense",
+   "meaning_jp": "感じる",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "knawa",
+   "class": "v.",
+   "meaning_en": "know, understand",
+   "meaning_jp": "知る",
+   "dialect": "Central"
+  },
+  {
+   "word": "rete",
+   "class": "n./v.",
+   "meaning_en": "forget",
+   "meaning_jp": "忘れる",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "haf",
+   "class": "v.",
+   "meaning_en": "have, own, hold",
+   "meaning_jp": "持っている",
+   "dialect": "Central"
+  },
+  {
+   "word": "echrra",
+   "class": "v.",
+   "meaning_en": "resonate",
+   "meaning_jp": "共鳴する",
+   "dialect": "Central"
+  },
+  {
+   "word": "parge",
+   "class": "v.",
+   "meaning_en": "cut loose, detach",
+   "meaning_jp": "切り離す",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "cexm",
+   "class": "v.",
+   "meaning_en": "come (person)",
+   "meaning_jp": "来る",
+   "dialect": "Central"
+  },
+  {
+   "word": "bexm",
+   "class": "v.",
+   "meaning_en": "come (time)",
+   "meaning_jp": "（時間が）来る",
+   "dialect": "Central"
+  },
+  {
+   "word": "fogabe",
+   "class": "v.",
+   "meaning_en": "forgive",
+   "meaning_jp": "許す",
+   "dialect": "Central"
+  },
+  {
+   "word": "melenas",
+   "class": "v.",
+   "meaning_en": "to love (irreplaceable)",
+   "meaning_jp": "愛してる",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "crushue",
+   "class": "v.",
+   "meaning_en": "spin, weave, craft magic",
+   "meaning_jp": "紡ぐ",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "grandus",
+   "class": "v.",
+   "meaning_en": "defend, protect",
+   "meaning_jp": "護る",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "khal",
+   "class": "v.",
+   "meaning_en": "protect, defend",
+   "meaning_jp": "護る",
+   "dialect": "Central"
+  },
+  {
+   "word": "exec",
+   "class": "v.",
+   "meaning_en": "execute",
+   "meaning_jp": "実行する",
+   "dialect": "Central"
+  },
+  {
+   "word": "aulla",
+   "class": "v.",
+   "meaning_en": "open, reveal",
+   "meaning_jp": "開く、明かす",
+   "dialect": "Central"
+  },
+  {
+   "word": "rana",
+   "class": "v.",
+   "meaning_en": "run, dash",
+   "meaning_jp": "走る",
+   "dialect": "Central"
+  },
+  {
+   "word": "walaka",
+   "class": "v.",
+   "meaning_en": "walk",
+   "meaning_jp": "歩く",
+   "dialect": "Central"
+  },
+  {
+   "word": "tek",
+   "class": "v.",
+   "meaning_en": "go",
+   "meaning_jp": "行く",
+   "dialect": "Central"
+  },
+  {
+   "word": "eta",
+   "class": "v.",
+   "meaning_en": "eat",
+   "meaning_jp": "食べる",
+   "dialect": "Central"
+  },
+  {
+   "word": "koffl",
+   "class": "v.",
+   "meaning_en": "drink",
+   "meaning_jp": "飲む",
+   "dialect": ""
+  },
+  {
+   "word": "slep",
+   "class": "v.",
+   "meaning_en": "sleep",
+   "meaning_jp": "眠る",
+   "dialect": "Central"
+  },
+  {
+   "word": "keen",
+   "class": "v.",
+   "meaning_en": "shine",
+   "meaning_jp": "輝く",
+   "dialect": "Central"
+  },
+  {
+   "word": "fhauri",
+   "class": "v.",
+   "meaning_en": "shine, shimmer",
+   "meaning_jp": "光る",
+   "dialect": ""
+  },
+  {
+   "word": "flare",
+   "class": "v.",
+   "meaning_en": "float",
+   "meaning_jp": "浮かぶ",
+   "dialect": "Central"
+  },
+  {
+   "word": "famfa",
+   "class": "v.",
+   "meaning_en": "flap wings",
+   "meaning_jp": "はばたく",
+   "dialect": "Central"
+  },
+  {
+   "word": "gyen",
+   "class": "v.",
+   "meaning_en": "spin, craft magic",
+   "meaning_jp": "紡ぐ",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "ftt",
+   "class": "v.",
+   "meaning_en": "vanish, disappear",
+   "meaning_jp": "消える",
+   "dialect": "Central"
+  },
+  {
+   "word": "siss",
+   "class": "v.",
+   "meaning_en": "erase, put out",
+   "meaning_jp": "消す",
+   "dialect": ""
+  },
+  {
+   "word": "raklya",
+   "class": "v.",
+   "meaning_en": "cry, weep",
+   "meaning_jp": "泣く",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "werlwe",
+   "class": "v.",
+   "meaning_en": "cry, shed tears",
+   "meaning_jp": "泣く",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "ferda",
+   "class": "v.",
+   "meaning_en": "dwell",
+   "meaning_jp": "宿る",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "afezeria",
+   "class": "v.",
+   "meaning_en": "bless",
+   "meaning_jp": "祝福する",
+   "dialect": "Central"
+  },
+  {
+   "word": "accrroad",
+   "class": "v.",
+   "meaning_en": "give, send",
+   "meaning_jp": "与える",
+   "dialect": "Central"
+  },
+  {
+   "word": "swant",
+   "class": "v.",
+   "meaning_en": "help, save",
+   "meaning_jp": "助ける",
+   "dialect": "Central"
+  },
+  {
+   "word": "lehaw",
+   "class": "v.",
+   "meaning_en": "save, help",
+   "meaning_jp": "救う",
+   "dialect": ""
+  },
+  {
+   "word": "deggeez",
+   "class": "v./n.",
+   "meaning_en": "betray",
+   "meaning_jp": "裏切る",
+   "dialect": "Central"
+  },
+  {
+   "word": "cause",
+   "class": "v.",
+   "meaning_en": "curse, torment",
+   "meaning_jp": "呪う",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "herea",
+   "class": "v.",
+   "meaning_en": "hate",
+   "meaning_jp": "憎む",
+   "dialect": ""
+  },
+  {
+   "word": "heighte",
+   "class": "v.",
+   "meaning_en": "injure, wound",
+   "meaning_jp": "傷つける",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "ruinie",
+   "class": "v.",
+   "meaning_en": "destroy",
+   "meaning_jp": "破壊する",
+   "dialect": "Central"
+  },
+  {
+   "word": "nuboisu",
+   "class": "v.",
+   "meaning_en": "destroy, annihilate",
+   "meaning_jp": "滅ぼす",
+   "dialect": ""
+  },
+  {
+   "word": "kil",
+   "class": "v.",
+   "meaning_en": "kill",
+   "meaning_jp": "殺す",
+   "dialect": "Central"
+  },
+  {
+   "word": "morto",
+   "class": "n./v.",
+   "meaning_en": "death, die",
+   "meaning_jp": "死、死ぬ",
+   "dialect": "Central"
+  },
+  {
+   "word": "manafeeze",
+   "class": "v.",
+   "meaning_en": "live",
+   "meaning_jp": "生きる",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "pomb",
+   "class": "v.",
+   "meaning_en": "give birth, create",
+   "meaning_jp": "生む",
+   "dialect": "Central"
+  },
+  {
+   "word": "quen",
+   "class": "v.",
+   "meaning_en": "give birth, create",
+   "meaning_jp": "生み出される",
+   "dialect": "Central"
+  },
+  {
+   "word": "drone",
+   "class": "v.",
+   "meaning_en": "download, take in",
+   "meaning_jp": "ダウンロード",
+   "dialect": "Central"
+  },
+  {
+   "word": "flip",
+   "class": "v.",
+   "meaning_en": "reverse, flip-flop",
+   "meaning_jp": "ひっくり返る",
+   "dialect": "Central"
+  },
+  {
+   "word": "vit",
+   "class": "v.",
+   "meaning_en": "see",
+   "meaning_jp": "見る",
+   "dialect": ""
+  },
+  {
+   "word": "pic",
+   "class": "v.",
+   "meaning_en": "realize, notice",
+   "meaning_jp": "気づく",
+   "dialect": "Central"
+  },
+  {
+   "word": "pilt",
+   "class": "v.",
+   "meaning_en": "realize, notice",
+   "meaning_jp": "気づく",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "neee",
+   "class": "v.",
+   "meaning_en": "call out",
+   "meaning_jp": "呼ぶ",
+   "dialect": "Central"
+  },
+  {
+   "word": "neia",
+   "class": "v.",
+   "meaning_en": "approach, draw near",
+   "meaning_jp": "近づく",
+   "dialect": "Central"
+  },
+  {
+   "word": "walaka",
+   "class": "v.",
+   "meaning_en": "walk",
+   "meaning_jp": "歩く",
+   "dialect": "Central"
+  },
+  {
+   "word": "grlanza",
+   "class": "v.",
+   "meaning_en": "dance",
+   "meaning_jp": "踊る",
+   "dialect": "Central"
+  },
+  {
+   "word": "tanta",
+   "class": "v.",
+   "meaning_en": "dance (flutter)",
+   "meaning_jp": "舞う",
+   "dialect": "Central"
+  },
+  {
+   "word": "tarfe",
+   "class": "v.",
+   "meaning_en": "stop, halt",
+   "meaning_jp": "止まる",
+   "dialect": "Central"
+  },
+  {
+   "word": "fitouva",
+   "class": "v.",
+   "meaning_en": "end, stop",
+   "meaning_jp": "終る",
+   "dialect": ""
+  },
+  {
+   "word": "dest",
+   "class": "v.",
+   "meaning_en": "wither, perish",
+   "meaning_jp": "枯れる",
+   "dialect": ""
+  },
+  {
+   "word": "gallido",
+   "class": "v.",
+   "meaning_en": "annihilate",
+   "meaning_jp": "消滅する",
+   "dialect": ""
+  },
+  {
+   "word": "karf",
+   "class": "v.",
+   "meaning_en": "change, transform",
+   "meaning_jp": "変える",
+   "dialect": ""
+  },
+  {
+   "word": "cenjue",
+   "class": "v.",
+   "meaning_en": "change (strong, authoritative)",
+   "meaning_jp": "変化する",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "atsyes",
+   "class": "v.",
+   "meaning_en": "accept, receive",
+   "meaning_jp": "受け入れる",
+   "dialect": ""
+  },
+  {
+   "word": "yehar",
+   "class": "v.",
+   "meaning_en": "release, unleash",
+   "meaning_jp": "解放する",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "frreie",
+   "class": "v.",
+   "meaning_en": "release",
+   "meaning_jp": "解き放つ",
+   "dialect": ""
+  },
+  {
+   "word": "bansh",
+   "class": "v.",
+   "meaning_en": "(violently) open",
+   "meaning_jp": "開く",
+   "dialect": "Central"
+  },
+  {
+   "word": "guol",
+   "class": "v.",
+   "meaning_en": "close",
+   "meaning_jp": "閉じる",
+   "dialect": "Central"
+  },
+  {
+   "word": "enter",
+   "class": "v.",
+   "meaning_en": "enter",
+   "meaning_jp": "入り込む",
+   "dialect": "Central"
+  },
+  {
+   "word": "coall",
+   "class": "v.",
+   "meaning_en": "return",
+   "meaning_jp": "還る",
+   "dialect": ""
+  },
+  {
+   "word": "loss",
+   "class": "v.",
+   "meaning_en": "lose, perish",
+   "meaning_jp": "無くす",
+   "dialect": ""
+  },
+  {
+   "word": "fujara",
+   "class": "v.",
+   "meaning_en": "fuse, join, mix",
+   "meaning_jp": "融合する",
+   "dialect": ""
+  },
+  {
+   "word": "fulual",
+   "class": "v.",
+   "meaning_en": "come true (wish)",
+   "meaning_jp": "叶う",
+   "dialect": "Central"
+  },
+  {
+   "word": "naja",
+   "class": "v.",
+   "meaning_en": "escape, retreat, leave",
+   "meaning_jp": "逃げ去る",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "zarnn",
+   "class": "n.",
+   "meaning_en": "storm, tempest",
+   "meaning_jp": "嵐",
+   "dialect": ""
+  },
+  {
+   "word": "zarle",
+   "class": "v.",
+   "meaning_en": "fall (rain), downpour",
+   "meaning_jp": "降る",
+   "dialect": "Central"
+  },
+  {
+   "word": "colgen",
+   "class": "v.",
+   "meaning_en": "freeze, congeal",
+   "meaning_jp": "凍る",
+   "dialect": ""
+  },
+  {
+   "word": "slepir",
+   "class": "v.",
+   "meaning_en": "put to sleep, stop",
+   "meaning_jp": "眠らせる",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "sapon",
+   "class": "v.",
+   "meaning_en": "remember, recall",
+   "meaning_jp": "思い出す",
+   "dialect": ""
+  },
+  {
+   "word": "riura",
+   "class": "n.",
+   "meaning_en": "face, expression",
+   "meaning_jp": "表情",
+   "dialect": ""
+  },
+  {
+   "word": "rinnoze",
+   "class": "v.",
+   "meaning_en": "get close together",
+   "meaning_jp": "寄り添う",
+   "dialect": ""
+  },
+  {
+   "word": "rinc",
+   "class": "v.",
+   "meaning_en": "connect, tie together",
+   "meaning_jp": "繋ぐ",
+   "dialect": ""
+  },
+  {
+   "word": "lhasya",
+   "class": "v.",
+   "meaning_en": "connect, tie together",
+   "meaning_jp": "繋がる",
+   "dialect": ""
+  },
+  {
+   "word": "neia",
+   "class": "v.",
+   "meaning_en": "approach",
+   "meaning_jp": "近づく",
+   "dialect": "Central"
+  },
+  {
+   "word": "lapo",
+   "class": "v.",
+   "meaning_en": "meet (by chance)",
+   "meaning_jp": "出逢う",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "yart",
+   "class": "v.",
+   "meaning_en": "meet (by chance)",
+   "meaning_jp": "出逢う",
+   "dialect": "Central"
+  },
+  {
+   "word": "talfato",
+   "class": "v.",
+   "meaning_en": "meet by fate",
+   "meaning_jp": "巡りあう",
+   "dialect": ""
+  },
+  {
+   "word": "riomo",
+   "class": "v.",
+   "meaning_en": "give, bestow",
+   "meaning_jp": "与える",
+   "dialect": "Cluster"
+  },
+  {
+   "word": "noime",
+   "class": "v.",
+   "meaning_en": "bestow, grant",
+   "meaning_jp": "与える",
+   "dialect": ""
+  },
+  {
+   "word": "sarrifis",
+   "class": "v.",
+   "meaning_en": "offer (sacrifice)",
+   "meaning_jp": "捧げる",
+   "dialect": "Central"
+  },
+  {
+   "word": "araus",
+   "class": "v.",
+   "meaning_en": "offer, sacrifice",
+   "meaning_jp": "捧げる",
+   "dialect": ""
+  },
+  {
+   "word": "tasyue",
+   "class": "v.",
+   "meaning_en": "offer, dedicate",
+   "meaning_jp": "捧げる",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "valwa",
+   "class": "v.",
+   "meaning_en": "purify",
+   "meaning_jp": "浄化する",
+   "dialect": "Central"
+  },
+  {
+   "word": "ini",
+   "class": "v.",
+   "meaning_en": "initialize, purify",
+   "meaning_jp": "初期化する",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "messe",
+   "class": "v.",
+   "meaning_en": "report, transmit, convey",
+   "meaning_jp": "伝える",
+   "dialect": "Central"
+  },
+  {
+   "word": "konla",
+   "class": "v.",
+   "meaning_en": "resound, echo",
+   "meaning_jp": "響く",
+   "dialect": ""
+  },
+  {
+   "word": "galado",
+   "class": "v.",
+   "meaning_en": "resound, echo",
+   "meaning_jp": "鳴る",
+   "dialect": ""
+  },
+  {
+   "word": "selena",
+   "class": "v.",
+   "meaning_en": "play (instrument)",
+   "meaning_jp": "奏でる",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "leat",
+   "class": "v.",
+   "meaning_en": "play (figurative)",
+   "meaning_jp": "奏でる",
+   "dialect": "Central"
+  },
+  {
+   "word": "linen",
+   "class": "v.",
+   "meaning_en": "talk, recite",
+   "meaning_jp": "語る",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "rippllys",
+   "class": "n./v.",
+   "meaning_en": "reply, respond",
+   "meaning_jp": "返事する",
+   "dialect": "Central"
+  },
+  {
+   "word": "viss",
+   "class": "v.",
+   "meaning_en": "read",
+   "meaning_jp": "読む",
+   "dialect": "Central"
+  },
+  {
+   "word": "wis",
+   "class": "v.",
+   "meaning_en": "be, is",
+   "meaning_jp": "～である",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "slepir",
+   "class": "v.",
+   "meaning_en": "put to sleep",
+   "meaning_jp": "眠らせる",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "grruw",
+   "class": "v.",
+   "meaning_en": "grow up",
+   "meaning_jp": "育つ",
+   "dialect": "Central"
+  },
+  {
+   "word": "grruwa",
+   "class": "v.",
+   "meaning_en": "raise, nurture",
+   "meaning_jp": "育てる",
+   "dialect": ""
+  },
+  {
+   "word": "yesse",
+   "class": "v.",
+   "meaning_en": "bring up, raise",
+   "meaning_jp": "育む",
+   "dialect": ""
+  },
+  {
+   "word": "hagol",
+   "class": "v.",
+   "meaning_en": "(time) pass by",
+   "meaning_jp": "過ぎる",
+   "dialect": ""
+  },
+  {
+   "word": "k.t.n.",
+   "class": "E.v.",
+   "meaning_en": "pass by, flow (time)",
+   "meaning_jp": "流れる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "synk",
+   "class": "v.",
+   "meaning_en": "join, overlap",
+   "meaning_jp": "重なる",
+   "dialect": "Central"
+  },
+  {
+   "word": "syunaht",
+   "class": "v.",
+   "meaning_en": "disappear, scatter",
+   "meaning_jp": "消え去る",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "zenva",
+   "class": "v.",
+   "meaning_en": "jump over, transcend",
+   "meaning_jp": "飛び越える",
+   "dialect": "Central"
+  },
+  {
+   "word": "stel",
+   "class": "v.",
+   "meaning_en": "take, steal, snatch",
+   "meaning_jp": "取る、奪う",
+   "dialect": "Central"
+  },
+  {
+   "word": "ks",
+   "class": "v.",
+   "meaning_en": "soothe, suggest",
+   "meaning_jp": "暗示を掛ける",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "grlanza",
+   "class": "v.",
+   "meaning_en": "dance",
+   "meaning_jp": "踊る",
+   "dialect": "Central"
+  },
+  {
+   "word": "repoear",
+   "class": "v.",
+   "meaning_en": "thank, gratitude",
+   "meaning_jp": "感謝",
+   "dialect": "Central"
+  },
+  {
+   "word": "yasra",
+   "class": "adj.",
+   "meaning_en": "gentle, calm",
+   "meaning_jp": "優しい",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "yaserwe",
+   "class": "v.",
+   "meaning_en": "relax, calm down",
+   "meaning_jp": "リラックスする",
+   "dialect": "Central"
+  },
+  {
+   "word": "yosyua",
+   "class": "v.",
+   "meaning_en": "comfort, console",
+   "meaning_jp": "慰める",
+   "dialect": "Central"
+  },
+  {
+   "word": "swant",
+   "class": "v.",
+   "meaning_en": "help, save",
+   "meaning_jp": "助ける",
+   "dialect": "Central"
+  },
+  {
+   "word": "lehaw",
+   "class": "v.",
+   "meaning_en": "save, help",
+   "meaning_jp": "救う",
+   "dialect": ""
+  },
+  {
+   "word": "dewee",
+   "class": "v.",
+   "meaning_en": "kneel",
+   "meaning_jp": "跪く",
+   "dialect": ""
+  },
+  {
+   "word": "waglialre",
+   "class": "v.",
+   "meaning_en": "entrust",
+   "meaning_jp": "託す",
+   "dialect": ""
+  },
+  {
+   "word": "riphaiah",
+   "class": "adj.",
+   "meaning_en": "revival, resurrection",
+   "meaning_jp": "甦り",
+   "dialect": ""
+  },
+  {
+   "word": "rifaien",
+   "class": "v.",
+   "meaning_en": "resurrect, revive",
+   "meaning_jp": "甦る",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "waath",
+   "class": "v.",
+   "meaning_en": "revive, rebirth",
+   "meaning_jp": "再生する",
+   "dialect": "Central"
+  },
+  {
+   "word": "woth",
+   "class": "n.",
+   "meaning_en": "rebirth, resurrection",
+   "meaning_jp": "再生",
+   "dialect": ""
+  },
+  {
+   "word": "gat",
+   "class": "n.",
+   "meaning_en": "curse",
+   "meaning_jp": "呪い",
+   "dialect": "Central"
+  },
+  {
+   "word": "giue",
+   "class": "v.",
+   "meaning_en": "curse, seize, imprison",
+   "meaning_jp": "呪縛する",
+   "dialect": ""
+  },
+  {
+   "word": "gauzewiga",
+   "class": "v.",
+   "meaning_en": "despair",
+   "meaning_jp": "絶望する",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "xevxl",
+   "class": "n.",
+   "meaning_en": "despair",
+   "meaning_jp": "絶望",
+   "dialect": ""
+  },
+  {
+   "word": "hymmnos",
+   "class": "n.",
+   "meaning_en": "song, Hymmnos",
+   "meaning_jp": "詩",
+   "dialect": "Central"
+  },
+  {
+   "word": "sarla",
+   "class": "n.",
+   "meaning_en": "song",
+   "meaning_jp": "詩",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "hynne",
+   "class": "n.",
+   "meaning_en": "voice",
+   "meaning_jp": "声",
+   "dialect": "Central"
+  },
+  {
+   "word": "eje",
+   "class": "n.",
+   "meaning_en": "heart, mind, feeling",
+   "meaning_jp": "心",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "ciel",
+   "class": "n.",
+   "meaning_en": "sky, world",
+   "meaning_jp": "空、世界",
+   "dialect": "Central"
+  },
+  {
+   "word": "sphaela",
+   "class": "n.",
+   "meaning_en": "world",
+   "meaning_jp": "世界",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "dor",
+   "class": "n.",
+   "meaning_en": "ground, continent",
+   "meaning_jp": "大地",
+   "dialect": "Central"
+  },
+  {
+   "word": "doodu",
+   "class": "n.",
+   "meaning_en": "ground, earth",
+   "meaning_jp": "大地",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "arhou",
+   "class": "n.",
+   "meaning_en": "hope, blessing",
+   "meaning_jp": "希望",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "ieeya",
+   "class": "n.",
+   "meaning_en": "hope, wish",
+   "meaning_jp": "希望",
+   "dialect": "Central"
+  },
+  {
+   "word": "futare",
+   "class": "n.",
+   "meaning_en": "future",
+   "meaning_jp": "未来",
+   "dialect": "Central"
+  },
+  {
+   "word": "firga",
+   "class": "n.",
+   "meaning_en": "past",
+   "meaning_jp": "過去",
+   "dialect": ""
+  },
+  {
+   "word": "ides",
+   "class": "n.",
+   "meaning_en": "past",
+   "meaning_jp": "過去",
+   "dialect": "Central"
+  },
+  {
+   "word": "im",
+   "class": "n.",
+   "meaning_en": "now",
+   "meaning_jp": "今",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "iem",
+   "class": "n.",
+   "meaning_en": "now",
+   "meaning_jp": "今",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "dyya",
+   "class": "n.",
+   "meaning_en": "day",
+   "meaning_jp": "日",
+   "dialect": "Central"
+  },
+  {
+   "word": "nuih",
+   "class": "n.",
+   "meaning_en": "night",
+   "meaning_jp": "夜",
+   "dialect": "Central"
+  },
+  {
+   "word": "harphe",
+   "class": "n.",
+   "meaning_en": "morning",
+   "meaning_jp": "朝",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "dauan",
+   "class": "n.",
+   "meaning_en": "dawn",
+   "meaning_jp": "夜明け",
+   "dialect": "Central"
+  },
+  {
+   "word": "weak",
+   "class": "n.",
+   "meaning_en": "moon",
+   "meaning_jp": "月",
+   "dialect": "Central"
+  },
+  {
+   "word": "maen",
+   "class": "n.",
+   "meaning_en": "full moon",
+   "meaning_jp": "満月",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "sheak",
+   "class": "n.",
+   "meaning_en": "sun",
+   "meaning_jp": "太陽",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "fayra",
+   "class": "n.",
+   "meaning_en": "fire, blaze",
+   "meaning_jp": "火、炎",
+   "dialect": "Central"
+  },
+  {
+   "word": "kapa",
+   "class": "n.",
+   "meaning_en": "water",
+   "meaning_jp": "水",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "jue",
+   "class": "n.",
+   "meaning_en": "water",
+   "meaning_jp": "水",
+   "dialect": ""
+  },
+  {
+   "word": "fhyu",
+   "class": "n.",
+   "meaning_en": "wind",
+   "meaning_jp": "風",
+   "dialect": "Central"
+  },
+  {
+   "word": "papana",
+   "class": "n.",
+   "meaning_en": "rain",
+   "meaning_jp": "雨",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "sarsa",
+   "class": "n.",
+   "meaning_en": "rain",
+   "meaning_jp": "雨",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "colga",
+   "class": "n.",
+   "meaning_en": "ice",
+   "meaning_jp": "氷",
+   "dialect": "Central"
+  },
+  {
+   "word": "frawr",
+   "class": "n.",
+   "meaning_en": "flower",
+   "meaning_jp": "花",
+   "dialect": "Central"
+  },
+  {
+   "word": "dorn",
+   "class": "n.",
+   "meaning_en": "tree, wood",
+   "meaning_jp": "木",
+   "dialect": "Central"
+  },
+  {
+   "word": "dornpica",
+   "class": "n.",
+   "meaning_en": "nut, fruit, seed",
+   "meaning_jp": "木の実",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "faura",
+   "class": "n.",
+   "meaning_en": "small bird",
+   "meaning_jp": "小鳥",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "fau",
+   "class": "n.",
+   "meaning_en": "bird (not small)",
+   "meaning_jp": "鳥",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "hymma",
+   "class": "n.",
+   "meaning_en": "small bird",
+   "meaning_jp": "小鳥",
+   "dialect": "Central"
+  },
+  {
+   "word": "hasyu",
+   "class": "n.",
+   "meaning_en": "fish",
+   "meaning_jp": "魚",
+   "dialect": "Central"
+  },
+  {
+   "word": "sasye",
+   "class": "n.",
+   "meaning_en": "girl, young woman",
+   "meaning_jp": "少女",
+   "dialect": "Central"
+  },
+  {
+   "word": "lasye",
+   "class": "n.",
+   "meaning_en": "boy, young man",
+   "meaning_jp": "少年",
+   "dialect": "Central"
+  },
+  {
+   "word": "walasye",
+   "class": "n.",
+   "meaning_en": "human, people",
+   "meaning_jp": "人間",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "qejyu",
+   "class": "n.",
+   "meaning_en": "people, humanity",
+   "meaning_jp": "人々",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "revatail",
+   "class": "n.",
+   "meaning_en": "Reyvateil",
+   "meaning_jp": "蕾瓦蒂尔",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "saash",
+   "class": "n.",
+   "meaning_en": "God, gods",
+   "meaning_jp": "神",
+   "dialect": "Central"
+  },
+  {
+   "word": "nosaash",
+   "class": "n.",
+   "meaning_en": "goddess",
+   "meaning_jp": "女神",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "diol",
+   "class": "n.",
+   "meaning_en": "God",
+   "meaning_jp": "神",
+   "dialect": ""
+  },
+  {
+   "word": "near",
+   "class": "n.",
+   "meaning_en": "life",
+   "meaning_jp": "命、生命",
+   "dialect": "Central"
+  },
+  {
+   "word": "manaf",
+   "class": "n.",
+   "meaning_en": "life, existence",
+   "meaning_jp": "命",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "cupla",
+   "class": "n.",
+   "meaning_en": "sin",
+   "meaning_jp": "罪",
+   "dialect": "Central"
+  },
+  {
+   "word": "wart",
+   "class": "n.",
+   "meaning_en": "word",
+   "meaning_jp": "言葉",
+   "dialect": "Central"
+  },
+  {
+   "word": "corle",
+   "class": "n.",
+   "meaning_en": "heart",
+   "meaning_jp": "心",
+   "dialect": ""
+  },
+  {
+   "word": "sphilar",
+   "class": "n.",
+   "meaning_en": "mind, spirit, heart",
+   "meaning_jp": "精神、心",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "lonfa",
+   "class": "n.",
+   "meaning_en": "soul",
+   "meaning_jp": "魂",
+   "dialect": ""
+  },
+  {
+   "word": "wiaa",
+   "class": "n.",
+   "meaning_en": "soul",
+   "meaning_jp": "魂",
+   "dialect": ""
+  },
+  {
+   "word": "ayulsa",
+   "class": "n.",
+   "meaning_en": "eternity",
+   "meaning_jp": "永遠",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "etealune",
+   "class": "n.",
+   "meaning_en": "eternity",
+   "meaning_jp": "永遠",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "fwal",
+   "class": "n./v.",
+   "meaning_en": "wing, advance",
+   "meaning_jp": "翼",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "fwillra",
+   "class": "n.",
+   "meaning_en": "feather, plumage",
+   "meaning_jp": "羽",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "gyuss",
+   "class": "n.",
+   "meaning_en": "embrace, hug",
+   "meaning_jp": "抱擁",
+   "dialect": "Central"
+  },
+  {
+   "word": "memora",
+   "class": "n.",
+   "meaning_en": "memory",
+   "meaning_jp": "記憶",
+   "dialect": "Central"
+  },
+  {
+   "word": "erphy",
+   "class": "n.",
+   "meaning_en": "memory, remembrance",
+   "meaning_jp": "思い出",
+   "dialect": ""
+  },
+  {
+   "word": "revm",
+   "class": "n.",
+   "meaning_en": "dream",
+   "meaning_jp": "夢",
+   "dialect": "Central"
+  },
+  {
+   "word": "fou",
+   "class": "n.",
+   "meaning_en": "wonder, mystery",
+   "meaning_jp": "不思議",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "fao",
+   "class": "n.",
+   "meaning_en": "miracle",
+   "meaning_jp": "奇跡",
+   "dialect": ""
+  },
+  {
+   "word": "yehah",
+   "class": "n.",
+   "meaning_en": "happiness",
+   "meaning_jp": "幸せ",
+   "dialect": "Central"
+  },
+  {
+   "word": "hiew",
+   "class": "n.",
+   "meaning_en": "sadness, sorrow",
+   "meaning_jp": "哀しみ",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "halun",
+   "class": "n.",
+   "meaning_en": "feelings",
+   "meaning_jp": "想い",
+   "dialect": ""
+  },
+  {
+   "word": "asyar",
+   "class": "n.",
+   "meaning_en": "feelings",
+   "meaning_jp": "想い",
+   "dialect": ""
+  },
+  {
+   "word": "enne",
+   "class": "n.",
+   "meaning_en": "prayer, request",
+   "meaning_jp": "祈り",
+   "dialect": "Central"
+  },
+  {
+   "word": "soare",
+   "class": "n.",
+   "meaning_en": "prayer",
+   "meaning_jp": "祈り",
+   "dialect": ""
+  },
+  {
+   "word": "enesse",
+   "class": "n.",
+   "meaning_en": "emotion",
+   "meaning_jp": "想い",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "infel",
+   "class": "n.",
+   "meaning_en": "love (familial)",
+   "meaning_jp": "愛",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "harton",
+   "class": "n.",
+   "meaning_en": "love (romantic)",
+   "meaning_jp": "愛",
+   "dialect": "Central"
+  },
+  {
+   "word": "syana",
+   "class": "n.",
+   "meaning_en": "love, feelings",
+   "meaning_jp": "愛、想い",
+   "dialect": ""
+  },
+  {
+   "word": "dsier",
+   "class": "n.",
+   "meaning_en": "desire",
+   "meaning_jp": "欲望",
+   "dialect": "Central"
+  },
+  {
+   "word": "morto",
+   "class": "n./v.",
+   "meaning_en": "death, die",
+   "meaning_jp": "死",
+   "dialect": "Central"
+  },
+  {
+   "word": "zodaw",
+   "class": "n.",
+   "meaning_en": "death",
+   "meaning_jp": "死",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "balduo",
+   "class": "adj.",
+   "meaning_en": "dark, of darkness",
+   "meaning_jp": "暗い",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "vonn",
+   "class": "n./adj.",
+   "meaning_en": "dark, darkness",
+   "meaning_jp": "闇",
+   "dialect": "Central"
+  },
+  {
+   "word": "noglle",
+   "class": "adj./n.",
+   "meaning_en": "black",
+   "meaning_jp": "黒",
+   "dialect": "Central"
+  },
+  {
+   "word": "vinan",
+   "class": "n./adj.",
+   "meaning_en": "white",
+   "meaning_jp": "白",
+   "dialect": "Central"
+  },
+  {
+   "word": "burle",
+   "class": "adj./n.",
+   "meaning_en": "blue",
+   "meaning_jp": "青",
+   "dialect": "Central"
+  },
+  {
+   "word": "grrena",
+   "class": "adj./n.",
+   "meaning_en": "green, azure",
+   "meaning_jp": "緑",
+   "dialect": "Central"
+  },
+  {
+   "word": "rudje",
+   "class": "adj./n.",
+   "meaning_en": "red, crimson",
+   "meaning_jp": "赤",
+   "dialect": "Central"
+  },
+  {
+   "word": "kiala",
+   "class": "adj./n.",
+   "meaning_en": "gold, golden",
+   "meaning_jp": "金",
+   "dialect": ""
+  },
+  {
+   "word": "irea",
+   "class": "adj./n.",
+   "meaning_en": "silver",
+   "meaning_jp": "銀",
+   "dialect": ""
+  },
+  {
+   "word": "kira",
+   "class": "n.",
+   "meaning_en": "star (celestial)",
+   "meaning_jp": "星",
+   "dialect": ""
+  },
+  {
+   "word": "lyuma",
+   "class": "n.",
+   "meaning_en": "star, planet",
+   "meaning_jp": "星",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "shen",
+   "class": "n.",
+   "meaning_en": "light",
+   "meaning_jp": "光",
+   "dialect": "Central"
+  },
+  {
+   "word": "fhau",
+   "class": "n.",
+   "meaning_en": "light",
+   "meaning_jp": "光",
+   "dialect": ""
+  },
+  {
+   "word": "lusye",
+   "class": "n.",
+   "meaning_en": "light",
+   "meaning_jp": "光",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "lir",
+   "class": "n.",
+   "meaning_en": "light",
+   "meaning_jp": "光",
+   "dialect": "Alpha (Eolia)"
+  },
+  {
+   "word": "siann",
+   "class": "n.",
+   "meaning_en": "light",
+   "meaning_jp": "光",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "rum",
+   "class": "n.",
+   "meaning_en": "flame",
+   "meaning_jp": "炎",
+   "dialect": ""
+  },
+  {
+   "word": "hyung",
+   "class": "n.",
+   "meaning_en": "hellfire",
+   "meaning_jp": "業火",
+   "dialect": ""
+  },
+  {
+   "word": "fayra",
+   "class": "n.",
+   "meaning_en": "fire, blaze",
+   "meaning_jp": "火、炎",
+   "dialect": "Central"
+  },
+  {
+   "word": "zaarn",
+   "class": "n.",
+   "meaning_en": "sea, ocean, wave",
+   "meaning_jp": "海原",
+   "dialect": ""
+  },
+  {
+   "word": "rivire",
+   "class": "n.",
+   "meaning_en": "river",
+   "meaning_jp": "川",
+   "dialect": "Central"
+  },
+  {
+   "word": "koora",
+   "class": "n.",
+   "meaning_en": "stream",
+   "meaning_jp": "小川",
+   "dialect": "Central"
+  },
+  {
+   "word": "sabl",
+   "class": "n.",
+   "meaning_en": "sand",
+   "meaning_jp": "砂",
+   "dialect": "Central"
+  },
+  {
+   "word": "dorna",
+   "class": "n.",
+   "meaning_en": "forest",
+   "meaning_jp": "森",
+   "dialect": ""
+  },
+  {
+   "word": "sefanl",
+   "class": "n.",
+   "meaning_en": "forest",
+   "meaning_jp": "森",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "garlden",
+   "class": "n.",
+   "meaning_en": "town",
+   "meaning_jp": "街",
+   "dialect": "Central"
+  },
+  {
+   "word": "sechel",
+   "class": "n.",
+   "meaning_en": "city",
+   "meaning_jp": "都市",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "forlinden",
+   "class": "n.",
+   "meaning_en": "village",
+   "meaning_jp": "村",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "dgal",
+   "class": "n.",
+   "meaning_en": "country, land",
+   "meaning_jp": "国",
+   "dialect": ""
+  },
+  {
+   "word": "spaha",
+   "class": "n.",
+   "meaning_en": "country",
+   "meaning_jp": "国",
+   "dialect": "Cluster"
+  },
+  {
+   "word": "ceku",
+   "class": "n.",
+   "meaning_en": "friend, comrade",
+   "meaning_jp": "友",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "ferx",
+   "class": "n.",
+   "meaning_en": "friend, companion",
+   "meaning_jp": "仲間",
+   "dialect": ""
+  },
+  {
+   "word": "kyakkya",
+   "class": "n.",
+   "meaning_en": "friend",
+   "meaning_jp": "なかよし",
+   "dialect": ""
+  },
+  {
+   "word": "nyamonyas",
+   "class": "n.",
+   "meaning_en": "friend",
+   "meaning_jp": "ともだち",
+   "dialect": ""
+  },
+  {
+   "word": "mea",
+   "class": "n.",
+   "meaning_en": "me (object)",
+   "meaning_jp": "私",
+   "dialect": "Central"
+  },
+  {
+   "word": "mean",
+   "class": "n.",
+   "meaning_en": "us (object)",
+   "meaning_jp": "わたしたち",
+   "dialect": "Central"
+  },
+  {
+   "word": "merra",
+   "class": "n.",
+   "meaning_en": "us (subject)",
+   "meaning_jp": "わたしたち",
+   "dialect": "Central"
+  },
+  {
+   "word": "yor",
+   "class": "n.",
+   "meaning_en": "you (sg object)",
+   "meaning_jp": "あなた",
+   "dialect": "Central"
+  },
+  {
+   "word": "yora",
+   "class": "n.",
+   "meaning_en": "you (pl object)",
+   "meaning_jp": "あなたたち",
+   "dialect": "Central"
+  },
+  {
+   "word": "yorr",
+   "class": "n.",
+   "meaning_en": "you (sg subject)",
+   "meaning_jp": "あなた",
+   "dialect": "Central"
+  },
+  {
+   "word": "yorra",
+   "class": "n.",
+   "meaning_en": "you (pl subject)",
+   "meaning_jp": "あなたたち",
+   "dialect": "Central"
+  },
+  {
+   "word": "hes",
+   "class": "n.",
+   "meaning_en": "him",
+   "meaning_jp": "彼",
+   "dialect": "Central"
+  },
+  {
+   "word": "herr",
+   "class": "pro.",
+   "meaning_en": "he (subject)",
+   "meaning_jp": "彼",
+   "dialect": "Central"
+  },
+  {
+   "word": "hers",
+   "class": "n.",
+   "meaning_en": "them (masc)",
+   "meaning_jp": "彼ら",
+   "dialect": "Central"
+  },
+  {
+   "word": "herra",
+   "class": "pro.",
+   "meaning_en": "they (masc subject)",
+   "meaning_jp": "彼ら",
+   "dialect": "Central"
+  },
+  {
+   "word": "has",
+   "class": "n.",
+   "meaning_en": "her",
+   "meaning_jp": "彼女",
+   "dialect": "Central"
+  },
+  {
+   "word": "harr",
+   "class": "pro.",
+   "meaning_en": "she (subject)",
+   "meaning_jp": "彼女",
+   "dialect": "Central"
+  },
+  {
+   "word": "hars",
+   "class": "n.",
+   "meaning_en": "them (fem)",
+   "meaning_jp": "彼女ら",
+   "dialect": "Central"
+  },
+  {
+   "word": "harra",
+   "class": "pro.",
+   "meaning_en": "they (fem subject)",
+   "meaning_jp": "彼女ら",
+   "dialect": "Central"
+  },
+  {
+   "word": "her",
+   "class": "pro.",
+   "meaning_en": "this",
+   "meaning_jp": "これ",
+   "dialect": "Central"
+  },
+  {
+   "word": "sor",
+   "class": "pro.",
+   "meaning_en": "that",
+   "meaning_jp": "それ",
+   "dialect": "Central"
+  },
+  {
+   "word": "sorr",
+   "class": "pro.",
+   "meaning_en": "that (subject)",
+   "meaning_jp": "それは",
+   "dialect": "Central"
+  },
+  {
+   "word": "ther",
+   "class": "pro.",
+   "meaning_en": "that (far)",
+   "meaning_jp": "あれ",
+   "dialect": "Central"
+  },
+  {
+   "word": "noes",
+   "class": "n.",
+   "meaning_en": "oneself",
+   "meaning_jp": "自分自身",
+   "dialect": "Central"
+  },
+  {
+   "word": "omn",
+   "class": "adj.",
+   "meaning_en": "one's own",
+   "meaning_jp": "自分の",
+   "dialect": ""
+  },
+  {
+   "word": "h.m.m.r.",
+   "class": "E.v.",
+   "meaning_en": "sing",
+   "meaning_jp": "謳う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "c.z.",
+   "class": "E.v.",
+   "meaning_en": "transform, become",
+   "meaning_jp": "変化する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "a.u.k.",
+   "class": "E.v.",
+   "meaning_en": "to be (copula)",
+   "meaning_jp": "be動詞",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "d.n.",
+   "class": "E.v.",
+   "meaning_en": "dance",
+   "meaning_jp": "踊る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "d.z.",
+   "class": "E.v.",
+   "meaning_en": "die",
+   "meaning_jp": "死ぬ",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "f.w.r.n.",
+   "class": "E.v.",
+   "meaning_en": "embrace, enfold",
+   "meaning_jp": "包みこむ",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "f.w.r.",
+   "class": "E.v.",
+   "meaning_en": "accept",
+   "meaning_jp": "受け入れる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "f.s.",
+   "class": "E.v.",
+   "meaning_en": "whisper, murmur",
+   "meaning_jp": "囁く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "b.s.m.",
+   "class": "E.v.",
+   "meaning_en": "come",
+   "meaning_jp": "来る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "g.w.n.",
+   "class": "E.v.",
+   "meaning_en": "lead, guide",
+   "meaning_jp": "導く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "g.v.w.",
+   "class": "E.v.",
+   "meaning_en": "fight, battle",
+   "meaning_jp": "戦う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "g.w.f.r.",
+   "class": "E.v.",
+   "meaning_en": "judge, convict",
+   "meaning_jp": "裁く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.r.",
+   "class": "E.v.",
+   "meaning_en": "burn, raze",
+   "meaning_jp": "焼く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.r.r.",
+   "class": "E.v.",
+   "meaning_en": "reflect, project",
+   "meaning_jp": "映す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "n.e.g.",
+   "class": "E.v.",
+   "meaning_en": "pray",
+   "meaning_jp": "祈る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "n.i.",
+   "class": "E.v.",
+   "meaning_en": "lose, forfeit",
+   "meaning_jp": "喪失する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "n.t.n.",
+   "class": "E.v.",
+   "meaning_en": "continue",
+   "meaning_jp": "続く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "r.f.m",
+   "class": "E.v.",
+   "meaning_en": "see, watch",
+   "meaning_jp": "見る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "s.l.",
+   "class": "E.v.",
+   "meaning_en": "believe, trust",
+   "meaning_jp": "信じる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "s.s.w.",
+   "class": "E.v.",
+   "meaning_en": "say, speak",
+   "meaning_jp": "言う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "v.a",
+   "class": "E.v.",
+   "meaning_en": "produce, craft",
+   "meaning_jp": "生む",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "v.t",
+   "class": "E.v.",
+   "meaning_en": "live",
+   "meaning_jp": "生きる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.s.r.",
+   "class": "E.v.",
+   "meaning_en": "forget",
+   "meaning_jp": "忘れる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.r.m.",
+   "class": "E.v.",
+   "meaning_en": "illuminate",
+   "meaning_jp": "照らす",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "x.v.",
+   "class": "E.v.",
+   "meaning_en": "destroy, harm",
+   "meaning_jp": "壊す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "y.y.",
+   "class": "E.v.",
+   "meaning_en": "heal, cure",
+   "meaning_jp": "癒す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "y.z.t.",
+   "class": "E.v.",
+   "meaning_en": "wish, desire",
+   "meaning_jp": "願う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "z.w.d.",
+   "class": "E.v.",
+   "meaning_en": "hesitate, be lost",
+   "meaning_jp": "迷う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "z.z.x.",
+   "class": "E.v.",
+   "meaning_en": "despair",
+   "meaning_jp": "絶望する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "k.i.",
+   "class": "E.v.",
+   "meaning_en": "kill, murder",
+   "meaning_jp": "殺す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "l.l.d.",
+   "class": "E.v.",
+   "meaning_en": "advance, go forward",
+   "meaning_jp": "前進する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "l.n.c.a.",
+   "class": "E.v.",
+   "meaning_en": "connect, tie together",
+   "meaning_jp": "繋がる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "t.n.m.n.",
+   "class": "E.v.",
+   "meaning_en": "plant, scatter seeds",
+   "meaning_jp": "まく",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.t.y.y.",
+   "class": "E.v.",
+   "meaning_en": "create, give birth to",
+   "meaning_jp": "作り出す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.a.m.",
+   "class": "E.v.",
+   "meaning_en": "exist",
+   "meaning_jp": "存在する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.f.l.",
+   "class": "E.v.",
+   "meaning_en": "cover, shroud",
+   "meaning_jp": "覆う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "g.k.n.",
+   "class": "E.v.",
+   "meaning_en": "eat",
+   "meaning_jp": "食べる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "g.n.g.",
+   "class": "E.v.",
+   "meaning_en": "pierce, go through",
+   "meaning_jp": "貫く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "d.n.g.",
+   "class": "E.v.",
+   "meaning_en": "pierce",
+   "meaning_jp": "穿つ",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "d.r.s.n.",
+   "class": "E.v.",
+   "meaning_en": "hand down, pass on",
+   "meaning_jp": "伝えられている",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "d.s.s.n.",
+   "class": "E.v.",
+   "meaning_en": "strike, fall upon",
+   "meaning_jp": "襲い掛かる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "d.x.",
+   "class": "E.v.",
+   "meaning_en": "gnaw at, crush",
+   "meaning_jp": "蝕む",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "k.f.k.k.",
+   "class": "E.v.",
+   "meaning_en": "sneer, ridicule",
+   "meaning_jp": "嘲笑う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "k.r.",
+   "class": "E.v.",
+   "meaning_en": "play, frolic",
+   "meaning_jp": "戯れる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "k.v.r.",
+   "class": "E.v.",
+   "meaning_en": "cover, wrap",
+   "meaning_jp": "覆う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "k.v.n.r.",
+   "class": "E.v.",
+   "meaning_en": "challenge, defy",
+   "meaning_jp": "挑む",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "b.a.",
+   "class": "E.v.",
+   "meaning_en": "overflow, pour out",
+   "meaning_jp": "溢れる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "f.p.n.",
+   "class": "E.v.",
+   "meaning_en": "downpour",
+   "meaning_jp": "降りしきる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "f.r.l.",
+   "class": "E.v.",
+   "meaning_en": "be frightened",
+   "meaning_jp": "怯える",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "h.k.t.t",
+   "class": "E.v.",
+   "meaning_en": "embrace, hug",
+   "meaning_jp": "抱擁する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "h.l.s.s.",
+   "class": "E.v.",
+   "meaning_en": "grieve, sigh",
+   "meaning_jp": "嘆く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "h.p.p",
+   "class": "E.v.",
+   "meaning_en": "think, feel",
+   "meaning_jp": "想う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "h.r.n.t.",
+   "class": "E.v.",
+   "meaning_en": "go on a journey",
+   "meaning_jp": "旅をする",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "h.w.s.s.",
+   "class": "E.v.",
+   "meaning_en": "grow, mature",
+   "meaning_jp": "成長する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "j.d.r.",
+   "class": "E.v.",
+   "meaning_en": "capture, stick to",
+   "meaning_jp": "囚われる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "j.l.r.",
+   "class": "E.v.",
+   "meaning_en": "calm down, return to self",
+   "meaning_jp": "我に返る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "j.w.",
+   "class": "E.v.",
+   "meaning_en": "entrust",
+   "meaning_jp": "託す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "j.z.t.",
+   "class": "E.v.",
+   "meaning_en": "execute, invoke",
+   "meaning_jp": "発動する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "l.k.k.",
+   "class": "E.v.",
+   "meaning_en": "look up at, gaze",
+   "meaning_jp": "見上げる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "l.l.n.",
+   "class": "E.v.",
+   "meaning_en": "bless",
+   "meaning_jp": "祝福する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "l.r.w.",
+   "class": "E.v.",
+   "meaning_en": "fulfill, accomplish",
+   "meaning_jp": "成し遂げる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.n.g.",
+   "class": "E.v.",
+   "meaning_en": "drink, understand",
+   "meaning_jp": "飲み込む",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.v.y.n.",
+   "class": "E.v.",
+   "meaning_en": "despise, disdain",
+   "meaning_jp": "侮る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "m.y.b.",
+   "class": "E.v.",
+   "meaning_en": "lead, guide",
+   "meaning_jp": "導く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "n.d.n.",
+   "class": "E.v.",
+   "meaning_en": "lay down, disappear",
+   "meaning_jp": "臥す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "n.m.l.",
+   "class": "E.v.",
+   "meaning_en": "dye, color",
+   "meaning_jp": "染まる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "n.y.g.t.",
+   "class": "E.v.",
+   "meaning_en": "take in, accept",
+   "meaning_jp": "入り込む",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "n.y.k.",
+   "class": "E.v.",
+   "meaning_en": "can do, capable",
+   "meaning_jp": "可能",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "p.s.w.t.",
+   "class": "E.v.",
+   "meaning_en": "seize, acquire",
+   "meaning_jp": "掴む",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "q.g.s.",
+   "class": "E.v.",
+   "meaning_en": "end, finish",
+   "meaning_jp": "終る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "q.l.s.",
+   "class": "E.v.",
+   "meaning_en": "shake, vibrate",
+   "meaning_jp": "揺らす",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "r.l.t.y.",
+   "class": "E.v.",
+   "meaning_en": "revive, resurrect",
+   "meaning_jp": "甦る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "r.w.",
+   "class": "E.v.",
+   "meaning_en": "help, rescue",
+   "meaning_jp": "助ける",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "s.a.",
+   "class": "E.v.",
+   "meaning_en": "extend (hand), invite",
+   "meaning_jp": "差し伸べる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "s.l.y.",
+   "class": "E.v.",
+   "meaning_en": "watch over",
+   "meaning_jp": "見守る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "s.n.k.k.",
+   "class": "E.v.",
+   "meaning_en": "bud (plant)",
+   "meaning_jp": "芽吹く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "s.n.s.",
+   "class": "E.v.",
+   "meaning_en": "synchronize, connect",
+   "meaning_jp": "同期する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "t.h.s.",
+   "class": "E.v.",
+   "meaning_en": "go outside",
+   "meaning_jp": "出る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "t.h.k.t.",
+   "class": "E.v.",
+   "meaning_en": "seek, search for",
+   "meaning_jp": "求める",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "t.k.d.",
+   "class": "E.v.",
+   "meaning_en": "reach, get across",
+   "meaning_jp": "届く",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.f.",
+   "class": "E.v.",
+   "meaning_en": "want to do",
+   "meaning_jp": "～したい",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.h.h.",
+   "class": "E.v.",
+   "meaning_en": "feel, sense",
+   "meaning_jp": "感じる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.n.s.",
+   "class": "E.v.",
+   "meaning_en": "visit, echo",
+   "meaning_jp": "訪れる",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.r.l",
+   "class": "E.v.",
+   "meaning_en": "aim at",
+   "meaning_jp": "目指す",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.r.g.",
+   "class": "E.v.",
+   "meaning_en": "must do",
+   "meaning_jp": "～なければならない",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.s.",
+   "class": "E.v.",
+   "meaning_en": "give",
+   "meaning_jp": "与える",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "w.w.j.n.c.",
+   "class": "E.v.",
+   "meaning_en": "resound, sympathize",
+   "meaning_jp": "共鳴する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "x.y.n.",
+   "class": "E.v.",
+   "meaning_en": "hurt, injure",
+   "meaning_jp": "傷つく",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "y.g.l.",
+   "class": "E.v.",
+   "meaning_en": "pledge, swear",
+   "meaning_jp": "誓う",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "y.g.r.r.",
+   "class": "E.v.",
+   "meaning_en": "neglect, shun",
+   "meaning_jp": "疎む",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "y.m.q.",
+   "class": "E.v.",
+   "meaning_en": "bear fruit, ripen",
+   "meaning_jp": "実る",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "r.f.r.m",
+   "class": "E.v.",
+   "meaning_en": "know, recognize",
+   "meaning_jp": "認識する",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "glansee",
+   "class": "adj.",
+   "meaning_en": "divine, exalted (LYA prefix → God)",
+   "meaning_jp": "神々しい",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "forgandal",
+   "class": "conj.",
+   "meaning_en": "because!",
+   "meaning_jp": "なぜならば！",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "wassa",
+   "class": "n.",
+   "meaning_en": "festival, feast",
+   "meaning_jp": "祭典",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "tatakaria",
+   "class": "n.",
+   "meaning_en": "all lives, beings",
+   "meaning_jp": "命たち",
+   "dialect": ""
+  },
+  {
+   "word": "gauzewiga",
+   "class": "v.",
+   "meaning_en": "despair",
+   "meaning_jp": "絶望する",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "zadius",
+   "class": "n.",
+   "meaning_en": "hatred",
+   "meaning_jp": "憎悪",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "gatyuny",
+   "class": "n.",
+   "meaning_en": "curse",
+   "meaning_jp": "呪い",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "gatyunla",
+   "class": "n.",
+   "meaning_en": "cursed land, hell",
+   "meaning_jp": "呪いの地",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "quesa",
+   "class": "n.",
+   "meaning_en": "thunder, lightning",
+   "meaning_jp": "雷鳴",
+   "dialect": "Central"
+  },
+  {
+   "word": "cecet",
+   "class": "n.",
+   "meaning_en": "shield",
+   "meaning_jp": "盾",
+   "dialect": "Central"
+  },
+  {
+   "word": "viega",
+   "class": "n.",
+   "meaning_en": "blade, sword",
+   "meaning_jp": "刃、剣",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "dilete",
+   "class": "n.",
+   "meaning_en": "God's breath/protection",
+   "meaning_jp": "神の加護",
+   "dialect": "Central"
+  },
+  {
+   "word": "diasee",
+   "class": "n.",
+   "meaning_en": "child of God",
+   "meaning_jp": "神の子",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "pauwel",
+   "class": "n.",
+   "meaning_en": "power",
+   "meaning_jp": "力",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "pawr",
+   "class": "n.",
+   "meaning_en": "power, strength",
+   "meaning_jp": "力",
+   "dialect": ""
+  },
+  {
+   "word": "olga",
+   "class": "n.",
+   "meaning_en": "power, authority",
+   "meaning_jp": "権限",
+   "dialect": ""
+  },
+  {
+   "word": "guard",
+   "class": "n.",
+   "meaning_en": "protection, guard",
+   "meaning_jp": "守り",
+   "dialect": "Central"
+  },
+  {
+   "word": "cecet",
+   "class": "n.",
+   "meaning_en": "shield",
+   "meaning_jp": "盾",
+   "dialect": "Central"
+  },
+  {
+   "word": "rosa",
+   "class": "n.",
+   "meaning_en": "rose",
+   "meaning_jp": "薔薇",
+   "dialect": "Central"
+  },
+  {
+   "word": "rawah",
+   "class": "n.",
+   "meaning_en": "flower",
+   "meaning_jp": "花",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "lyafre",
+   "class": "n.",
+   "meaning_en": "butterfly",
+   "meaning_jp": "蝶",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "sara",
+   "class": "n.",
+   "meaning_en": "grass",
+   "meaning_jp": "草",
+   "dialect": "Central"
+  },
+  {
+   "word": "brinch",
+   "class": "n.",
+   "meaning_en": "branch",
+   "meaning_jp": "枝",
+   "dialect": "Central"
+  },
+  {
+   "word": "plina",
+   "class": "n.",
+   "meaning_en": "greenery (plants)",
+   "meaning_jp": "緑",
+   "dialect": "Central"
+  },
+  {
+   "word": "colmask",
+   "class": "n.",
+   "meaning_en": "form, shape, state",
+   "meaning_jp": "姿",
+   "dialect": ""
+  },
+  {
+   "word": "raudl",
+   "class": "n.",
+   "meaning_en": "form, shape",
+   "meaning_jp": "姿、形",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "cyurio",
+   "class": "n.",
+   "meaning_en": "reason, logic, order",
+   "meaning_jp": "理、秩序",
+   "dialect": "Central"
+  },
+  {
+   "word": "cerchio",
+   "class": "n.",
+   "meaning_en": "possibility",
+   "meaning_jp": "可能性",
+   "dialect": "Central"
+  },
+  {
+   "word": "missea",
+   "class": "n.",
+   "meaning_en": "mission",
+   "meaning_jp": "使命",
+   "dialect": "Cluster"
+  },
+  {
+   "word": "titia",
+   "class": "n.",
+   "meaning_en": "good will, goodness",
+   "meaning_jp": "善意",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "yura",
+   "class": "n.",
+   "meaning_en": "balance",
+   "meaning_jp": "バランス",
+   "dialect": "Central"
+  },
+  {
+   "word": "ryua",
+   "class": "n.",
+   "meaning_en": "resolution, determination",
+   "meaning_jp": "覚悟",
+   "dialect": ""
+  },
+  {
+   "word": "syalea",
+   "class": "n.",
+   "meaning_en": "decision, resolve",
+   "meaning_jp": "決意",
+   "dialect": ""
+  },
+  {
+   "word": "spitze",
+   "class": "n.",
+   "meaning_en": "freedom",
+   "meaning_jp": "自由",
+   "dialect": "Central"
+  },
+  {
+   "word": "skit",
+   "class": "n.",
+   "meaning_en": "promise, vow",
+   "meaning_jp": "契約",
+   "dialect": "Kurt Ciel"
+  },
+  {
+   "word": "alefio",
+   "class": "n.",
+   "meaning_en": "vow, pledge",
+   "meaning_jp": "誓い",
+   "dialect": ""
+  },
+  {
+   "word": "geeow",
+   "class": "n./v.",
+   "meaning_en": "oath, vow, resolve",
+   "meaning_jp": "誓い",
+   "dialect": "Central"
+  },
+  {
+   "word": "nel",
+   "class": "n.",
+   "meaning_en": "zero (0)",
+   "meaning_jp": "無、ゼロ",
+   "dialect": ""
+  },
+  {
+   "word": "nnoi",
+   "class": "n.",
+   "meaning_en": "one (1)",
+   "meaning_jp": "一つ",
+   "dialect": ""
+  },
+  {
+   "word": "zi",
+   "class": "n.",
+   "meaning_en": "two (2)",
+   "meaning_jp": "ふたつ",
+   "dialect": ""
+  },
+  {
+   "word": "dri",
+   "class": "n.",
+   "meaning_en": "three (3)",
+   "meaning_jp": "三",
+   "dialect": ""
+  },
+  {
+   "word": "fef",
+   "class": "n.",
+   "meaning_en": "four (4)",
+   "meaning_jp": "四",
+   "dialect": ""
+  },
+  {
+   "word": "vira",
+   "class": "n.",
+   "meaning_en": "five (5)",
+   "meaning_jp": "五",
+   "dialect": ""
+  },
+  {
+   "word": "ixa",
+   "class": "n.",
+   "meaning_en": "six (6)",
+   "meaning_jp": "六",
+   "dialect": ""
+  },
+  {
+   "word": "hept",
+   "class": "n.",
+   "meaning_en": "seven (7)",
+   "meaning_jp": "七",
+   "dialect": ""
+  },
+  {
+   "word": "octa",
+   "class": "n.",
+   "meaning_en": "eight (8)",
+   "meaning_jp": "八",
+   "dialect": ""
+  },
+  {
+   "word": "nei",
+   "class": "n.",
+   "meaning_en": "nine (9)",
+   "meaning_jp": "九",
+   "dialect": ""
+  },
+  {
+   "word": "dec",
+   "class": "n.",
+   "meaning_en": "ten (10)",
+   "meaning_jp": "十",
+   "dialect": ""
+  },
+  {
+   "word": "hec",
+   "class": "n.",
+   "meaning_en": "hundred (100)",
+   "meaning_jp": "百",
+   "dialect": ""
+  },
+  {
+   "word": "kic",
+   "class": "n.",
+   "meaning_en": "thousand (1000)",
+   "meaning_jp": "千",
+   "dialect": ""
+  },
+  {
+   "word": "mic",
+   "class": "n.",
+   "meaning_en": "ten thousand (10000)",
+   "meaning_jp": "万",
+   "dialect": ""
+  },
+  {
+   "word": "en",
+   "class": "conj.",
+   "meaning_en": "and, because, for",
+   "meaning_jp": "そして",
+   "dialect": "Central"
+  },
+  {
+   "word": "ag",
+   "class": "conj.",
+   "meaning_en": "and",
+   "meaning_jp": "そして",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "na",
+   "class": "adv.",
+   "meaning_en": "negation",
+   "meaning_jp": "否定",
+   "dialect": "Central"
+  },
+  {
+   "word": "zz",
+   "class": "adv.",
+   "meaning_en": "negation (Pastalie)",
+   "meaning_jp": "否定",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "re",
+   "class": "pre.",
+   "meaning_en": "passive prefix",
+   "meaning_jp": "受身",
+   "dialect": "Central"
+  },
+  {
+   "word": "rre",
+   "class": "pre.",
+   "meaning_en": "subject marker",
+   "meaning_jp": "主語定義",
+   "dialect": "Central"
+  },
+  {
+   "word": "tes",
+   "class": "conj.",
+   "meaning_en": "to (destination)",
+   "meaning_jp": "～に",
+   "dialect": "Central"
+  },
+  {
+   "word": "anw",
+   "class": "prep.",
+   "meaning_en": "direct object marker",
+   "meaning_jp": "～を",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "art",
+   "class": "conj.",
+   "meaning_en": "by (passive agent)",
+   "meaning_jp": "～によって",
+   "dialect": "Central"
+  },
+  {
+   "word": "oz",
+   "class": "pre.",
+   "meaning_en": "of (possessive)",
+   "meaning_jp": "～の",
+   "dialect": "Central"
+  },
+  {
+   "word": "sos",
+   "class": "conj.",
+   "meaning_en": "for, because of",
+   "meaning_jp": "～のため",
+   "dialect": "Central"
+  },
+  {
+   "word": "enw",
+   "class": "conj.",
+   "meaning_en": "while doing",
+   "meaning_jp": "～しながら",
+   "dialect": "Central"
+  },
+  {
+   "word": "ween",
+   "class": "conj.",
+   "meaning_en": "inside, in",
+   "meaning_jp": "～の中に",
+   "dialect": "Central"
+  },
+  {
+   "word": "won",
+   "class": "conj.",
+   "meaning_en": "over, on (surface)",
+   "meaning_jp": "～の上に",
+   "dialect": "Central"
+  },
+  {
+   "word": "folten",
+   "class": "prep.",
+   "meaning_en": "before, in front of",
+   "meaning_jp": "前",
+   "dialect": "Central"
+  },
+  {
+   "word": "den",
+   "class": "conj.",
+   "meaning_en": "however, but",
+   "meaning_jp": "しかし",
+   "dialect": "Central"
+  },
+  {
+   "word": "rol",
+   "class": "conj.",
+   "meaning_en": "as if, like",
+   "meaning_jp": "～のように",
+   "dialect": "Central"
+  },
+  {
+   "word": "zess",
+   "class": "adv.",
+   "meaning_en": "like ~",
+   "meaning_jp": "～のように",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "aiph",
+   "class": "conj.",
+   "meaning_en": "if",
+   "meaning_jp": "もし",
+   "dialect": "Central"
+  },
+  {
+   "word": "yetere",
+   "class": "adv.",
+   "meaning_en": "if...then",
+   "meaning_jp": "そうすれば",
+   "dialect": "Central"
+  },
+  {
+   "word": "fatere",
+   "class": "adv.",
+   "meaning_en": "otherwise",
+   "meaning_jp": "さもなくば",
+   "dialect": "Central"
+  },
+  {
+   "word": "nor",
+   "class": "pre.",
+   "meaning_en": "or",
+   "meaning_jp": "か",
+   "dialect": ""
+  },
+  {
+   "word": "wet",
+   "class": "conj.",
+   "meaning_en": "whether",
+   "meaning_jp": "～かどうか",
+   "dialect": ""
+  },
+  {
+   "word": "whai",
+   "class": "conj.",
+   "meaning_en": "why",
+   "meaning_jp": "なぜ",
+   "dialect": "Central"
+  },
+  {
+   "word": "whalt",
+   "class": "conj.",
+   "meaning_en": "what (exclamation)",
+   "meaning_jp": "何！",
+   "dialect": "Central"
+  },
+  {
+   "word": "whou",
+   "class": "conj.",
+   "meaning_en": "who, person who",
+   "meaning_jp": "～する者",
+   "dialect": "Central"
+  },
+  {
+   "word": "vie",
+   "class": "part.",
+   "meaning_en": "too, as well",
+   "meaning_jp": "～も",
+   "dialect": ""
+  },
+  {
+   "word": "viela",
+   "class": "conj.",
+   "meaning_en": "together, with",
+   "meaning_jp": "共に",
+   "dialect": ""
+  },
+  {
+   "word": "jam",
+   "class": "adv.",
+   "meaning_en": "together",
+   "meaning_jp": "一緒に",
+   "dialect": "Central"
+  },
+  {
+   "word": "oucc",
+   "class": "adv.",
+   "meaning_en": "together",
+   "meaning_jp": "一緒に",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "neyxin",
+   "class": "conj.",
+   "meaning_en": "along with, together",
+   "meaning_jp": "共に",
+   "dialect": ""
+  },
+  {
+   "word": "agan",
+   "class": "conj.",
+   "meaning_en": "again",
+   "meaning_jp": "再び",
+   "dialect": ""
+  },
+  {
+   "word": "utabi",
+   "class": "adv.",
+   "meaning_en": "once again",
+   "meaning_jp": "再び",
+   "dialect": ""
+  },
+  {
+   "word": "sial",
+   "class": "adj.",
+   "meaning_en": "a bit, a little, fragment",
+   "meaning_jp": "少し",
+   "dialect": "Central"
+  },
+  {
+   "word": "col",
+   "class": "adv.",
+   "meaning_en": "can do (possibility)",
+   "meaning_jp": "～できる",
+   "dialect": ""
+  },
+  {
+   "word": "elle",
+   "class": "prep.",
+   "meaning_en": "from, out of",
+   "meaning_jp": "～から",
+   "dialect": "Central"
+  },
+  {
+   "word": "ede",
+   "class": "pre.",
+   "meaning_en": "in, at",
+   "meaning_jp": "～で",
+   "dialect": ""
+  },
+  {
+   "word": "ess",
+   "class": "prep.",
+   "meaning_en": "in (Pastalie)",
+   "meaning_jp": "～で",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "du",
+   "class": "p.",
+   "meaning_en": "direct object marker (Pastalie)",
+   "meaning_jp": "～を",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "dn",
+   "class": "p.",
+   "meaning_en": "by means of (Pastalie)",
+   "meaning_jp": "～で",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "tou",
+   "class": "conj.",
+   "meaning_en": "at, in, to",
+   "meaning_jp": "～に",
+   "dialect": "Central"
+  },
+  {
+   "word": "ut",
+   "class": "conj.",
+   "meaning_en": "at, to",
+   "meaning_jp": "～に",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "vl",
+   "class": "conj.",
+   "meaning_en": "from, since",
+   "meaning_jp": "～から",
+   "dialect": ""
+  },
+  {
+   "word": "we",
+   "class": "conj.",
+   "meaning_en": "even more than",
+   "meaning_jp": "～よりも",
+   "dialect": "Central"
+  },
+  {
+   "word": "how",
+   "class": "conj.",
+   "meaning_en": "even in this way",
+   "meaning_jp": "こんなにも",
+   "dialect": ""
+  },
+  {
+   "word": "so",
+   "class": "conj.",
+   "meaning_en": "in such a way, so much",
+   "meaning_jp": "そんなに",
+   "dialect": ""
+  },
+  {
+   "word": "van",
+   "class": "conj.",
+   "meaning_en": "even if, still",
+   "meaning_jp": "～であっても",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "targue",
+   "class": "conj.",
+   "meaning_en": "even if",
+   "meaning_jp": "たとえ～でも",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "marst",
+   "class": "conj.",
+   "meaning_en": "must, ought to",
+   "meaning_jp": "～すべき",
+   "dialect": ""
+  },
+  {
+   "word": "qafl",
+   "class": "conj.",
+   "meaning_en": "will it ~? (uncertainty)",
+   "meaning_jp": "～だろうか",
+   "dialect": ""
+  },
+  {
+   "word": "llizz",
+   "class": "adv.",
+   "meaning_en": "possibly, maybe",
+   "meaning_jp": "～かもしれない",
+   "dialect": "Central"
+  },
+  {
+   "word": "fari",
+   "class": "conj.",
+   "meaning_en": "and, on the other hand",
+   "meaning_jp": "一方で",
+   "dialect": ""
+  },
+  {
+   "word": "elna",
+   "class": "conj.",
+   "meaning_en": "and so, and then",
+   "meaning_jp": "こうして",
+   "dialect": ""
+  },
+  {
+   "word": "agga",
+   "class": "conj.",
+   "meaning_en": "thus, therefore",
+   "meaning_jp": "かくして",
+   "dialect": ""
+  },
+  {
+   "word": "erlla",
+   "class": "pre.",
+   "meaning_en": "very, a lot",
+   "meaning_jp": "もっと",
+   "dialect": ""
+  },
+  {
+   "word": "goa",
+   "class": "conj.",
+   "meaning_en": "only",
+   "meaning_jp": "～だけ",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "gral",
+   "class": "adj.",
+   "meaning_en": "all of, entire",
+   "meaning_jp": "全て",
+   "dialect": "Pastalie"
+  },
+  {
+   "word": "omni",
+   "class": "adj.",
+   "meaning_en": "everything, all",
+   "meaning_jp": "全てを",
+   "dialect": ""
+  },
+  {
+   "word": "omnis",
+   "class": "adj.",
+   "meaning_en": "everything (object)",
+   "meaning_jp": "全てを",
+   "dialect": "Ancient Metafalss"
+  },
+  {
+   "word": "omness",
+   "class": "n.",
+   "meaning_en": "sadness, grief",
+   "meaning_jp": "憂い",
+   "dialect": ""
+  },
+  {
+   "word": "azl",
+   "class": "conj.",
+   "meaning_en": "until",
+   "meaning_jp": "～まで",
+   "dialect": ""
+  },
+  {
+   "word": "beng",
+   "class": "conj.",
+   "meaning_en": "before (time)",
+   "meaning_jp": "～以前",
+   "dialect": "Central"
+  },
+  {
+   "word": "lgn",
+   "class": "conj.",
+   "meaning_en": "beyond, after",
+   "meaning_jp": "～の先",
+   "dialect": ""
+  },
+  {
+   "word": "rafto",
+   "class": "adv.",
+   "meaning_en": "after, continued for",
+   "meaning_jp": "～の後",
+   "dialect": ""
+  },
+  {
+   "word": "nx",
+   "class": "n.",
+   "meaning_en": "next",
+   "meaning_jp": "次",
+   "dialect": "Central"
+  },
+  {
+   "word": "xactin",
+   "class": "n.",
+   "meaning_en": "answer, reply",
+   "meaning_jp": "答え",
+   "dialect": ""
+  },
+  {
+   "word": "xaczor",
+   "class": "n.",
+   "meaning_en": "question, query",
+   "meaning_jp": "問い",
+   "dialect": ""
+  },
+  {
+   "word": "laa",
+   "class": "conj.",
+   "meaning_en": "for, for the sake of",
+   "meaning_jp": "～のため",
+   "dialect": ""
+  },
+  {
+   "word": "Rha",
+   "class": "E.s. I",
+   "meaning_en": "trance state (variant of Rrha)",
+   "meaning_jp": "トランス状態",
+   "dialect": "Ancient Metafalss",
+   "source": "EXEC_METAFALICA"
+  },
+  {
+   "word": "ferxs",
+   "class": "n.",
+   "meaning_en": "friend, companion",
+   "meaning_jp": "仲間",
+   "dialect": "",
+   "source": "leat ptrapica"
+  },
+  {
+   "word": "fhauri",
+   "class": "v.",
+   "meaning_en": "light fragment",
+   "meaning_jp": "光の欠片",
+   "dialect": "",
+   "source": "EXEC_FLIP_ARPHAGE"
+  },
+  {
+   "word": "heas",
+   "class": "v.",
+   "meaning_en": "heal, soothe",
+   "meaning_jp": "癒す",
+   "dialect": "",
+   "source": "Game"
+  },
+  {
+   "word": "hymmenos",
+   "class": "v./n.",
+   "meaning_en": "sing, play, resonate (variant of hymme)",
+   "meaning_jp": "謳う、奏でる",
+   "dialect": "",
+   "source": "染～SEN～"
+  },
+  {
+   "word": "hymmer",
+   "class": "n.",
+   "meaning_en": "small bird, player (variant of hymma)",
+   "meaning_jp": "小鳥",
+   "dialect": "Kurt Ciel",
+   "source": "月奏～ツキカナデ～"
+  },
+  {
+   "word": "otabi",
+   "class": "adv.",
+   "meaning_en": "once again (variant of utabi)",
+   "meaning_jp": "再び",
+   "dialect": "",
+   "source": ""
+  },
+  {
+   "word": "shaken",
+   "class": "n.",
+   "meaning_en": "left (from sheak=sun)",
+   "meaning_jp": "左",
+   "dialect": "",
+   "source": "AT2 game"
+  },
+  {
+   "word": "weaken",
+   "class": "n.",
+   "meaning_en": "right (from weak=moon)",
+   "meaning_jp": "右",
+   "dialect": "",
+   "source": "AT2 game"
+  },
+  {
+   "word": "shutdown",
+   "class": "v.",
+   "meaning_en": "shutdown, stop",
+   "meaning_jp": "停止",
+   "dialect": "",
+   "source": "AT3 game"
+  },
+  {
+   "word": "trix",
+   "class": "v.",
+   "meaning_en": "extract (opposite of azit)",
+   "meaning_jp": "抽出",
+   "dialect": "",
+   "source": "AT3 game"
+  }
+ ]
+}
