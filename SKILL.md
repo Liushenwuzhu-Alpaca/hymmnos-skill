@@ -32,7 +32,7 @@ Hymmnos has four sentence types. Identify which one applies before proceeding:
 
 ## How to Translate or Compose
 
-### Translating Hymmnos to English/Chinese
+### Translating Hymmnos to English/Chinese/Japanese
 
 1. Identify the sentence type (see above)
 2. Parse the emotion encoding first (emotion sounds or emotion vowels) — this sets the emotional context for the entire sentence
@@ -40,8 +40,9 @@ Hymmnos has four sentence types. Identify which one applies before proceeding:
 4. Determine the sentence structure (self-type vs. non-self-type)
 5. Translate the core meaning, then layer in the emotional nuance
 6. Handle special constructs: rre (subject), na/zz (negation), re/eh (passive), oz (possession)
+7. For Japanese translation, use the Japanese meanings (meaning_jp field) in the lexicon directly — Hymmnos pronunciation is based on Japanese katakana, so the Japanese meanings are the most natural bridge. Emotion sounds can be rendered with their Japanese glosses (e.g., Was yea ra → とても嬉しく、このまま続けたい). The 歌颂之丘 wiki source files in references/wiki-*.txt contain native Chinese translations that can also serve as a bridge to Japanese.
 
-### Composing Hymmnos from English/Chinese
+### Composing Hymmnos from English/Chinese/Japanese
 
 1. Choose the dialect: Standard (most common, EXEC_ songs) or Pastalie (compact, METHOD_ songs)
 2. Select the emotion: for Standard, pick 3 words (intensity + type + desirability); for Pastalie, pick emotion vowels for the verb's bank periods
@@ -115,8 +116,10 @@ chs (become), sonwe (sing), hymme (sing/play/resonate), hyma (listen), pagle (sp
 
 ## Translation Tips
 
-- Emotion sounds are often omitted in translation since English/Chinese express emotion through word choice
+- Emotion sounds are often omitted in translation since English/Chinese/Japanese express emotion through word choice
 - The "ra" desirability word is near-meaningless due to overuse — usually safe to ignore
 - No tenses exist in Hymmnos; time is implied by context or words like "ides" (past), "im" (now), "futare" (future)
 - When translating songs, read [references/examples.md](references/examples.md) for patterns from real Hymmnos lyrics
 - For Chinese translations, the Japanese meanings in the lexicon serve as a bridge since Hymmnos phonetics are Japanese-based
+- For Japanese translations, use the meaning_jp field in [references/lexicon-full.json](references/lexicon-full.json) directly — it contains the original Japanese glosses from the Hymmnoserver and EXA_PICO Wiki. Emotion sounds map naturally to Japanese emotional expressions (Was yea ra → とても嬉しく、このままでいたい; Rrha guwo ga → 怒りに我を忘れて、早く終わらせたい)
+- When composing from Japanese, Japanese verbs can be mapped to Hymmnos verbs via the lexicon's meaning_jp field (e.g., なる→chs, 歌う→sonwe/hymme, 聞く→hyma, 滅ぼす→nuboisu/ruinie)
