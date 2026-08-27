@@ -126,7 +126,7 @@ Source: EXA_PICO Wiki
 
 ### Question Sentences
 
-**Nn num ra whait irs ar ciel** = What exists in the sky?
+**Nn num ra whalt irs ar ciel** = What exists in the sky?
 **Nn num gagis whai hymma chs fwal** = Why did the bird become wings?
 Source: Teaching material
 
@@ -172,8 +172,8 @@ Source: EXEC_HIBERNATION
 
 ### Subject Definer (x.)
 
-**xE rre cloche cEzE hymmnos/.**
-= Cloche is delighted to become a song (and this makes me happy)
+**xE rre chroche cEzE hymmnos/.**
+= Chroche is delighted to become a song (and this makes me happy)
 (x. with E = I feel happy about the subject)
 
 **xI harr cEzE hymmnos/.**
@@ -252,7 +252,7 @@ Line 1: **Rrha guwo ga gatyuny ar ciel en ini sor gatyunla art sa fayra**
 **kiafa hynne mea? pagle tes yor.** = Can you hear my voice? My voice calling to you.
 **Fou paks ga kiafa hynne yor** = Yes, I can hear your voice (wary)
 **Was yea ra pauwel en wael yor.** = I would give you further power and pleasure
-**Yorr faf, so** = Are you feeling afraid? (rhetorical question; faf = scary)
+**Yorr faf, so** = I can tell you're scared. (faf = scary)
 **Yorr nille mea** = You're like me.
 **na fowrlle heighte** = Bearing unfading scars
 **En yorr re deggeez art ciel** = Betrayed by the world

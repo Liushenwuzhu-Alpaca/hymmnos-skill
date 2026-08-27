@@ -50,7 +50,7 @@ Naming conventions:
 | Ar tonelico (1st Tower) | Sol Ciel | Central Standard + dialects | EXEC_XXXX/. | Full; Origin Shurelia |
 | Sol Marta (2nd Tower relay) | Metafalss | Central Standard (relay) | EXEC_XXXX/. | Via 1st Tower + Frelia |
 | Infel Phira | Metafalss | New Testament of Pastalie ONLY | METHOD_XXXX/. | 0.1% of Ar tonelico; IPD-powered |
-| Harvestasya (3rd Tower) | Sol Cluster | Central Standard + Cluster | EXEC_XXXX/. | Best-effort; no Orgel |
+| Harvestasha (3rd Tower) | Sol Cluster | Central Standard + Cluster | EXEC_XXXX/. | Best-effort; no Orgel |
 
 Servers cannot interoperate natively (different formats, like endianness). Cross-system communication needs a shared protocol.
 
@@ -83,7 +83,7 @@ The remaining 20 consonants derive from Carmena Foreluna letter meanings.
 - **H-waves** (Dynamic H-waves): carry the singer's thoughts/feelings; act as program instructions
 - **D-waves** (Dynamic D-waves): produce physical effects; act as screen output
 - The singer's SHW (high-frequency thoughts) contains the entire song's information at every moment
-- Audible waves (50-20,000 Hz D-waves) carry the emotional waves (>20,000 Hz D-waves)
+- Audible waves (50-20,000 Hz D-waves) carry the emotional waves (>20,000 Hz H-waves)
 - Each Hymmnos word's pronunciation carries its corresponding emotion at maximum efficiency
 
 ## Carmena Foreluna (律史前月読)
@@ -103,7 +103,7 @@ The precursor to Hymmnos. Each letter has its own meaning; words are formed by c
 | I | Holy | | V | Joy |
 | J | Unfamiliar | | W | Spirit, Soul |
 | K | Creation and Destruction | | X | Protection |
-| L | (unknown) | | Y | Light |
+| L | You, Other Person | | Y | Light |
 | M | Compassion | | Z | God(dess) |
 
 Example: "chs" (become) starts with C = change; "c.z." (Pastalie become) also starts with C.

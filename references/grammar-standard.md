@@ -23,7 +23,7 @@ Structure: `[intensity] [emotion type] [desirability]`
 |------|---------------|---------|---------|
 | i | 'e' in "evil" | impatient, irritated | Central |
 | yea | "yeah" | happy | Central |
-| waa | "wa" prolonged | happy | Old Metafalss |
+| waa | "wa" prolonged | happy | Ancient Metafalss |
 | paks | "pox" | nervous, excited | Central |
 | num | "number" | nil, nothing (default) | Central |
 | ki | "key" | focused, concentrating | Central |
@@ -33,7 +33,7 @@ Structure: `[intensity] [emotion type] [desirability]`
 | granme | gran-may | wanting to protect, brave | Central |
 | touwaka | toe-wah-kah | hopeful, wishing | Central |
 | quel | "quell" | eager, desperate | Central |
-| yant | "yawn"+t | fearful, panicked | Old Metafalss |
+| yant | "yawn"+t | fearful, panicked | Ancient Metafalss |
 | guwo | "grow" (Fudd) | angry, resentful | Central |
 | jyel | "jail" | lonely | Central |
 | zweie | German "zwei" | determined, sincere | Central |
@@ -80,13 +80,13 @@ Prepositional phrases attach after the verb and its direct object, following the
 ```
 [ES] + [verb1] + rre + [subject] + [verb2] + [object] + [compound]
 ```
-Example: `Wee ki ra hyma rre sasye pagle wart` = I listen to the girl speaking
+Example: `Wee ki ra hyma rre walasye pagle wart` = I listen to the person speaking
 
 **Full-non-self** (subject is main actor):
 ```
 [ES] + rre + [subject] + [verb] + [object] + [compound]
 ```
-Example: `Was yea ra rre hyma hymme` = The bird sings happily
+Example: `Was yea ra rre hyma hymme` = I happily listen to the singing/resonance
 
 Rules:
 - `rre` marks the following word as subject; appears at most ONCE per sentence
@@ -104,8 +104,8 @@ Faura yerwe murfan anw sol ciel = The little bird chirps her feelings to the wor
 
 Less common; used in narratives. Subject may follow a comma for emphasis:
 ```
-Nn num gaya na ieeya crushue anw dornpica, kaguya
-= Kaguya doesn't wish to craft the seeds anymore
+Rrha cyuie gaya na ieeya crushue anw dornpica, rhaplanca
+= Rhaplanca doesn't wish to craft the seeds anymore
 ```
 
 ## Pronouns

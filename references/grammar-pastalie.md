@@ -98,7 +98,7 @@ Or just the Emotion Verb alone if the object is implied.
 Subject-form pronouns may omit `rre`. Using `rre` with a pronoun emphasizes it.
 
 Examples:
-- `xE rre cloche cEzE hymmnos/.` = Cloche becomes song (and this makes me happy)
+- `xE rre chroche cEzE hymmnos/.` = Chroche becomes song (and this makes me happy)
 - `xI harr cEzE hymmnos/.` = She becomes song (and I'm jealous)
 - `xE rre yorra cEzE hymmnos/.` = YOU ALL become song (emphasized)
 
@@ -111,7 +111,7 @@ Emotion Vowel prefixes on nouns indicate ownership + emotional attachment:
 | me | A[noun] | Agasar = my stuffed doll |
 | you | YA[noun] | YAgasar = your doll |
 | everyone/world | LYA[noun] | LYAgasar = everyone's doll |
-| specific person | A[noun]_[name] | Agasar_cloche = Cloche's doll |
+| specific person | A[noun]_[name] | Agasar_chroche = Cloche's doll |
 
 Other vowels may indicate specific emotions toward the possession. Based on Japanese [noun]の[noun], the second noun can modify/describe the first: `Ahiew_ayulsa` = eternal sadness (not "eternity's sadness").
 
@@ -170,7 +170,7 @@ ishikawa! ishikawa! ishikawa! ishikawa!
 
 ### Hypothetical
 
-`Xc=` (pronounced "zek") before a condition, followed by `->` and the result:
+`Xc=` (pronounced "zeku") before a condition, followed by `->` and the result:
 ```
 Xc=hLYEmYEmArA -> cEzLYE hymmnos/.
 = If I sing, then I will become a song
