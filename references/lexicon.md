@@ -22,7 +22,7 @@
 |------|---------|---------|
 | i | impatient, irritated | Central |
 | yea | happy | Central |
-| waa | happy | Old Metafalss |
+| waa | happy | Ancient Metafalss |
 | paks | nervous, excited | Central |
 | num | nil, nothing (default) | Central |
 | ki | focused, concentrating | Central |
@@ -32,7 +32,7 @@
 | granme | wanting to protect, brave | Central |
 | touwaka | hopeful, wishing | Central |
 | quel | eager, desperate | Central |
-| yant | fearful, panicked | Old Metafalss |
+| yant | fearful, panicked | Ancient Metafalss |
 | guwo | angry, resentful | Central |
 | jyel | lonely | Central |
 | zweie | determined, sincere | Central |
@@ -188,7 +188,7 @@
 | fayra | fire, blaze | Central |
 | firga | past | - |
 | fhyu | wind | Central |
-| fou | wonder, mystery | Kurt Ciel |
+| foul | wonder, mystery | Kurt Ciel |
 | frawr | flower | Central |
 | futare | future | Central |
 | fwal | wing | Kurt Ciel |

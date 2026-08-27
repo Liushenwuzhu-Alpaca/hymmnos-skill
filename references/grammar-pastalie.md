@@ -47,7 +47,7 @@ Three categories, used interchangeably to reflect the speaker's emotions:
 |-------|---------|
 | LYA | thinking of all, want to devote myself |
 | LYI | pain, destruction, ruin |
-| LYU | sadness, instability |
+| LYU | sadness, unease, instability |
 | LYE | happiness, satisfaction, prosperity |
 | LYO | strife, chaos, war |
 | LYN | calmness, quietness |

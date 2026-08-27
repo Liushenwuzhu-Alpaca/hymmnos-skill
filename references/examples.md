@@ -44,13 +44,14 @@ Source: Teaching material
 
 ### Non-First-Person Sentences
 
-**Wee ki ra hyma rre sasye pagle wart**
-= I will concentrate on listening to the girl speaking words
-(Wee=fairly, ki=focused, ra=continue, hyma=listen, rre=subject marker, sasye=girl, pagle=speak, wart=words)
+**Wee ki ra hyma rre walasye pagle wart**
+= I will concentrate on listening to the words the person says
+(Wee=fairly, ki=focused, ra=continue, hyma=listen, rre=subject marker, walasye=person, pagle=speak, wart=words)
 Source: EXA_PICO Wiki
 
 **Was yea ra rre hyma hymme**
-= The bird sings happily (and I share that feeling)
+= I happily listen to the singing/resonance (and I share that feeling)
+(hyma=listen, hymme=sing/resonate; rre marks hyma as subject — "the singing is heard")
 Source: Teaching material
 
 **Was ki ra rre lasye linen sasye**
@@ -136,9 +137,9 @@ Source: Teaching material
 (VSO form with emotion sound)
 Source: EXEC_HIBERNATION
 
-**Nn num gaya na ieeya crushue anw dornpica, kaguya**
-= Kaguya doesn't wish to craft the seeds anymore
-(Subject after comma for emphasis)
+**Rrha cyuie gaya na ieeya crushue anw dornpica, rhaplanca**
+= Rhaplanca doesn't want to craft the seeds anymore
+(VOS form: verb+object before subject after comma; Rrha cyuie = trance-like sorrow)
 Source: EXEC_HIBERNATION
 
 ## Neopact Pastalie Examples
@@ -167,7 +168,7 @@ Source: EXEC_HIBERNATION
 **hYAmmrA chroche/.** = I will sing my best for Cloche
 
 **cEzE hymmnos/.** = I am delighted to express myself through song
-**cYEzYE hymmnos/.** = You are delighted I am expressing you through song (YE targets you)
+**cYEzYE hymmnos/.** = I make you become a song (YE shifts the verb's object to "you", with intent to make you happy)
 
 ### Subject Definer (x.)
 
@@ -203,18 +204,18 @@ Source: EXEC_HIBERNATION
 
 **Xc=hLYEmYEmArA -> cEzLYE hymmnos/.**
 = If I sing, then I will become a song
-(Xc= = conditional; -> = then)
+(Xc= = "zeku", conditional construct; -> = "pasu", function definition operator used here as consequence arrow. Note: this construct is based on fan analysis; Xc= pronunciation "zeku" is confirmed by EXA_PICO but its conditional function is inferred from usage, not officially documented.)
 
 **zz arhou, balduo, ujes, Oqejyu, xA rre <-x aYAuAkN kajya LYAglansee qejyu/.**
 = Despair, darkness, ill will, hated people — they are necessary as well
-(<-x = back-reference to the preceding list)
+(<-x = "pagu", back-reference to the preceding list. Note: this construct appears in METHOD_IMPLANTA fan analysis; the <-x pronunciation "pagu" is documented but its back-reference function is inferred from context, not officially documented.)
 
 ### Possessive Noun Prefixes
 
 **Agasar** = my stuffed doll (A = my, with positive emotion)
 **YAgasar** = your stuffed doll (YA = your)
 **LYAgasar** = everyone's doll (LYA = belonging to all)
-**Agasar_cloche** = Cloche's doll (A + noun + _name)
+**Agasar_chroche** = Chroche's doll (A + noun + _name; note: "chroche" is the Japanese spelling, English release uses "Cloche")
 
 **wYEsA Agasar_luca/.**
 = I will give you Luca's precious stuffed doll to make you happy
@@ -251,7 +252,7 @@ Line 1: **Rrha guwo ga gatyuny ar ciel en ini sor gatyunla art sa fayra**
 **kiafa hynne mea? pagle tes yor.** = Can you hear my voice? My voice calling to you.
 **Fou paks ga kiafa hynne yor** = Yes, I can hear your voice (wary)
 **Was yea ra pauwel en wael yor.** = I would give you further power and pleasure
-**Yorr faf, so** = I can tell you're scared.
+**Yorr faf, so** = Are you feeling afraid? (rhetorical question; faf = scary)
 **Yorr nille mea** = You're like me.
 **na fowrlle heighte** = Bearing unfading scars
 **En yorr re deggeez art ciel** = Betrayed by the world

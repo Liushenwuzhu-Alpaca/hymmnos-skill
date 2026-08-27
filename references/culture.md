@@ -113,7 +113,7 @@ Example: "chs" (become) starts with C = change; "c.z." (Pastalie become) also st
 The planet Ar Ciel's own language, predating all Hymmnos. Each sound carries a feeling; words are sums of letter feelings. Full frequency range: 20-600,000 Hz (30x human hearing).
 
 - Two notation layers: Public (26 symbols, lossy) and Compartment (adds diacritics for inaudible properties)
-- FMCL (frequency compartments): `!` `#` `$` `%` for sub-20kHz ranges
+- FMCL (frequency compartments): `!` `#` `$` `%` for sounds OVER 20,000 Hz (sub-dividing the 20k-600k Hz inaudible range)
 - AMCL (amplitude compartments): `&` `(` `)` for waveform shapes
 - Vowels have umbrella categories: A=[Scale], I=[Pray], U=[Experience], E=[Neighbour], O=[Karma], N=[Mandala]
 - Every letter converges on "love" at the spectrum's far end
@@ -125,7 +125,7 @@ The planet Ar Ciel's own language, predating all Hymmnos. Each sound carries a f
 |------|------|---------------|
 | Clyuue | King of Gods | Rokkan (六冠) |
 | Saki | Goddess of Salvation and Life | Sakiyarumei (咲夜琉命) |
-| Horus | God of Life | - |
+| Horus | Highest God of Earth; manages planetary equilibrium and D-wave phenomena | - |
 | Juklizda | God of the Sun | Nayudara (那由他羅) |
 | Yurishica | Goddess of Fire and Civilization | Gurentei (紅蓮帝) |
 | Shelanoir | Goddess of Plants, Forests and Life | Saranoyomei (沙羅世命) |

@@ -144,7 +144,7 @@ The precursor to Hymmnos; each letter has its own meaning. Words are formed by c
 | I | Holy | | V | Joy |
 | J | Unfamiliar | | W | Spirit, Soul |
 | K | Creation and Destruction | | X | Protection |
-| L | (unknown) | | Y | Light |
+| L | You, Other Person | | Y | Light |
 | M | Compassion | | Z | God(dess) |
 
 Example: "chs" (become) starts with C = change; "c.z." (Pastalie become) also starts with C.
@@ -157,8 +157,8 @@ The planet's own language, predating all Hymmnos. Each sound carries a feeling; 
 
 1. **Public Ar Ciela**: 26 symbols for human-audible sounds (lossy)
 2. **Compartment Ar Ciela**: adds diacritics for inaudible properties
-   - FMCL (frequency): `!` `#` `$` `%` for 50k-600k Hz ranges
-   - AMCL (amplitude): `&` `(` `)` for waveform shapes
+   - FMCL (frequency): `!` `#` `$` `%` for sounds OVER 20,000 Hz (sub-dividing the 20k-600k Hz inaudible range into sessions 0-4)
+   - AMCL (amplitude): `&` `(` `)` for waveform shapes above 20,000 Hz
 
 ### Letter Meanings (by frequency range)
 

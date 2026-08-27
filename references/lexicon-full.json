@@ -52,7 +52,7 @@
    "word": "waa",
    "class": "E.s. II",
    "meaning_en": "happy",
-   "dialect": "Old Metafalss"
+   "dialect": "Ancient Metafalss"
   },
   {
    "word": "paks",
@@ -112,7 +112,7 @@
    "word": "yant",
    "class": "E.s. II",
    "meaning_en": "fearful, panicked",
-   "dialect": "Old Metafalss"
+   "dialect": "Ancient Metafalss"
   },
   {
    "word": "guwo",
@@ -172,7 +172,7 @@
    "word": "gagis",
    "class": "E.s. III",
    "meaning_en": "indifferent",
-   "dialect": "Old Metafalss"
+   "dialect": "Ancient Metafalss"
   },
   {
    "word": "chs",
@@ -595,13 +595,6 @@
    "dialect": "Central"
   },
   {
-   "word": "walaka",
-   "class": "v.",
-   "meaning_en": "walk",
-   "meaning_jp": "歩く",
-   "dialect": "Central"
-  },
-  {
    "word": "grlanza",
    "class": "v.",
    "meaning_en": "dance",
@@ -656,13 +649,6 @@
    "meaning_en": "change (strong, authoritative)",
    "meaning_jp": "変化する",
    "dialect": "Ancient Metafalss"
-  },
-  {
-   "word": "atsyes",
-   "class": "v.",
-   "meaning_en": "accept, receive",
-   "meaning_jp": "受け入れる",
-   "dialect": ""
   },
   {
    "word": "yehar",
@@ -798,13 +784,6 @@
    "dialect": ""
   },
   {
-   "word": "neia",
-   "class": "v.",
-   "meaning_en": "approach",
-   "meaning_jp": "近づく",
-   "dialect": "Central"
-  },
-  {
    "word": "lapo",
    "class": "v.",
    "meaning_en": "meet (by chance)",
@@ -938,13 +917,6 @@
    "dialect": "Ancient Metafalss"
   },
   {
-   "word": "slepir",
-   "class": "v.",
-   "meaning_en": "put to sleep",
-   "meaning_jp": "眠らせる",
-   "dialect": "Ancient Metafalss"
-  },
-  {
    "word": "grruw",
    "class": "v.",
    "meaning_en": "grow up",
@@ -1015,13 +987,6 @@
    "dialect": "Kurt Ciel"
   },
   {
-   "word": "grlanza",
-   "class": "v.",
-   "meaning_en": "dance",
-   "meaning_jp": "踊る",
-   "dialect": "Central"
-  },
-  {
    "word": "repoear",
    "class": "v.",
    "meaning_en": "thank, gratitude",
@@ -1050,20 +1015,6 @@
    "dialect": "Central"
   },
   {
-   "word": "swant",
-   "class": "v.",
-   "meaning_en": "help, save",
-   "meaning_jp": "助ける",
-   "dialect": "Central"
-  },
-  {
-   "word": "lehaw",
-   "class": "v.",
-   "meaning_en": "save, help",
-   "meaning_jp": "救う",
-   "dialect": ""
-  },
-  {
    "word": "dewee",
    "class": "v.",
    "meaning_en": "kneel",
@@ -1078,7 +1029,7 @@
    "dialect": ""
   },
   {
-   "word": "riphaiah",
+   "word": "rifaiah",
    "class": "adj.",
    "meaning_en": "revival, resurrection",
    "meaning_jp": "甦り",
@@ -1554,7 +1505,7 @@
    "dialect": "Central"
   },
   {
-   "word": "fou",
+   "word": "foul",
    "class": "n.",
    "meaning_en": "wonder, mystery",
    "meaning_jp": "不思議",
@@ -1642,13 +1593,6 @@
    "class": "n.",
    "meaning_en": "desire",
    "meaning_jp": "欲望",
-   "dialect": "Central"
-  },
-  {
-   "word": "morto",
-   "class": "n./v.",
-   "meaning_en": "death, die",
-   "meaning_jp": "死",
    "dialect": "Central"
   },
   {
@@ -1783,13 +1727,6 @@
    "meaning_en": "hellfire",
    "meaning_jp": "業火",
    "dialect": ""
-  },
-  {
-   "word": "fayra",
-   "class": "n.",
-   "meaning_en": "fire, blaze",
-   "meaning_jp": "火、炎",
-   "dialect": "Central"
   },
   {
    "word": "zaarn",
@@ -2716,13 +2653,6 @@
    "dialect": ""
   },
   {
-   "word": "gauzewiga",
-   "class": "v.",
-   "meaning_en": "despair",
-   "meaning_jp": "絶望する",
-   "dialect": "Ancient Metafalss"
-  },
-  {
    "word": "zadius",
    "class": "n.",
    "meaning_en": "hatred",
@@ -2804,13 +2734,6 @@
    "class": "n.",
    "meaning_en": "protection, guard",
    "meaning_jp": "守り",
-   "dialect": "Central"
-  },
-  {
-   "word": "cecet",
-   "class": "n.",
-   "meaning_en": "shield",
-   "meaning_jp": "盾",
    "dialect": "Central"
   },
   {
@@ -3535,14 +3458,6 @@
    "meaning_jp": "仲間",
    "dialect": "",
    "source": "leat ptrapica"
-  },
-  {
-   "word": "fhauri",
-   "class": "v.",
-   "meaning_en": "light fragment",
-   "meaning_jp": "光の欠片",
-   "dialect": "",
-   "source": "EXEC_FLIP_ARPHAGE"
   },
   {
    "word": "heas",
