@@ -190,7 +190,7 @@ One Emotion Sound applied to multiple sentences:
 
 Question words: `whalt` (what), `whai` (why). Place after Emotion Sound, replacing the questioned element:
 ```
-Nn num ra whait irs ar ciel = What exists in the sky?
+Nn num ra whalt irs ar ciel = What exists in the sky?
 ```
 
 ## Numbers

@@ -110,7 +110,7 @@ Wee yea ra exec hymme VIENA >> SOL=FAGE/1x10 enter FRELIA
 | -> | pasu | Function definition arrow |
 | <-x | pagu | Back-reference marker |
 | x. | zu | Subject marker (Pastalie) |
-| Xc= | zek | Conditional/hypothetical |
+| Xc= | zeku | Conditional/hypothetical |
 | :/ ... /: | - | Quotation marks (Pastalie) |
 | /. | (invoke) | Sentence end + execute |
 | ! | - | Sentence end (no execute) |
