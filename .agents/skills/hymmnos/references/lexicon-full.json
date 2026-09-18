@@ -115,7 +115,7 @@
     },
     {
       "word": "5",
-      "class": "n.",
+      "class": "adj.",
       "meaning_en": "5／五（数词）",
       "dialect": "Central",
       "pron": "ヴぃら (vira) /biɾa/",
@@ -811,7 +811,7 @@
       "word": "c.m.l.",
       "class": "E.v.",
       "meaning_en": "心配する 憂う",
-      "dialect": "Central",
+      "dialect": "Pastalie",
       "pron": "クンル (kunlu) /kənlə/",
       "notes": "JP: 心配する 憂う | EN: worry, grief"
     },
@@ -2466,7 +2466,8 @@
       "word": "ferxs",
       "class": "n.",
       "meaning_en": "friend, companion",
-      "dialect": "Central"
+      "dialect": "Central",
+      "pron": "ferkus"
     },
     {
       "word": "fetala",
@@ -2629,7 +2630,7 @@
     },
     {
       "word": "fou",
-      "class": "E.s.",
+      "class": "E.s. I",
       "meaning_en": "ちょっと",
       "dialect": "Central",
       "pron": "フォウ (fou) /ɸoɯ/",
@@ -3373,7 +3374,7 @@
       "meaning_en": "抱擁",
       "dialect": "Central",
       "pron": "ギュス (gyus) /gʲɯs/",
-      "notes": "JP: 抱擁 | EN: embrace, hug",
+      "notes": "JP: 抱擁 | EN: embrace, hug | Often used as verb in songs despite n. classification.",
       "meaning_ja": "抱擁"
     },
     {
@@ -3386,16 +3387,8 @@
       "meaning_ja": "支配する"
     },
     {
-      "word": "h.k.t.t",
-      "class": "E.v.",
-      "meaning_en": "抱擁する、抱きしめる",
-      "dialect": "Pastalie",
-      "pron": "ハクト (hakut) /hakəto/",
-      "notes": "JP: 抱擁する、抱きしめる | EN: embrace, hug"
-    },
-    {
       "word": "h.k.t.t.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "embrace, hug",
       "dialect": "Pastalie",
       "pron": "ハクト"
@@ -3419,16 +3412,8 @@
       "meaning_ja": "謳う"
     },
     {
-      "word": "h.p.p",
-      "class": "E.v.",
-      "meaning_en": "想う",
-      "dialect": "Pastalie",
-      "pron": "フプ (hupu) /ɸəpə/",
-      "notes": "JP: 想う | EN: think, feel"
-    },
-    {
       "word": "h.p.p.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "think, feel",
       "dialect": "Pastalie",
       "pron": "フプ"
@@ -3590,7 +3575,7 @@
     },
     {
       "word": "hars",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "彼女ら",
       "dialect": "Central",
       "pron": "ハルス (hars) /haɾs/",
@@ -3617,7 +3602,7 @@
     },
     {
       "word": "has",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "彼女",
       "dialect": "Central",
       "pron": "ハス (has) /has/",
@@ -3770,7 +3755,7 @@
     },
     {
       "word": "hers",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "彼ら",
       "dialect": "Central",
       "pron": "へルス (hers) /heɾs/",
@@ -3779,7 +3764,7 @@
     },
     {
       "word": "hes",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "彼",
       "dialect": "Central",
       "pron": "ヘス (hes) /hes/",
@@ -3928,18 +3913,6 @@
       "meaning_ja": "謳う、奏でる、共鳴する"
     },
     {
-      "word": "hymmenos",
-      "class": "v./n.",
-      "meaning_en": "sing, play, resonate (variant of hymme)",
-      "dialect": "Central"
-    },
-    {
-      "word": "hymmer",
-      "class": "n.",
-      "meaning_en": "small bird, player (variant of hymma)",
-      "dialect": "Kurt Ciel"
-    },
-    {
       "word": "hymmne",
       "class": "n.",
       "meaning_en": "波動、調べ、メロディ (hymmnosよりも軽い、意味的にも浅いもの。)",
@@ -3993,9 +3966,9 @@
     },
     {
       "word": "i",
-      "class": "E.s.",
-      "meaning_en": "痛苦、恐惧、想逃离",
-      "dialect": "Pastalie",
+      "class": "E.s.II",
+      "meaning_en": "impatient, irritated",
+      "dialect": "Central",
       "pron": "い (i) /i/",
       "notes": "Level 1 Emotion Vowel (inward): pain, agony, terror, desire to escape; as Subject Definer: jealousy. Distinct from Central E.s.II i; page: New Testament of Pastalie",
       "meaning_ja": "焦り"
@@ -4599,7 +4572,7 @@
       "word": "kl",
       "class": "part.",
       "meaning_en": "を",
-      "dialect": "Central",
+      "dialect": "Cluster",
       "pron": "クル (kul) /kəl/",
       "notes": "JP: を | EN: direct object marker (observed only in Cluster Note Songs)"
     },
@@ -5220,7 +5193,7 @@
     },
     {
       "word": "ma",
-      "class": "E.s.",
+      "class": "E.s. I",
       "meaning_en": "平常心",
       "dialect": "Central",
       "pron": "マ (ma) /ma/",
@@ -5345,7 +5318,7 @@
     },
     {
       "word": "mea",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "私",
       "dialect": "Central",
       "pron": "ミーァ (miia) /miːa/",
@@ -5354,7 +5327,7 @@
     },
     {
       "word": "mean",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "わたしたち",
       "dialect": "Central",
       "pron": "ミーン (miin) /miːɴ/",
@@ -5434,7 +5407,7 @@
     },
     {
       "word": "merra",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "わたしたち（主語定義）",
       "dialect": "Central",
       "pron": "ミーラ (miira) /miːra/",
@@ -5781,11 +5754,11 @@
     },
     {
       "word": "nei",
-      "class": "n.",
+      "class": "adj.",
       "meaning_en": "9／九",
       "dialect": "Central",
       "pron": "ねい (nei) /nei/",
-      "notes": "Hymmnos number 9; page: Standard Hymmnos"
+      "notes": "Pronunciation of number 9 (see entry \"9\")"
     },
     {
       "word": "neia",
@@ -5893,7 +5866,7 @@
     },
     {
       "word": "nn",
-      "class": "E.s.",
+      "class": "E.s. I",
       "meaning_en": "無気力状態",
       "dialect": "Central",
       "pron": "ン (n) /ɴ/",
@@ -5928,7 +5901,7 @@
     },
     {
       "word": "noes",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "自分自身",
       "dialect": "Central",
       "pron": "ノイス (nois) /nois/",
@@ -6240,7 +6213,8 @@
       "word": "otabi",
       "class": "adv.",
       "meaning_en": "once again (variant of utabi)",
-      "dialect": "Central"
+      "dialect": "Central",
+      "pron": "otabi"
     },
     {
       "word": "oter",
@@ -6954,12 +6928,6 @@
       "notes": "JP: 勤め 仕事 | EN: responsibility, duty, job, work"
     },
     {
-      "word": "r.f.m",
-      "class": "E.v.",
-      "meaning_en": "see, watch",
-      "dialect": "Pastalie"
-    },
-    {
       "word": "r.f.m.",
       "class": "E.v.",
       "meaning_en": "見る",
@@ -6969,16 +6937,8 @@
       "meaning_ja": "見る"
     },
     {
-      "word": "r.f.r.m",
-      "class": "E.v.",
-      "meaning_en": "認識する、知る",
-      "dialect": "Pastalie",
-      "pron": "ルフルン (rufurun) /rәɸәɾәɴ/",
-      "notes": "JP: 認識する、知る | EN: know, recognize, acknowledge"
-    },
-    {
       "word": "r.f.r.m.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "recognize, know, understand",
       "dialect": "Pastalie",
       "pron": "ルフルン"
@@ -7206,7 +7166,8 @@
       "word": "Rha",
       "class": "E.s. I",
       "meaning_en": "trance state (variant of Rrha)",
-      "dialect": "Ancient Metafalss"
+      "dialect": "Ancient Metafalss",
+      "pron": "ra"
     },
     {
       "word": "rhaplanca",
@@ -7370,7 +7331,7 @@
     },
     {
       "word": "rrha",
-      "class": "E.s.",
+      "class": "E.s. I",
       "meaning_en": "トランス状態 (自分の気が正気か否かもわからないくらいトランス状態の時に使う。もっとも、これを使うときは、これ以外の想音を使おうと思えるほど冷静ではないので、自然とこれが口から出てくる。)",
       "dialect": "Central",
       "pron": "[ルル]ラ ([rr]ra first two r's are rolled) /ra/",
@@ -7781,7 +7742,8 @@
       "word": "shaken",
       "class": "n.",
       "meaning_en": "left (from sheak=sun)",
-      "dialect": "Central"
+      "dialect": "Central",
+      "pron": "sheiken"
     },
     {
       "word": "shazra",
@@ -7866,7 +7828,8 @@
       "word": "shutdown",
       "class": "v.",
       "meaning_en": "shutdown, stop",
-      "dialect": "Central"
+      "dialect": "Central",
+      "pron": "shatdaun"
     },
     {
       "word": "shyfac",
@@ -8560,11 +8523,11 @@
     {
       "word": "tie",
       "class": "conj.",
-      "meaning_en": "～に対して（対象を特定 指定する）",
+      "meaning_en": "in regards to... (object marker)",
       "dialect": "Pastalie",
       "pron": "ティエ (tie) /tie/",
       "notes": "JP: ～に対して（対象を特定 指定する） | EN: in regards to... (object marker)",
-      "meaning_ja": "捕まえる、拘束する"
+      "meaning_ja": ""
     },
     {
       "word": "tienar",
@@ -8685,7 +8648,8 @@
       "word": "trix",
       "class": "v.",
       "meaning_en": "extract (opposite of azit)",
-      "dialect": "Central"
+      "dialect": "Central",
+      "pron": "torikusu"
     },
     {
       "word": "ttu",
@@ -8886,46 +8850,22 @@
       "meaning_ja": "まどろむ"
     },
     {
-      "word": "v.a",
-      "class": "E.v.",
-      "meaning_en": "生む、紡ぐ 【名詞使用：誕生】",
-      "dialect": "Pastalie",
-      "pron": "ヴァ (va) /ba/",
-      "notes": "JP: 生む、紡ぐ 【名詞使用：誕生】 | EN: produce, craft (when used as a noun, it means \"birth\")"
-    },
-    {
       "word": "v.a.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "produce, craft",
       "dialect": "Pastalie",
       "pron": "ヴァ"
     },
     {
-      "word": "v.s.k",
-      "class": "E.v.",
-      "meaning_en": "体感する、実感する。経験する",
-      "dialect": "Pastalie",
-      "pron": "ヴィスク (visuk) /bisәk/",
-      "notes": "JP: 体感する、実感する。経験する | EN: sense physically, feel, experience"
-    },
-    {
       "word": "v.s.k.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "experience, feel, sense",
       "dialect": "Pastalie",
       "pron": "ヴィスク"
     },
     {
-      "word": "v.t",
-      "class": "E.v.",
-      "meaning_en": "生きる 【名詞使用：生命】",
-      "dialect": "Pastalie",
-      "pron": "ヴッ (vut) /bɯʔ/",
-      "notes": "JP: 生きる 【名詞使用：生命】 | EN: live (when used as noun, it means \"life\")"
-    },
-    {
       "word": "v.t.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "live, exist",
       "dialect": "Pastalie",
       "pron": "ヴッ"
@@ -9200,16 +9140,8 @@
       "notes": "JP: ～なければならない | EN: must do, must be done"
     },
     {
-      "word": "w.r.l",
-      "class": "E.v.",
-      "meaning_en": "目指す 【名詞使用：目標】",
-      "dialect": "Pastalie",
-      "pron": "ウルル (urulu) /ɯɾәlә/",
-      "notes": "JP: 目指す 【名詞使用：目標】 | EN: aim at, have an eye on (when used as a noun, it means \"signpost\")"
-    },
-    {
       "word": "w.r.l.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "aim for, track",
       "dialect": "Pastalie",
       "pron": "ウルル"
@@ -9241,16 +9173,8 @@
       "notes": "JP: 忘れる | EN: forget"
     },
     {
-      "word": "w.s.s",
-      "class": "E.v.",
-      "meaning_en": "讃える",
-      "dialect": "Pastalie",
-      "pron": "ワッセ (wasse) /ɰaQse/",
-      "notes": "JP: 讃える | EN: praise"
-    },
-    {
       "word": "w.s.s.",
-      "class": "E.V.",
+      "class": "E.v.",
       "meaning_en": "praise",
       "dialect": "Pastalie [Unofficial]",
       "pron": "?"
@@ -9399,7 +9323,7 @@
     },
     {
       "word": "was",
-      "class": "E.s.",
+      "class": "E.s. I",
       "meaning_en": "とても強烈に（第一想音）",
       "dialect": "Central",
       "pron": "ワス (was) /ɰas/",
@@ -9531,7 +9455,7 @@
     },
     {
       "word": "wee",
-      "class": "E.s.",
+      "class": "E.s. I",
       "meaning_en": "かなり（第一想音）",
       "dialect": "Central",
       "pron": "ウィ (wi) /ɰi/",
@@ -9803,7 +9727,7 @@
       "meaning_en": "給え (より塔に尊敬の感情を明確に伝えたい場合に使用する。 例：xe khal(護り給え) あまり常用される単語ではない。)",
       "dialect": "Cluster",
       "pron": "ジ (zi) /dzi/",
-      "notes": "JP: 給え (より塔に尊敬の感情を明確に伝えたい場合に使用する。 例：xe khal(護り給え) あまり常用される単語ではない。) | EN: please (used before a verb), bestow, grant, receive (Note: Used whenever someone wants to clearly convey an even greater feeling of respect to the Tower. Example: xe khal (please, protect me). This is not a word that sees common use.)",
+      "notes": "JP: 給え (より塔に尊敬の感情を明確に伝えたい場合に使用する。 例：xe khal(護り給え) あまり常用される単語ではない。) | EN: please (used before a verb), bestow, grant, receive (Note: Used whenever someone wants to clearly convey an even greater feeling of respect to the Tower. Example: xe khal (please, protect me). This is not a word that sees common use.) | Note: xE (Cluster) vs x. + E (Pastalie subject definer) are different constructs.",
       "meaning_ja": "給え"
     },
     {
@@ -10146,7 +10070,7 @@
     },
     {
       "word": "yor",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "あなた",
       "dialect": "Central",
       "pron": "ヨア (yoa) /joa/",
@@ -10155,7 +10079,7 @@
     },
     {
       "word": "yora",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "あなたたち",
       "dialect": "Central",
       "pron": "ヨラ (yora) /joɾa/",
@@ -10164,7 +10088,7 @@
     },
     {
       "word": "yorr",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "あなた（主語定義）",
       "dialect": "Central",
       "pron": "ヨ[ルル] (yo(rr) two last r's are rolled) /jor/",
@@ -10173,7 +10097,7 @@
     },
     {
       "word": "yorra",
-      "class": "n.",
+      "class": "pn.",
       "meaning_en": "あなたたち（主語定義）",
       "dialect": "Central",
       "pron": "ヨ[ルル]ラ (yo(rr) two last r's are rolled) /jora/",
@@ -10533,6 +10457,14 @@
       "pron": "ズー (zu) /dzә/",
       "notes": "JP: 否定 | EN: negation, denial, un-",
       "meaning_ja": "否定"
+    },
+    {
+      "word": "tie",
+      "class": "v.",
+      "dialect": "Kurt Ciel",
+      "meaning_en": "catch, restrain",
+      "pron": "",
+      "notes": "Kurt Ciel verb; homograph of Pastalie conj. tie"
     }
   ]
 }
