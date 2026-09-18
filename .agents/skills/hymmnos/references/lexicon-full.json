@@ -115,7 +115,7 @@
     },
     {
       "word": "5",
-      "class": "adj.",
+      "class": "n.",
       "meaning_en": "5／五（数词）",
       "dialect": "Central",
       "pron": "ヴぃら (vira) /biɾa/",
@@ -169,7 +169,7 @@
     {
       "word": "<-x",
       "class": "part.",
-      "meaning_en": "回指前述成分（spak）",
+      "meaning_en": "back-reference marker（pagu）",
       "dialect": "Pastalie",
       "pron": "（す）ぱぐ ((su)pagu) /pag/",
       "notes": "Refers to a previously mentioned noun/phrase; page: New Testament of Pastalie",
@@ -178,7 +178,7 @@
     {
       "word": "<=",
       "class": "part.",
-      "meaning_en": "（tabura）",
+      "meaning_en": "reverse/Binasphere reverse marker（tabura）",
       "dialect": "Central",
       "pron": "たぶら (tabura) /tabʔra/",
       "notes": "Special character; page: Standard Hymmnos"
@@ -189,7 +189,7 @@
       "meaning_en": "Binasphere 行起始（tab）",
       "dialect": "Central",
       "pron": "たぶ (tabu) /tab/",
-      "notes": "Binasphere Chorus line starter; page: Standard Hymmnos"
+      "notes": "Binasphere Chorus line starter; page: Standard Hymmnos | Also used as object=>target and definition arrow."
     },
     {
       "word": ">>",
@@ -350,7 +350,7 @@
       "class": "n.",
       "meaning_en": "音",
       "dialect": "Pastalie",
-      "pron": "アーレ (aale) /a:le/",
+      "pron": "アーレ (aale) /aːle/",
       "notes": "JP: 音 | EN: sound",
       "meaning_ja": "音"
     },
@@ -481,7 +481,7 @@
       "dialect": "Central",
       "pron": "アラウス (araus) /aɾaɯs/",
       "notes": "JP: 捧げる | EN: offer, sacrifice, dedicate",
-      "meaning_ja": "取替 "
+      "meaning_ja": "捧げる"
     },
     {
       "word": "arhou",
@@ -543,7 +543,7 @@
       "dialect": "Central",
       "pron": "アテーリア (ateeria) /ateːɾia/",
       "notes": "JP: 誘う | EN: invite, lead",
-      "meaning_ja": "受け入れる"
+      "meaning_ja": "誘う／導く"
     },
     {
       "word": "ates",
@@ -882,7 +882,7 @@
       "class": "adv.",
       "meaning_en": "天高く",
       "dialect": "Central",
-      "pron": "セルレ (selle) /seQle/",
+      "pron": "セッレ (selle) /seQle/",
       "notes": "JP: 天高く | EN: heavenly",
       "meaning_ja": "天高く"
     },
@@ -995,7 +995,7 @@
       "class": "adj.",
       "meaning_en": "選ばれた、特別",
       "dialect": "Kurt Ciel",
-      "pron": "シェッ (shee) /ɕetʔ/",
+      "pron": "シェッ (shet) /ɕetʔ/",
       "notes": "JP: 選ばれた、特別 | EN: chosen, particular, special",
       "meaning_ja": "選ばれた、特別"
     },
@@ -1285,9 +1285,9 @@
     },
     {
       "word": "d_cell",
-      "class": "Com.",
+      "class": "cnstr.",
       "meaning_en": "D-Cellophane",
-      "dialect": "Central",
+      "dialect": "Unknown [Unofficial]",
       "pron": "ディーセル (diisel) /diːsel/",
       "notes": "JP: Dセロファン | EN: D-Cellophane",
       "meaning_ja": "Dセロファン"
@@ -1509,7 +1509,7 @@
       "dialect": "Central",
       "pron": "デウ (deu) /deɯ/",
       "notes": "JP: ～を | EN: to ~ (direct object marker)",
-      "meaning_ja": "そして、～と"
+      "meaning_ja": "～を（対象）"
     },
     {
       "word": "dewee",
@@ -1767,7 +1767,7 @@
       "class": "n.",
       "meaning_en": "欲望",
       "dialect": "Central",
-      "pron": "ヂェア (dchea) /dʑɶa/",
+      "pron": "ヂェア (jea) /dʑea/",
       "notes": "JP: 欲望 | EN: desire",
       "meaning_ja": "欲望"
     },
@@ -2028,7 +2028,8 @@
       "meaning_en": "願う 縋エニェ 望む",
       "dialect": "Central",
       "pron": "エナルテ (enalte) /enalte/",
-      "notes": "JP: 願う 縋エニェ 望む | EN: wish, cling to, desire"
+      "notes": "JP: 願う 縋エニェ 望む | EN: wish, cling to, desire",
+      "meaning_ja": "願う 縋る 望む"
     },
     {
       "word": "enne",
@@ -2064,7 +2065,7 @@
       "dialect": "Central",
       "pron": "エンヴィード (enviid) /eɴbiːd/",
       "notes": "JP: 傲慢な | EN: arrogant, insolent",
-      "meaning_ja": "愚か"
+      "meaning_ja": "傲慢な"
     },
     {
       "word": "enw",
@@ -2563,7 +2564,7 @@
       "dialect": "Kurt Ciel",
       "pron": "フリプ (flip) /ɸlip/",
       "notes": "JP: 引き替えに | EN: in exchange",
-      "meaning_ja": "ひっくり返る、フリップフロップ転送コマンド"
+      "meaning_ja": "引き替えに"
     },
     {
       "word": "fluy",
@@ -2603,7 +2604,7 @@
     },
     {
       "word": "forgandal",
-      "class": "Com.",
+      "class": "intj.",
       "meaning_en": "なぜならば！",
       "dialect": "Kurt Ciel",
       "pron": "フォーガンダル (foogandal) /ɸoːgaɴdal/",
@@ -3047,7 +3048,7 @@
       "dialect": "Central",
       "pron": "ギウエ (giwe) /gʲiɯe/",
       "notes": "JP: 呪縛する 捕える 囚われる | EN: curse, seize, imprison",
-      "meaning_ja": "体"
+      "meaning_ja": "犠牲／呪縛する"
     },
     {
       "word": "giz",
@@ -3225,7 +3226,7 @@
       "dialect": "Central",
       "pron": "グロウ (grou) /gɾoɯ/",
       "notes": "JP: 愚かな | EN: stupid, idiotic",
-      "meaning_ja": "傲慢"
+      "meaning_ja": "愚かな"
     },
     {
       "word": "grrena",
@@ -3681,7 +3682,7 @@
       "class": "v.",
       "meaning_en": "傷つける",
       "dialect": "Ancient Metafalss",
-      "pron": "ヘイテ (hrite) /heite/",
+      "pron": "ヘイテ (heite) /heite/",
       "notes": "JP: 傷つける | EN: injure, wound",
       "meaning_ja": "傷つける"
     },
@@ -3690,7 +3691,7 @@
       "class": "E.s.II",
       "meaning_en": "(unknown meaning)",
       "dialect": "Central",
-      "pron": "ヘルレイ (hellei) /heQlei/",
+      "pron": "ヘッレイ (hellei) /heQlei/",
       "notes": "EN: (unknown meaning) | UNCERTAIN: meaning not given in source"
     },
     {
@@ -3963,15 +3964,6 @@
       "pron": "フィジク (fizik) /ɸiʑik/",
       "notes": "JP: 肉体、体 | EN: body | Alpha subtype: EOLIA",
       "meaning_ja": "肉体、体"
-    },
-    {
-      "word": "i",
-      "class": "E.s.II",
-      "meaning_en": "impatient, irritated",
-      "dialect": "Central",
-      "pron": "い (i) /i/",
-      "notes": "Level 1 Emotion Vowel (inward): pain, agony, terror, desire to escape; as Subject Definer: jealousy. Distinct from Central E.s.II i; page: New Testament of Pastalie",
-      "meaning_ja": "焦り"
     },
     {
       "word": "iasien",
@@ -4581,7 +4573,7 @@
       "class": "v.",
       "meaning_en": "知る 識る 【認識する】",
       "dialect": "Central",
-      "pron": "ノーワ noowa /noːwa/",
+      "pron": "ノーワ (noowa) /noːwa/",
       "notes": "JP: 知る 識る 【認識する】 | EN: know, understand [cognize]",
       "meaning_ja": "知る"
     },
@@ -5101,7 +5093,7 @@
       "class": "adj.",
       "meaning_en": "安らぎの 安らかな 穏やかな 緩やかな",
       "dialect": "Central",
-      "pron": "リル二ャ (lirnya) /liɾnʲa/",
+      "pron": "リルニャ (lirnya) /liɾnʲa/",
       "notes": "JP: 安らぎの 安らかな 穏やかな 緩やかな | EN: gentle, peaceful, loose, relaxed",
       "meaning_ja": "安らぎ"
     },
@@ -5180,7 +5172,7 @@
       "class": "E.v.",
       "meaning_en": "侮る",
       "dialect": "Pastalie",
-      "pron": "ムヴイン (muvin) /mәbәin/",
+      "pron": "ムヴイン (muvin) /məbəin/",
       "notes": "JP: 侮る | EN: despise, disdain, take lightly, underestimate"
     },
     {
@@ -5188,7 +5180,7 @@
       "class": "E.v.",
       "meaning_en": "導く 【名詞使用：導き 天啓 標】",
       "dialect": "Pastalie",
-      "pron": "ムイブ (muibu) /mәibә/",
+      "pron": "ムイブ (muibu) /məibə/",
       "notes": "JP: 導く 【名詞使用：導き 天啓 標】 | EN: lead, guide (when used as a noun, it means \"lead\", \"divine revelation\", \"sign\")"
     },
     {
@@ -5339,7 +5331,7 @@
       "class": "adj.",
       "meaning_en": "優しい",
       "dialect": "Central",
-      "pron": "メークル (meekul) /meːkәl/",
+      "pron": "メークル (meekul) /meːkəl/",
       "notes": "JP: 優しい | EN: gentle",
       "meaning_ja": "優しい"
     },
@@ -5403,7 +5395,7 @@
       "dialect": "Central",
       "pron": "メルファ (merfa) /meɾɸa/",
       "notes": "JP: 想い | EN: feelings",
-      "meaning_ja": "無垢な, 無垢な願い"
+      "meaning_ja": "想い"
     },
     {
       "word": "merra",
@@ -5559,7 +5551,7 @@
       "dialect": "Central",
       "pron": "ムトゥルク (muturk) /mɯtɯɾk/",
       "notes": "JP: 物語 | EN: story",
-      "meaning_ja": "温かさ"
+      "meaning_ja": "物語"
     },
     {
       "word": "n",
@@ -5600,7 +5592,7 @@
       "class": "E.v.",
       "meaning_en": "染まる 【名詞使用：彩り】",
       "dialect": "Pastalie",
-      "pron": "ンム (nmu) /ɴmә/",
+      "pron": "ンム (nmu) /ɴmə/",
       "notes": "JP: 染まる 【名詞使用：彩り】 | EN: dye, color (when used as a noun, it means \"coloration\")",
       "meaning_ja": "染まる"
     },
@@ -5618,7 +5610,7 @@
       "class": "E.v.",
       "meaning_en": "入り込む",
       "dialect": "Pastalie",
-      "pron": "ンヤグト (n'yaguto) /ɴjagәto/",
+      "pron": "ンヤグト (n'yaguto) /ɴjagəto/",
       "notes": "JP: 入り込む | EN: take in, accept"
     },
     {
@@ -5754,7 +5746,7 @@
     },
     {
       "word": "nei",
-      "class": "adj.",
+      "class": "n.",
       "meaning_en": "9／九",
       "dialect": "Central",
       "pron": "ねい (nei) /nei/",
@@ -5808,7 +5800,7 @@
       "class": "n.",
       "meaning_en": "要人 重臣",
       "dialect": "Central",
-      "pron": "ネプソグル (nepsogur) /nepsogәɾ/",
+      "pron": "ネプソグル (nepsogur) /nepsogəɾ/",
       "notes": "JP: 要人 重臣 | EN: important person, chief vassal"
     },
     {
@@ -5825,7 +5817,7 @@
       "class": "conj.",
       "meaning_en": "共に 一緒に",
       "dialect": "Central",
-      "pron": "ネイズン (neizun) /neidzәɴ/",
+      "pron": "ネイズン (neizun) /neidzəɴ/",
       "notes": "JP: 共に 一緒に | EN: along with, together with"
     },
     {
@@ -5921,7 +5913,7 @@
       "class": "adj./n.",
       "meaning_en": "黒、黒い",
       "dialect": "Central",
-      "pron": "ノグル (nogul) /nogәl/",
+      "pron": "ノグル (nogul) /nogəl/",
       "notes": "JP: 黒、黒い | EN: black",
       "meaning_ja": "黒、黒い"
     },
@@ -6024,7 +6016,7 @@
       "class": "n.",
       "meaning_en": "次",
       "dialect": "Central",
-      "pron": "ヌクス (nuks) /nәks/",
+      "pron": "ヌクス (nuks) /nəks/",
       "notes": "JP: 次 | EN: next",
       "meaning_ja": "次"
     },
@@ -6111,7 +6103,7 @@
       "class": "v.",
       "meaning_en": "渦巻する",
       "dialect": "Central",
-      "pron": "オギュブル (ogyubul) ogʲәbәl",
+      "pron": "オギュブル (ogyubul) /ogʲəbəl/",
       "notes": "JP: 渦巻する | EN: coil, swirl",
       "meaning_ja": "渦巻する"
     },
@@ -6145,7 +6137,7 @@
       "class": "adj.",
       "meaning_en": "自分の",
       "dialect": "Central",
-      "pron": "オムン (omn) /omәɴ/",
+      "pron": "オムン (omn) /oməɴ/",
       "notes": "JP: 自分の | EN: oneself, one's own"
     },
     {
@@ -6153,16 +6145,16 @@
       "class": "n.",
       "meaning_en": "憂う 憂い？ 「讃える」ではない（公式発表）",
       "dialect": "Central",
-      "pron": "オムネス (omnes) /omәnes/",
+      "pron": "オムネス (omnes) /omənes/",
       "notes": "JP: 憂う 憂い？ 「讃える」ではない（公式発表） | EN: sadness, grief (it has been officially stated that it does not mean \"praise\")",
-      "meaning_ja": "生命"
+      "meaning_ja": "憂い／憂う"
     },
     {
       "word": "omni",
       "class": "adj.",
       "meaning_en": "全てを",
       "dialect": "Central",
-      "pron": "オムニ (omni) /omәnʲi/",
+      "pron": "オムニ (omni) /omənʲi/",
       "notes": "JP: 全てを | EN: everything, all"
     },
     {
@@ -6170,7 +6162,7 @@
       "class": "adj.",
       "meaning_en": "全てを",
       "dialect": "Ancient Metafalss",
-      "pron": "オムニス (omnis) /omәnʲis/",
+      "pron": "オムニス (omnis) /omənʲis/",
       "notes": "JP: 全てを | EN: everything (direct object)",
       "meaning_ja": "全てを"
     },
@@ -6205,7 +6197,7 @@
       "class": "n.",
       "meaning_en": "問題、障害 (na orviclle:無問題=大丈夫)",
       "dialect": "Central",
-      "pron": "オーヴィクル (oovikul) oːbikәɾ",
+      "pron": "オーヴィクル (oovikul) /oːbikəɾ/",
       "notes": "JP: 問題、障害 (na orviclle:無問題=大丈夫) | EN: problem, question, obstacle (Note: “na orviclle” can mean \"no problem\" or \"it's okay\").",
       "meaning_ja": "問題、障害"
     },
@@ -6292,7 +6284,7 @@
       "class": "E.v.",
       "meaning_en": "掴む 獲得する 【名詞使用：取得】",
       "dialect": "Pastalie",
-      "pron": "ピスウト (pisuto) /pisәɯtә/",
+      "pron": "ピスウト (pisuuto) /pisəɯtə/",
       "notes": "JP: 掴む 獲得する 【名詞使用：取得】 | EN: seize, acquire (when used as a noun, it means \"acquisition\")",
       "meaning_ja": "掴む・獲得する"
     },
@@ -6740,7 +6732,7 @@
       "class": "v.",
       "meaning_en": "要求する 欲しい 望む 頂戴 （酒の缶を）開ける",
       "dialect": "Central",
-      "pron": "プシュー (pushuu) /pәɕɯː/",
+      "pron": "プシュー (pushuu) /pəɕɯː/",
       "notes": "JP: 要求する 欲しい 望む 頂戴 （酒の缶を）開ける | EN: desire, want, wish for, get, open (a beer can)"
     },
     {
@@ -6748,7 +6740,7 @@
       "class": "n.",
       "meaning_en": "宝",
       "dialect": "Kurt Ciel",
-      "pron": "プトラピカ (putrapika) /pәtɾapika/",
+      "pron": "プトラピカ (putrapika) /pətɾapika/",
       "notes": "JP: 宝 | EN: treasure",
       "meaning_ja": "宝"
     },
@@ -6757,7 +6749,7 @@
       "class": "n.",
       "meaning_en": "秋",
       "dialect": "Kurt Ciel",
-      "pron": "プトラピル (ptrapil) /pәtɾapil/",
+      "pron": "プトラピル (ptrapil) /pətɾapil/",
       "notes": "JP: 秋 | EN: autumn",
       "meaning_ja": "秋"
     },
@@ -6784,7 +6776,7 @@
       "class": "E.v.",
       "meaning_en": "終る",
       "dialect": "Pastalie",
-      "pron": "クグス (kugusu) /kɯәgәsә/",
+      "pron": "クグス (kugusu) /kɯəgəsə/",
       "notes": "JP: 終る | EN: end, finish",
       "meaning_ja": "終る"
     },
@@ -6793,7 +6785,7 @@
       "class": "E.v.",
       "meaning_en": "揺らす 【名詞使用：揺れ 振動】",
       "dialect": "Pastalie",
-      "pron": "クレス (kulesu) /kwәgәsә/",
+      "pron": "クレス (kulesu) /kɯləsə/",
       "notes": "JP: 揺らす 【名詞使用：揺れ 振動】 | EN: shake, vibrate (when used as a noun, it means \"shaking\", \"vibration\", \"tremor\")",
       "meaning_ja": "激しく揺らす"
     },
@@ -6802,7 +6794,7 @@
       "class": "conj.",
       "meaning_en": "～だろうか (曖昧な表現に)",
       "dialect": "Central",
-      "pron": "クァフル (kwaful) /kɰaɸәl/",
+      "pron": "クァフル (kwaful) /kɰaɸəl/",
       "notes": "JP: ～だろうか (曖昧な表現に) | EN: will it ~ ? (conjugation used at the start of a sentence to express uncertainty or doubts about the future)"
     },
     {
@@ -6847,7 +6839,7 @@
       "dialect": "Central",
       "pron": "クァルス (kwals) /kɰals/",
       "notes": "JP: 生命 | EN: life",
-      "meaning_ja": "再生"
+      "meaning_ja": "生命"
     },
     {
       "word": "quel",
@@ -6932,7 +6924,7 @@
       "class": "E.v.",
       "meaning_en": "見る",
       "dialect": "Pastalie",
-      "pron": "ルフン (rufun) /rәɸәɴ/",
+      "pron": "ルフン (rufun) /rəɸəɴ/",
       "notes": "JP: 見る | EN: see, watch | alt spelling: r.f.m",
       "meaning_ja": "見る"
     },
@@ -6957,7 +6949,7 @@
       "class": "E.v.",
       "meaning_en": "助ける 救う 【名詞使用：救い 救済】",
       "dialect": "Pastalie",
-      "pron": "ルゥ (ruu) /rәɰ/",
+      "pron": "ルゥ (ruu) /rəɰ/",
       "notes": "JP: 助ける 救う 【名詞使用：救い 救済】 | EN: help, rescue (when used as a noun, it means \"salvation\", \"rescue\", \"aid\", \"relief\")",
       "meaning_ja": "助ける、救う"
     },
@@ -7167,7 +7159,8 @@
       "class": "E.s. I",
       "meaning_en": "trance state (variant of Rrha)",
       "dialect": "Ancient Metafalss",
-      "pron": "ra"
+      "pron": "ラ (ra) /ɾa/",
+      "notes": "Variant spelling of Rrha in EXEC_METAFALICA"
     },
     {
       "word": "rhaplanca",
@@ -7438,7 +7431,7 @@
       "class": "E.v.",
       "meaning_en": "信じる 【名詞使用：信用 信頼】",
       "dialect": "Pastalie",
-      "pron": "シル (silu) /silә/",
+      "pron": "シル (silu) /silə/",
       "notes": "JP: 信じる 【名詞使用：信用 信頼】 | EN: believe, trust (when used as a noun, it means \"trust\", \"faith\", \"belief\")",
       "meaning_ja": "信じる"
     },
@@ -7447,16 +7440,16 @@
       "class": "E.v.",
       "meaning_en": "見守る 見つめる",
       "dialect": "Pastalie",
-      "pron": "スリャ (sulya) /sәlʲa/",
+      "pron": "スリャ (sulya) /səlʲa/",
       "notes": "JP: 見守る 見つめる | EN: watch over, look at",
-      "meaning_ja": "与える"
+      "meaning_ja": "見守る／見つめる"
     },
     {
       "word": "s.n.k.k.",
       "class": "E.v.",
       "meaning_en": "芽吹く",
       "dialect": "Pastalie",
-      "pron": "スンク (sunku) /sәɴkә/",
+      "pron": "スンク (sunku) /səɴkə/",
       "notes": "JP: 芽吹く | EN: bud (plant)",
       "meaning_ja": "芽吹く"
     },
@@ -7465,7 +7458,7 @@
       "class": "E.v.",
       "meaning_en": "同期する 接続する",
       "dialect": "Pastalie",
-      "pron": "シンス (sinsu) /sinsә/",
+      "pron": "シンス (sinsu) /sinsə/",
       "notes": "JP: 同期する 接続する | EN: synchronize, connect"
     },
     {
@@ -7473,7 +7466,7 @@
       "class": "E.v.",
       "meaning_en": "言う 告げる 語る 話す 【名詞使用：話 会話 言葉】",
       "dialect": "Pastalie",
-      "pron": "スーウ (suuu) /sәːɯ/",
+      "pron": "スーウ (suuu) /səːɯ/",
       "notes": "JP: 言う 告げる 語る 話す 【名詞使用：話 会話 言葉】 | EN: say, speak, inform (when used as a noun, it means \"talk\", \"conversation\", \"words)",
       "meaning_ja": "言う、告げる、語る"
     },
@@ -7508,7 +7501,7 @@
       "class": "n.",
       "meaning_en": "砂",
       "dialect": "Central",
-      "pron": "サブル (sabul) /sabәl/",
+      "pron": "サブル (sabul) /sabəl/",
       "notes": "JP: 砂 | EN: sand",
       "meaning_ja": "砂"
     },
@@ -7967,7 +7960,7 @@
       "class": "pn.",
       "meaning_en": "それ",
       "dialect": "Central",
-      "pron": "ソァ (soa) /soә/",
+      "pron": "ソァ (soa) /soə/",
       "notes": "JP: それ | EN: Alternate spelling of \"sor\"."
     },
     {
@@ -8018,7 +8011,7 @@
       "class": "pn.",
       "meaning_en": "それ",
       "dialect": "Central",
-      "pron": "ソァ (soa) /soә/",
+      "pron": "ソァ (soa) /soə/",
       "notes": "JP: それ | EN: that",
       "meaning_ja": "それ"
     },
@@ -8035,7 +8028,7 @@
       "class": "pn.",
       "meaning_en": "それは（主語定義）",
       "dialect": "Central",
-      "pron": "ソ[ﾙﾙ] (so[rr] last two r's are rolled) /sor/",
+      "pron": "ソ[ルル] (so[rr] last two r's are rolled) /sor/",
       "notes": "JP: それは（主語定義） | EN: that (subject form)"
     },
     {
@@ -8043,7 +8036,7 @@
       "class": "pn.",
       "meaning_en": "それらは（主語定義）",
       "dialect": "Central",
-      "pron": "ソ[ﾙﾙ]ラ (so[rr]a two middle r's are rolled) /sora/",
+      "pron": "ソ[ルル]ラ (so[rr]a two middle r's are rolled) /sora/",
       "notes": "JP: それらは（主語定義） | EN: those (subject form)"
     },
     {
@@ -8209,7 +8202,7 @@
     },
     {
       "word": "swantes",
-      "class": "v.",
+      "class": "n.",
       "meaning_en": "救い 救済",
       "dialect": "Central",
       "pron": "スワンテス (suwantes) /sɯɰaɴtes/",
@@ -8299,7 +8292,7 @@
       "class": "E.v.",
       "meaning_en": "求める",
       "dialect": "Pastalie",
-      "pron": "トゥハクト (tuhakuto) /tәhakәtә/",
+      "pron": "トゥハクト (tuhakuto) /təhakətə/",
       "notes": "JP: 求める | EN: seek, search for"
     },
     {
@@ -8307,7 +8300,7 @@
       "class": "E.v.",
       "meaning_en": "当たる 外に出る",
       "dialect": "Pastalie",
-      "pron": "ティハス (tihasu) /tihasә/",
+      "pron": "ティハス (tihasu) /tihasə/",
       "notes": "JP: 当たる 外に出る | EN: go outside, be touched by",
       "meaning_ja": "外に出る"
     },
@@ -8316,34 +8309,34 @@
       "class": "E.v.",
       "meaning_en": "届く 届ける",
       "dialect": "Pastalie",
-      "pron": "トクト (tokuto) /tәkәtә/",
+      "pron": "トクト (tokuto) /təkətə/",
       "notes": "JP: 届く 届ける | EN: reach, get across",
       "meaning_ja": "届く"
     },
     {
       "word": "t.n.",
-      "class": "v.",
+      "class": "E.v.",
       "meaning_en": "止める、やめる 【名詞使用：停止 静止】",
       "dialect": "Pastalie",
-      "pron": "トゥン (tun) /tәɴ/",
+      "pron": "トゥン (tun) /təɴ/",
       "notes": "JP: 止める、やめる 【名詞使用：停止 静止】 | EN: stop, end (when used as a noun, it means \"suspension\", \"repose\")",
       "meaning_ja": "止める、やめる"
     },
     {
       "word": "t.n.m.n.",
-      "class": "v.",
+      "class": "E.v.",
       "meaning_en": "(種を)まく、植える",
       "dialect": "Pastalie",
-      "pron": "トンムン (tonmun) /tәɴmәɴ/",
+      "pron": "トンムン (tonmun) /təɴməɴ/",
       "notes": "JP: (種を)まく、植える | EN: scatter (seeds), (to) plant",
       "meaning_ja": "(種を)まく、植える"
     },
     {
       "word": "t.r.m.",
-      "class": "v.",
+      "class": "E.v.",
       "meaning_en": "展開する、咲かせる、実現する",
       "dialect": "Pastalie",
-      "pron": "トルム (torumu) /tәrәmә/",
+      "pron": "トルム (torumu) /tərəmə/",
       "notes": "JP: 展開する、咲かせる、実現する | EN: develop, make bloom, realize, appear",
       "meaning_ja": "展開する、咲かせる、実現する"
     },
@@ -8395,7 +8388,7 @@
       "class": "n.",
       "meaning_en": "水",
       "dialect": "Pastalie",
-      "pron": "タパ (tapa) tapa",
+      "pron": "タパ (tapa) /tapa/",
       "notes": "JP: 水 | EN: water",
       "meaning_ja": "水"
     },
@@ -8691,7 +8684,7 @@
       "class": "adj.",
       "meaning_en": "小さな",
       "dialect": "Pastalie",
-      "pron": "トゥュイ (tuyui) /tәʲɯi/",
+      "pron": "トゥュイ (tuyui) /təʲɯi/",
       "notes": "JP: 小さな | EN: small, little, tiny (indicates size)",
       "meaning_ja": "小さな"
     },
@@ -8700,9 +8693,9 @@
       "class": "adj.",
       "meaning_en": "僅かに 少し （量を表す）",
       "dialect": "Central",
-      "pron": "トゥュス (tuyus) /tәʲɯs/",
+      "pron": "トゥュス (tuyus) /təʲɯs/",
       "notes": "JP: 僅かに 少し （量を表す） | EN: slightly, a bit, a little (indicates amount of something)",
-      "meaning_ja": "優しい"
+      "meaning_ja": "僅かに／少し"
     },
     {
       "word": "u",
@@ -8735,7 +8728,8 @@
       "meaning_en": "【（死と隣り合わせ、狂愛の語が近い）】",
       "dialect": "Central",
       "pron": "ウビティオ (ubitio) /ɯbitio/",
-      "notes": "JP: 【（死と隣り合わせ、狂愛の語が近い）】 | EN: love (it has implications of crazed love, joining in death)"
+      "notes": "JP: 【（死と隣り合わせ、狂愛の語が近い）】 | EN: love (it has implications of crazed love, joining in death)",
+      "meaning_ja": "愛する（狂愛・死と隣り合わせ）"
     },
     {
       "word": "ubititoe",
@@ -8786,7 +8780,7 @@
       "class": "n.",
       "meaning_en": "状況",
       "dialect": "Central",
-      "pron": "ウルドゥム (urdum) /ɯɾdәm/",
+      "pron": "ウルドゥム (urdum) /ɯɾdəm/",
       "notes": "JP: 状況 | EN: situation, circumstance"
     },
     {
@@ -8794,7 +8788,7 @@
       "class": "n.",
       "meaning_en": "嘆き",
       "dialect": "Pastalie",
-      "pron": "ウルグン (urgun) /ɯɾgәɴ/",
+      "pron": "ウルグン (urgun) /ɯɾgəɴ/",
       "notes": "JP: 嘆き | EN: grief, lamentation",
       "meaning_ja": "嘆き"
     },
@@ -8845,7 +8839,7 @@
       "class": "v.",
       "meaning_en": "まどろむ 【微睡 まどろみ】",
       "dialect": "Kurt Ciel",
-      "pron": "ウテゥ (uteu) /ɯteә/",
+      "pron": "ウテゥ (uteu) /ɯteə/",
       "notes": "JP: まどろむ 【微睡 まどろみ】 | EN: doze off, nap, slumber",
       "meaning_ja": "まどろむ"
     },
@@ -9083,7 +9077,7 @@
       "class": "conj.",
       "meaning_en": "～から ～より",
       "dialect": "Central",
-      "pron": "ヴル (vul) /bәl/",
+      "pron": "ヴル (vul) /bəl/",
       "notes": "JP: ～から ～より | EN: from, since",
       "meaning_ja": "～から, ～に"
     },
@@ -9109,7 +9103,7 @@
       "class": "E.v.",
       "meaning_en": "～したい",
       "dialect": "Pastalie",
-      "pron": "ウフ (ufu) /ɰәɸә/",
+      "pron": "ウフ (ufu) /ɰəɸə/",
       "notes": "JP: ～したい | EN: want to do ~",
       "meaning_ja": "〜したい"
     },
@@ -9118,7 +9112,7 @@
       "class": "E.v.",
       "meaning_en": "感じる 【名詞使用：感受 感知】",
       "dialect": "Pastalie",
-      "pron": "ヲゥ (wou) /ɰoә/",
+      "pron": "ヲゥ (wou) /ɰoə/",
       "notes": "JP: 感じる 【名詞使用：感受 感知】 | EN: feel, sense (when used as noun, it means \"sensitivity\", \"perception\")",
       "meaning_ja": "感じる"
     },
@@ -9127,7 +9121,7 @@
       "class": "E.v.",
       "meaning_en": "訪れる, 響く",
       "dialect": "Pastalie",
-      "pron": "ウンス (unsu) /ɯɴsә/",
+      "pron": "ウンス (unsu) /ɯɴsə/",
       "notes": "JP: 訪れる, 響く | EN: visit, echo",
       "meaning_ja": "訪れる, 響く"
     },
@@ -9136,7 +9130,7 @@
       "class": "E.v.",
       "meaning_en": "～なければならない",
       "dialect": "Pastalie",
-      "pron": "ウルグ (urugu) ɯɾәgә",
+      "pron": "ウルグ (urugu) /ɯɾəgə/",
       "notes": "JP: ～なければならない | EN: must do, must be done"
     },
     {
@@ -9151,7 +9145,7 @@
       "class": "E.v.",
       "meaning_en": "照らす",
       "dialect": "Pastalie",
-      "pron": "ワルム (warumu) /ɰaɾәmә/",
+      "pron": "ワルム (warumu) /ɰaɾəmə/",
       "notes": "JP: 照らす | EN: shine on, illuminate",
       "meaning_ja": "照らす"
     },
@@ -9160,7 +9154,7 @@
       "class": "E.v.",
       "meaning_en": "与える",
       "dialect": "Pastalie",
-      "pron": "ウス (usu) /ɯsә/",
+      "pron": "ウス (usu) /ɯsə/",
       "notes": "JP: 与える | EN: give",
       "meaning_ja": "与える"
     },
@@ -9169,7 +9163,7 @@
       "class": "E.v.",
       "meaning_en": "忘れる",
       "dialect": "Pastalie",
-      "pron": "ウスル (usuru) /ɯsәɾә/",
+      "pron": "ウスル (usuru) /ɯsəɾə/",
       "notes": "JP: 忘れる | EN: forget"
     },
     {
@@ -9184,7 +9178,7 @@
       "class": "E.v.",
       "meaning_en": "共鳴する 【名詞使用：共感】",
       "dialect": "Pastalie",
-      "pron": "ウージャンク (uujanku) /ɯːdʑaɴkә/",
+      "pron": "ウージャンク (uujanku) /ɯːdʑaɴkə/",
       "notes": "JP: 共鳴する 【名詞使用：共感】 | EN: resound, sympathize (when used as a noun, it means \"sympathy\", \"resonance\")",
       "meaning_ja": "共鳴する"
     },
@@ -9397,7 +9391,7 @@
       "class": "conj.",
       "meaning_en": "～しよう （～したい、よりも前向き）",
       "dialect": "Central",
-      "pron": "ワズク (wazk) /ɰadzәk/",
+      "pron": "ワズク (wazk) /ɰadzək/",
       "notes": "JP: ～しよう （～したい、よりも前向き） | EN: let's ~, let us ~ (future preposition for verbs)"
     },
     {
@@ -9494,7 +9488,7 @@
       "class": "n.",
       "meaning_en": "涙、雫",
       "dialect": "Ancient Metafalss",
-      "pron": "ウィルラ (wilra) /ɰilɾa",
+      "pron": "ウィルラ (wilra) /ɰilɾa/",
       "notes": "JP: 涙、雫 | EN: tear, drop",
       "meaning_ja": "涙、雫"
     },
@@ -9573,7 +9567,7 @@
       "class": "n.",
       "meaning_en": "音 音色",
       "dialect": "Central",
-      "pron": "ウィエネ (wiene) ɰiene",
+      "pron": "ウィエネ (wiene) /ɰiene/",
       "notes": "JP: 音 音色 | EN: melody, tone, timbre",
       "meaning_ja": "音色"
     },
@@ -9616,7 +9610,7 @@
       "class": "v.",
       "meaning_en": "～である",
       "dialect": "Ancient Metafalss",
-      "pron": "ヴィス (wis) /ɰis/",
+      "pron": "ウィス (wis) /ɰis/",
       "notes": "JP: ～である | EN: be, is",
       "meaning_ja": "〜である"
     },
@@ -9668,7 +9662,7 @@
       "class": "E.v.",
       "meaning_en": "壊す 破壊する コワレロ",
       "dialect": "Pastalie",
-      "pron": "ズブ (zubu) /zәbә/",
+      "pron": "ズブ (zubu) /zəbə/",
       "notes": "JP: 壊す 破壊する コワレロ | EN: harm, injure, destroy, DIE"
     },
     {
@@ -9676,7 +9670,7 @@
       "class": "E.v.",
       "meaning_en": "壊す 破壊する コワレロ",
       "dialect": "Pastalie",
-      "pron": "ズブグ (zubugu) /zәbәgә/",
+      "pron": "ズブグ (zubugu) /zəbəgə/",
       "notes": "JP: 壊す 破壊する コワレロ | EN: harm, injure, destroy, DIE | alt spelling: x.v.g"
     },
     {
@@ -9714,7 +9708,7 @@
       "meaning_ja": "傷"
     },
     {
-      "word": "xc=",
+      "word": "Xc=",
       "class": "conj.",
       "meaning_en": "假设句标记（if）",
       "dialect": "Pastalie",
@@ -9788,7 +9782,7 @@
       "class": "pn.",
       "meaning_en": "その それ",
       "dialect": "Central",
-      "pron": "ズトス (ztos) /dzәtos/",
+      "pron": "ズトス (ztos) /dzətos/",
       "notes": "JP: その それ | EN: that"
     },
     {
@@ -9796,7 +9790,7 @@
       "class": "E.v.",
       "meaning_en": "誓う",
       "dialect": "Pastalie",
-      "pron": "イグル (igulu) /igәlә/",
+      "pron": "イグル (igulu) /igələ/",
       "notes": "JP: 誓う | EN: pledge, swear"
     },
     {
@@ -9804,7 +9798,7 @@
       "class": "E.v.",
       "meaning_en": "疎む",
       "dialect": "Pastalie",
-      "pron": "ユグルル (yugururu) /jәgәɾәɾә/",
+      "pron": "ユグルル (yugururu) /jəgəɾəɾə/",
       "notes": "JP: 疎む | EN: neglect, shun, alienate, underestimate"
     },
     {
@@ -9812,7 +9806,7 @@
       "class": "E.v.",
       "meaning_en": "実る 【名詞使用：実り】",
       "dialect": "Pastalie",
-      "pron": "ヤンク (yanku) /jaɴkә/",
+      "pron": "ヤンク (yanku) /jaɴkə/",
       "notes": "JP: 実る 【名詞使用：実り】 | EN: bear fruit, ripen (when used as a noun, it means \"ripening\", \"crop\", \"harvest)",
       "meaning_ja": "実る"
     },
@@ -9821,7 +9815,7 @@
       "class": "E.v.",
       "meaning_en": "癒す 【名詞使用：癒し】",
       "dialect": "Pastalie",
-      "pron": "ヤヤ (yaya) /jәyә/",
+      "pron": "ヤヤ (yaya) /jəyə/",
       "notes": "JP: 癒す 【名詞使用：癒し】 | EN: heal, cure (when used as a noun, it means \"healing\")",
       "meaning_ja": "癒す"
     },
@@ -9830,7 +9824,7 @@
       "class": "E.v.",
       "meaning_en": "願う 【望む】 【名詞使用：願い 望み】",
       "dialect": "Pastalie",
-      "pron": "ヤズット (yazutt) /jәdzәQt/",
+      "pron": "ヤズット (yazutt) /jədzəQt/",
       "notes": "JP: 願う 【望む】 【名詞使用：願い 望み】 | EN: wish, desire, request (when used as a noun, it means \"wish\")",
       "meaning_ja": "願う"
     },
@@ -9990,7 +9984,7 @@
       "class": "adj.",
       "meaning_en": "幸せな",
       "dialect": "Central",
-      "pron": "イェハー[ﾙ] (yehaa(r) last r is rolled) /jehaːr/",
+      "pron": "イェハー[ル] (yehaa(r) last r is rolled) /jehaːr/",
       "notes": "JP: 幸せな | EN: happy, blissful, joyful"
     },
     {
@@ -10057,7 +10051,7 @@
       "class": "E.s.II",
       "meaning_en": "平静、放松（令对方）",
       "dialect": "Pastalie",
-      "pron": "ぅん (un) /әɴ/",
+      "pron": "ぅん (un) /əɴ/",
       "notes": "Level 2 Emotion Vowel: Calm down, be at peace, relax; page: New Testament of Pastalie"
     },
     {
@@ -10186,7 +10180,7 @@
       "class": "E.v.",
       "meaning_en": "迷う",
       "dialect": "Pastalie",
-      "pron": "ズウドゥ (zuudu) /dzәɯdә/",
+      "pron": "ズウドゥ (zuudu) /dzəɯdə/",
       "notes": "JP: 迷う | EN: hesitate, be lost, be at a loss about, be confused"
     },
     {
@@ -10305,7 +10299,7 @@
       "class": "v.",
       "meaning_en": "泳ぐ",
       "dialect": "Central",
-      "pron": "ザッシェン (zaashen) /dzaQɕeɴ/",
+      "pron": "ザッシェン (zasshen) /dzaQɕeɴ/",
       "notes": "JP: 泳ぐ | EN: swim",
       "meaning_ja": "泳ぐ"
     },
@@ -10454,7 +10448,7 @@
       "class": "adv.",
       "meaning_en": "否定",
       "dialect": "Pastalie",
-      "pron": "ズー (zu) /dzә/",
+      "pron": "ズー (zu) /dzə/",
       "notes": "JP: 否定 | EN: negation, denial, un-",
       "meaning_ja": "否定"
     },
@@ -10465,6 +10459,142 @@
       "meaning_en": "catch, restrain",
       "pron": "",
       "notes": "Kurt Ciel verb; homograph of Pastalie conj. tie"
+    },
+    {
+      "word": "DIA",
+      "class": "Com.",
+      "dialect": "Central",
+      "meaning_en": "input (dialog)",
+      "pron": "ダイア (daia)",
+      "notes": "Server command; homograph of dia n. king/throne"
+    },
+    {
+      "word": "/:",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "quotation closer (pairs with :/)",
+      "pron": "",
+      "notes": "Closes :/ ... /: quotation"
+    },
+    {
+      "word": "i",
+      "class": "E.s.II",
+      "dialect": "Central",
+      "meaning_en": "impatient, irritated",
+      "pron": "イ (i) /i/",
+      "notes": "Central emotion sound level II"
+    },
+    {
+      "word": "i",
+      "class": "E.s.",
+      "dialect": "Pastalie",
+      "meaning_en": "pain, agony, want to escape",
+      "pron": "イ (i) /i/",
+      "notes": "Pastalie Level-1 emotion vowel; distinct from Central E.s.II i"
+    },
+    {
+      "word": "METHOD",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title prefix (Infel Phira)",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "over.",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title infix (hybrid)",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "with.",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title infix (hybrid)",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "FLIP",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title command (Flipsphere)",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "FYUSION",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title element",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "PLUGINs",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title element",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "includes.Ex",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title element",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "0x",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "parameter/channel header (ogu)",
+      "pron": "",
+      "notes": "Used in METHOD_/EXEC_ song headers"
+    },
+    {
+      "word": "1x",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "parameter/channel header (igu)",
+      "pron": "",
+      "notes": "Used in METHOD_/EXEC_ song headers"
+    },
+    {
+      "word": "-ra",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "nth digit from the right (positional numeral)",
+      "pron": "ラ (ra)",
+      "notes": "e.g., noifefura noi = 1001"
+    },
+    {
+      "word": "!",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "sentence end (no invoke)",
+      "pron": "",
+      "notes": "Sentence terminator"
+    },
+    {
+      "word": "?",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "question marker (no invoke)",
+      "pron": "",
+      "notes": "Sentence terminator"
+    },
+    {
+      "word": "2x1/0",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "Binasphere two-line header",
+      "pron": "ジグイオ (jiguio)",
+      "notes": "Used in EXEC hymme 2x1/0>>"
     }
   ]
 }
