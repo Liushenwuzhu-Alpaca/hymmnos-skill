@@ -1,12 +1,28 @@
 {
   "entries": [
     {
+      "word": "!",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "sentence end (no invoke)",
+      "pron": "",
+      "notes": "Sentence terminator"
+    },
+    {
       "word": "->",
       "class": "part.",
       "meaning_en": "函数定义／条件结果连接（pas）",
       "dialect": "Pastalie",
       "pron": "ぱす (pasu) /pas/",
       "notes": "Function definition and hypothetical result marker; page: New Testament of Pastalie / Standard Hymmnos"
+    },
+    {
+      "word": "-ra",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "nth digit from the right (positional numeral)",
+      "pron": "ラ (ra)",
+      "notes": "e.g., noifefura noi = 1001"
     },
     {
       "word": "/.",
@@ -17,6 +33,14 @@
       "notes": "Executes the sentence as Song Magic; page: New Testament of Pastalie"
     },
     {
+      "word": "/:",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "quotation closer (pairs with :/)",
+      "pron": "",
+      "notes": "Closes :/ ... /: quotation"
+    },
+    {
       "word": "0",
       "class": "n.",
       "meaning_en": "0／零（数词）",
@@ -24,6 +48,14 @@
       "pron": "ねる (neru) /nel/",
       "notes": "Digit form of nell; also Hymmnos Binary digit pronounced お (o) /o/; page: Standard Hymmnos",
       "meaning_ja": "0"
+    },
+    {
+      "word": "0x",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "parameter/channel header (ogu)",
+      "pron": "",
+      "notes": "Used in METHOD_/EXEC_ song headers"
     },
     {
       "word": "0x vvi.",
@@ -79,6 +111,14 @@
       "meaning_ja": "10000"
     },
     {
+      "word": "1x",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "parameter/channel header (igu)",
+      "pron": "",
+      "notes": "Used in METHOD_/EXEC_ song headers"
+    },
+    {
       "word": "1x aas ixi.",
       "class": "part.",
       "meaning_en": "想音保持定义结束",
@@ -94,6 +134,24 @@
       "pron": "じ (ji) /dzi/",
       "notes": "Digit form of zi; page: Standard Hymmnos",
       "meaning_ja": "2"
+    },
+    {
+      "word": "2x",
+      "class": "Com.",
+      "meaning_en": "定義内容による",
+      "meaning_ja": "定義内容による",
+      "dialect": "Unknown",
+      "pron": "ジグ",
+      "notes": "変数？ | 変数？",
+      "source": "hymmnogram"
+    },
+    {
+      "word": "2x1/0",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "Binasphere two-line header",
+      "pron": "ジグイオ (jiguio)",
+      "notes": "Used in EXEC hymme 2x1/0>>"
     },
     {
       "word": "3",
@@ -200,6 +258,14 @@
       "notes": "Used in EXEC hymme 2X1/0>>; page: Standard Hymmnos"
     },
     {
+      "word": "?",
+      "class": "part.",
+      "dialect": "Pastalie",
+      "meaning_en": "question marker (no invoke)",
+      "pron": "",
+      "notes": "Sentence terminator"
+    },
+    {
       "word": "a",
       "class": "E.s.",
       "meaning_en": "力量、集中、决心、全力",
@@ -215,6 +281,16 @@
       "pron": "アウク (auku) /aɯk/",
       "notes": "JP: be動詞に相当 | EN: equivalent to the “to be” verb",
       "meaning_ja": "動詞に相当"
+    },
+    {
+      "word": "aas",
+      "class": "Com.",
+      "meaning_en": "感情を",
+      "meaning_ja": "感情を",
+      "dialect": "Unknown",
+      "pron": "アース",
+      "notes": "想音の保証定義構文 | 想音の保証定義構文",
+      "source": "hymmnogram"
     },
     {
       "word": "accrroad",
@@ -233,6 +309,16 @@
       "pron": "アクラ (akra) /akɾa/",
       "notes": "JP: きっと、確かに (高い可能性を示す語句) | EN: surely, certainly (Note: Used for expressing something that's highly probable to happen)",
       "meaning_ja": "きっと、確かに"
+    },
+    {
+      "word": "ad",
+      "class": "adv.",
+      "meaning_en": "そして",
+      "meaning_ja": "そして",
+      "dialect": "Unknown",
+      "pron": "アド",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "add",
@@ -397,6 +483,16 @@
       "notes": "JP: 愛しい | EN: beloved"
     },
     {
+      "word": "amario",
+      "class": "n.",
+      "meaning_en": "愛",
+      "meaning_ja": "愛",
+      "dialect": "Unknown",
+      "pron": "アマリオ",
+      "notes": "van amario oz mea na meycray tes yor,　たとえこの愛が君に届かなかったとしても　（Infelious Rhaplanca）",
+      "source": "hymmnogram"
+    },
+    {
       "word": "ammue",
       "class": "n.",
       "meaning_en": "音、（音の）波動",
@@ -430,6 +526,16 @@
       "dialect": "Central",
       "pron": "アンニェ (annye) /aɴnʲe/",
       "notes": "JP: 礎 | EN: cornerstone, foundation"
+    },
+    {
+      "word": "ansul",
+      "class": "Com.",
+      "meaning_en": "統率者",
+      "meaning_ja": "統率者",
+      "dialect": "Unknown",
+      "pron": "アンスル",
+      "notes": "三体のオリジンのヒュムネコード。管理者の意。　元ネタのルーン文字では情報や知識を表すアンザス神を指す | 三体のオリジンのヒュムネコード。管理者の意。　元ネタのルーン文字では情報や知識を表すアンザス神を指す",
+      "source": "hymmnogram"
     },
     {
       "word": "answa",
@@ -491,6 +597,16 @@
       "pron": "アーフー (aahuu) /aːɸɯː/",
       "notes": "JP: 希望, 恩恵 | EN: hope, wish, blessing",
       "meaning_ja": "希望"
+    },
+    {
+      "word": "arka",
+      "class": "n.",
+      "meaning_en": "大樹",
+      "meaning_ja": "大樹",
+      "dialect": "Unknown",
+      "pron": "アルカ",
+      "notes": "Hymmnos Chronicle ～世界を最も愛した少女たちの詩～考案",
+      "source": "hymmnogram"
     },
     {
       "word": "arl",
@@ -590,6 +706,16 @@
       "meaning_ja": "永遠"
     },
     {
+      "word": "azit",
+      "class": "Com.",
+      "meaning_en": "詩の想いを封じ込める",
+      "meaning_ja": "詩の想いを封じ込める",
+      "dialect": "Unknown",
+      "pron": "アジット",
+      "notes": "#5100 --x tArm azit tn='METAFALICA'　ID5100（メタファリカ）をHCからレーヴァテイルへ想いを展開します。　（２本編）",
+      "source": "hymmnogram"
+    },
+    {
       "word": "azl",
       "class": "conj.",
       "meaning_en": "～ま（の間）",
@@ -604,6 +730,16 @@
       "dialect": "Pastalie",
       "pron": "バー (baa) /baː/",
       "notes": "JP: 溢れる 溢れ出す 解放する | EN: overflow, pour out, unleash"
+    },
+    {
+      "word": "b.s.",
+      "class": "v.",
+      "meaning_en": "(unknown)",
+      "meaning_ja": "（不明）",
+      "dialect": "Unknown",
+      "pron": "",
+      "notes": "Awiaa_vamue byui ujes bOsYI dn hyung. 　訳不明　(SUBLIMATION２）",
+      "source": "hymmnogram"
     },
     {
       "word": "b.s.m.",
@@ -1016,6 +1152,16 @@
       "pron": "シェール (sheel) /ɕeːl/",
       "notes": "JP: 空、（意訳で）世界 | EN: sky, (translated usually as) world",
       "meaning_ja": "空、（意訳で）世界"
+    },
+    {
+      "word": "ciela",
+      "class": "n.",
+      "meaning_en": "星",
+      "meaning_ja": "星",
+      "dialect": "Unknown",
+      "pron": "シエラ",
+      "notes": "ar ciela（星語）より",
+      "source": "hymmnogram"
     },
     {
       "word": "ciellenne",
@@ -1554,6 +1700,14 @@
       "pron": "ディア (dia) /dia/",
       "notes": "JP: 王、王座、玉座、支配者 | EN: king, throne, ruler",
       "meaning_ja": "王、王座、玉座、支配者"
+    },
+    {
+      "word": "DIA",
+      "class": "Com.",
+      "dialect": "Central",
+      "meaning_en": "input (dialog)",
+      "pron": "ダイア (daia)",
+      "notes": "Server command; homograph of dia n. king/throne"
     },
     {
       "word": "dialssa",
@@ -2112,6 +2266,16 @@
       "meaning_ja": "永遠にこのままでいたい"
     },
     {
+      "word": "es",
+      "class": "Com.",
+      "meaning_en": "ターゲット設定",
+      "meaning_ja": "ターゲット設定",
+      "dialect": "Unknown",
+      "pron": "エス",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "ess",
       "class": "prep.",
       "meaning_en": "～で (英語のin相当)",
@@ -2226,6 +2390,16 @@
       "meaning_ja": "実行する"
     },
     {
+      "word": "extracting",
+      "class": "n.",
+      "meaning_en": "エクストラクティング",
+      "meaning_ja": "エクストラクティング",
+      "dialect": "Unknown",
+      "pron": "エクストラクティング",
+      "notes": "曲名 | 誰が紡いだのかを示すもの。エクストラクトでは同じ詩を別人が謳うことがあるので、この表記がなされる場合がある。",
+      "source": "hymmnogram"
+    },
+    {
       "word": "f.p.n.",
       "class": "E.v.",
       "meaning_en": "降りしきる",
@@ -2253,6 +2427,16 @@
       "meaning_ja": "囁く"
     },
     {
+      "word": "f.w.r",
+      "class": "v.",
+      "meaning_en": "受け入れる",
+      "meaning_ja": "受け入れる",
+      "dialect": "Pastalie",
+      "pron": "フウル",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "f.w.r.",
       "class": "E.v.",
       "meaning_en": "受け入れる",
@@ -2260,6 +2444,16 @@
       "pron": "フウル (fuur) /ɸəɯɾə/",
       "notes": "JP: 受け入れる | EN: accept | alt spelling: f.w.r",
       "meaning_ja": "受け入れる"
+    },
+    {
+      "word": "f.w.r.n",
+      "class": "v.",
+      "meaning_en": "包む",
+      "meaning_ja": "包む",
+      "dialect": "Pastalie",
+      "pron": "フウルン",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "f.w.r.n.",
@@ -2438,6 +2632,16 @@
       "notes": "Hymmnos number 4; page: Standard Hymmnos"
     },
     {
+      "word": "fehu",
+      "class": "Com.",
+      "meaning_en": "従属する",
+      "meaning_ja": "従属する",
+      "dialect": "Unknown",
+      "pron": "フェフ",
+      "notes": "通常のβの持つヒュムネコード。従属の意。　元ネタのルーン文字では家畜の牛を指す。また富の象徴でもある。実際の読みはフェイフューだったりヒューだったり | 通常のβの持つヒュムネコード。従属の意。　元ネタのルーン文字では家畜の牛を指す。また富の象徴でもある。実際の読みはフェイフューだったりヒューだったり",
+      "source": "hymmnogram"
+    },
+    {
       "word": "ferda",
       "class": "v.",
       "meaning_en": "宿る",
@@ -2565,6 +2769,14 @@
       "pron": "フリプ (flip) /ɸlip/",
       "notes": "JP: 引き替えに | EN: in exchange",
       "meaning_ja": "引き替えに"
+    },
+    {
+      "word": "FLIP",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title command (Flipsphere)",
+      "pron": "",
+      "notes": "Song title schema element"
     },
     {
       "word": "fluy",
@@ -2797,6 +3009,24 @@
       "notes": "JP: 野望 | EN: ambition"
     },
     {
+      "word": "FYUSION",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title element",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
+      "word": "g.k.n",
+      "class": "v.",
+      "meaning_en": "食べる",
+      "meaning_ja": "食べる",
+      "dialect": "Pastalie",
+      "pron": "ガッン",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "g.k.n.",
       "class": "E.v.",
       "meaning_en": "たべる 食べる 【名詞使用：食事 摂取 糧】",
@@ -2873,6 +3103,16 @@
       "dialect": "Central",
       "pron": "ガラド (galado) /galado/",
       "notes": "JP: 鳴る 響く | EN: resound, echo, reverb"
+    },
+    {
+      "word": "galido",
+      "class": "v.",
+      "meaning_en": "消滅する",
+      "meaning_ja": "消滅する",
+      "dialect": "Unknown",
+      "pron": "ガレド",
+      "notes": "en rre EL=NEMESYS galido elle dor.　エル・ネメシスは滅亡した　（烈獅皇紀）",
+      "source": "hymmnogram"
     },
     {
       "word": "gallido",
@@ -3388,6 +3628,16 @@
       "meaning_ja": "支配する"
     },
     {
+      "word": "h.k.t.t",
+      "class": "v.",
+      "meaning_en": "抱擁する",
+      "meaning_ja": "抱擁する",
+      "dialect": "Pastalie",
+      "pron": "ハクト",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "h.k.t.t.",
       "class": "E.v.",
       "meaning_en": "embrace, hug",
@@ -3411,6 +3661,16 @@
       "pron": "フムル (humur) /ɸəməɾ/",
       "notes": "JP: 謳う | EN: sing",
       "meaning_ja": "謳う"
+    },
+    {
+      "word": "h.p.p",
+      "class": "v.",
+      "meaning_en": "想う",
+      "meaning_ja": "想う",
+      "dialect": "Pastalie",
+      "pron": "フプ",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "h.p.p.",
@@ -3940,6 +4200,16 @@
       "notes": "JP: ヒュムノスフィア 珠洲ノ宮 | EN: Name of the Ar Ciel Goddess of Songs and Creation. Also known as Suzunomiya."
     },
     {
+      "word": "hymneth",
+      "class": "n.",
+      "meaning_en": "詩？",
+      "meaning_ja": "詩？",
+      "dialect": "Unknown",
+      "pron": "ヒュムネス",
+      "notes": "商品名、クルトヒュムネスから",
+      "source": "hymmnogram"
+    },
+    {
       "word": "hynne",
       "class": "n.",
       "meaning_en": "声",
@@ -3964,6 +4234,22 @@
       "pron": "フィジク (fizik) /ɸiʑik/",
       "notes": "JP: 肉体、体 | EN: body | Alpha subtype: EOLIA",
       "meaning_ja": "肉体、体"
+    },
+    {
+      "word": "i",
+      "class": "E.s.II",
+      "dialect": "Central",
+      "meaning_en": "impatient, irritated",
+      "pron": "イ (i) /i/",
+      "notes": "Central emotion sound level II"
+    },
+    {
+      "word": "i",
+      "class": "E.s.",
+      "dialect": "Pastalie",
+      "meaning_en": "pain, agony, want to escape",
+      "pron": "イ (i) /i/",
+      "notes": "Pastalie Level-1 emotion vowel; distinct from Central E.s.II i"
     },
     {
       "word": "iasien",
@@ -4034,6 +4320,14 @@
       "pron": "インプランタ (inplanta) /iɴplaɴta/",
       "notes": "JP: ヒュムノス・イムプランタ, 神の大樹, 実 | EN: Implanta (a hymn); God's Tree in the myths of Metafalss, fruit, seed",
       "meaning_ja": "ヒュムノス・イムプランタ, 神の大樹, 実"
+    },
+    {
+      "word": "includes.Ex",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title element",
+      "pron": "",
+      "notes": "Song title schema element"
     },
     {
       "word": "infel",
@@ -4121,12 +4415,42 @@
       "meaning_ja": "いる、存在する"
     },
     {
+      "word": "iwl",
+      "class": "adv.",
+      "meaning_en": "やがて～だろう",
+      "meaning_ja": "やがて～だろう",
+      "dialect": "Pastalie",
+      "pron": "イウル",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "ixa",
       "class": "n.",
       "meaning_en": "6／六",
       "dialect": "Central",
       "pron": "いくさ (ikusa) /iksa/",
       "notes": "Hymmnos number 6; page: Standard Hymmnos"
+    },
+    {
+      "word": "ixe",
+      "class": "n.",
+      "meaning_en": "6",
+      "meaning_ja": "6",
+      "dialect": "Central",
+      "pron": "イクサ",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
+      "word": "ixi",
+      "class": "Com.",
+      "meaning_en": "ここで止める",
+      "meaning_ja": "ここで止める",
+      "dialect": "Unknown",
+      "pron": "イクシ",
+      "notes": "想音の保証定義構文 | 想音の保証定義構文",
+      "source": "hymmnogram"
     },
     {
       "word": "j.d.r.",
@@ -4423,6 +4747,16 @@
       "notes": "JP: 重圧 重荷 重い | EN: heavy pressure, heavy load, heavy"
     },
     {
+      "word": "kearryier",
+      "class": "n.",
+      "meaning_en": "重圧",
+      "meaning_ja": "重圧",
+      "dialect": "Unknown",
+      "pron": "ケアリーア",
+      "notes": "Chs kearryier weareqye nun waglialre　託された想いと　（Infelious Rhaplanca.）",
+      "source": "hymmnogram"
+    },
+    {
       "word": "keen",
       "class": "v.",
       "meaning_en": "輝く",
@@ -4511,6 +4845,16 @@
       "notes": "JP: 清め炎 | EN: Purifying flames"
     },
     {
+      "word": "kieghl",
+      "class": "n.",
+      "meaning_en": "叫び",
+      "meaning_ja": "叫び",
+      "dialect": "Unknown",
+      "pron": "キーグル",
+      "notes": "wAssE kieghl 　【訳不明】　（SUBLIMATION２）",
+      "source": "hymmnogram"
+    },
+    {
       "word": "kierre",
       "class": "n.",
       "meaning_en": "刻、瞬間",
@@ -4526,6 +4870,16 @@
       "dialect": "Central",
       "pron": "キータ (kiita) /kʲiːta/",
       "notes": "JP: 想い | EN: feelings"
+    },
+    {
+      "word": "kik",
+      "class": "n.",
+      "meaning_en": "1000",
+      "meaning_ja": "1000",
+      "dialect": "Central",
+      "pron": "キク / キィ",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "kil",
@@ -4829,6 +5183,16 @@
       "pron": "ライ (lai) /lai/",
       "notes": "JP: 嘘、虚構 | EN: lie, falsehood, fabrication",
       "meaning_ja": "嘘、虚構"
+    },
+    {
+      "word": "lea",
+      "class": "n.",
+      "meaning_en": "祭",
+      "meaning_ja": "祭",
+      "dialect": "Unknown",
+      "pron": "レア",
+      "notes": "sev AVew=Lea_16 qym/:　１６歳の誕生祭の日　　（ALTERNATION）",
+      "source": "hymmnogram"
     },
     {
       "word": "leaff",
@@ -5460,6 +5824,14 @@
       "notes": "JP: 希望 | EN: hope"
     },
     {
+      "word": "METHOD",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title prefix (Infel Phira)",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
       "word": "meycray",
       "class": "v.",
       "meaning_en": "届く 届ける",
@@ -5474,6 +5846,16 @@
       "dialect": "Central",
       "pron": "みく/みぃ (miku/mii) /mik/ /miː/",
       "notes": "Hymmnos number 10000; combining form mii; page: Standard Hymmnos"
+    },
+    {
+      "word": "mik",
+      "class": "n.",
+      "meaning_en": "10000",
+      "meaning_ja": "10000",
+      "dialect": "Central",
+      "pron": "ミク / ミィ",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "milra",
@@ -5682,6 +6064,16 @@
       "pron": "ナージャ (naaja) /naːdʑa/",
       "notes": "JP: 後退する、さがる、逃げ去る、立ち去る | EN: escape, retreat, disappear, leave",
       "meaning_ja": "後退する、さがる、逃げ去る、立ち去る"
+    },
+    {
+      "word": "nanarta",
+      "class": "v.",
+      "meaning_en": "踊る",
+      "meaning_ja": "踊る",
+      "dialect": "Unknown",
+      "pron": "ナナルタ",
+      "notes": "Hymmnos Chronicle ～世界を最も愛した少女たちの詩～考案",
+      "source": "hymmnogram"
     },
     {
       "word": "nasya",
@@ -5961,6 +6353,16 @@
       "notes": "JP: 悪 ※「ygulatiaznouon」から引きされた。 | EN: Evil Note: from \"ygulatiaznouon\""
     },
     {
+      "word": "noyme",
+      "class": "v.",
+      "meaning_en": "与える？",
+      "meaning_ja": "与える？",
+      "dialect": "Unknown",
+      "pron": "ノイメ",
+      "notes": "wearequewie rre her syeary meycray en yorr noime ar fao.　この魂と引き換えに唯一つの奇跡をお与えください　（Infelious Rhaplanca）",
+      "source": "hymmnogram"
+    },
+    {
       "word": "nozess",
       "class": "v.",
       "meaning_en": "無にする、なくす",
@@ -6072,6 +6474,16 @@
       "dialect": "Pastalie",
       "pron": "お (o) /o/",
       "notes": "Level 1 Emotion Vowel (inward): rage, wrath, malice; as Subject Definer: anger/hatred; page: New Testament of Pastalie"
+    },
+    {
+      "word": "oct",
+      "class": "n.",
+      "meaning_en": "8",
+      "meaning_ja": "8",
+      "dialect": "Central",
+      "pron": "オクタ",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "octa",
@@ -6261,6 +6673,14 @@
       "pron": "オウェア (owea) /oɰea/",
       "notes": "JP: たくさんの | EN: a lot, many, much",
       "meaning_ja": "たくさんの"
+    },
+    {
+      "word": "over.",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title infix (hybrid)",
+      "pron": "",
+      "notes": "Song title schema element"
     },
     {
       "word": "oylnum",
@@ -6622,6 +7042,14 @@
       "meaning_ja": "緑（植物）"
     },
     {
+      "word": "PLUGINs",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title element",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
       "word": "poe",
       "class": "n.",
       "meaning_en": "種",
@@ -6690,6 +7118,16 @@
       "dialect": "Central",
       "pron": "ポト (poto) /poto/",
       "notes": "JP: 落ちる | EN: fall down"
+    },
+    {
+      "word": "pranta",
+      "class": "n.",
+      "meaning_en": "頂",
+      "meaning_ja": "頂",
+      "dialect": "Unknown",
+      "pron": "プランタ",
+      "notes": "Hymmnos Chronicle ～世界を最も愛した少女たちの詩～考案",
+      "source": "hymmnogram"
     },
     {
       "word": "prasrity",
@@ -6761,6 +7199,16 @@
       "pron": "ピューペ (pyuupe) /pyuːpe/",
       "notes": "JP: 涙 | EN: tear, teardrop",
       "meaning_ja": "涙"
+    },
+    {
+      "word": "pushu",
+      "class": "v.",
+      "meaning_en": "要求する",
+      "meaning_ja": "要求する",
+      "dialect": "Unknown",
+      "pron": "プシュー",
+      "notes": "Was nyasri ga werlwe na ぷしゅー(´д⊂),presia yorr weal yos crown! Was ki ga ぷしゅー！訳：さけをくれ！（むっちゃ真剣。 | みとせのりこ氏が発言。https://twitter.com/snow_blanc/status/284308460210888708",
+      "source": "hymmnogram"
     },
     {
       "word": "pyuf",
@@ -6896,6 +7344,16 @@
       "meaning_ja": "正義"
     },
     {
+      "word": "qvag",
+      "class": "",
+      "meaning_en": "災厄",
+      "meaning_ja": "災厄",
+      "dialect": "Unknown",
+      "pron": "クヴァグ",
+      "notes": "xE rre qvag mLYIr doodu　災厄が大地を灼き尽し　（GRANZERO=SPEAR）",
+      "source": "hymmnogram"
+    },
+    {
       "word": "qwitte",
       "class": "v.",
       "meaning_en": "願う",
@@ -6920,6 +7378,16 @@
       "notes": "JP: 勤め 仕事 | EN: responsibility, duty, job, work"
     },
     {
+      "word": "r.f.m",
+      "class": "v.",
+      "meaning_en": "見る",
+      "meaning_ja": "見る",
+      "dialect": "Pastalie",
+      "pron": "ルフン",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "r.f.m.",
       "class": "E.v.",
       "meaning_en": "見る",
@@ -6927,6 +7395,16 @@
       "pron": "ルフン (rufun) /rəɸəɴ/",
       "notes": "JP: 見る | EN: see, watch | alt spelling: r.f.m",
       "meaning_ja": "見る"
+    },
+    {
+      "word": "r.f.r.m",
+      "class": "v.",
+      "meaning_en": "認識する",
+      "meaning_ja": "認識する",
+      "dialect": "Pastalie",
+      "pron": "ルフルン",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "r.f.r.m.",
@@ -7170,6 +7648,16 @@
       "pron": "ラプランカ (raplanka) /raplaɴka/",
       "notes": "JP: ラプランカ | EN: a goddess from Metafalss' mythology, and Maoh's partner",
       "meaning_ja": "ラプランカ"
+    },
+    {
+      "word": "rhashe",
+      "class": "adv.",
+      "meaning_en": "発進",
+      "meaning_ja": "発進",
+      "dialect": "Central",
+      "pron": "ラッシェ",
+      "notes": "かけ声的に使用する",
+      "source": "hymmnogram"
     },
     {
       "word": "ridalnae",
@@ -7425,6 +7913,16 @@
       "dialect": "Pastalie",
       "pron": "サー (saa) /saː/",
       "notes": "JP: （手を）差し伸べる 誘う | EN: extend (a hand), invite"
+    },
+    {
+      "word": "s.l",
+      "class": "v.",
+      "meaning_en": "信じる",
+      "meaning_ja": "信じる",
+      "dialect": "Pastalie",
+      "pron": "シル",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "s.l.",
@@ -7730,6 +8228,16 @@
       "pron": "スグエラ (sguela) /sgɯela/",
       "notes": "JP: 重大な 大変な | EN: precious, important, significant",
       "meaning_ja": "大切な"
+    },
+    {
+      "word": "sh",
+      "class": "Com.",
+      "meaning_en": "定常H波",
+      "meaning_ja": "定常H波",
+      "dialect": "Unknown",
+      "pron": "エスエイチ",
+      "notes": "HALT => slepir en stel spitze spiritum SH_TILIA kierre.　SHサーバー内全導体H波は一時的にHALT　（Z） | Static Hymmno. H波はHymmno wave、D波はDetail wave",
+      "source": "hymmnogram"
     },
     {
       "word": "shaken",
@@ -8323,6 +8831,16 @@
       "meaning_ja": "止める、やめる"
     },
     {
+      "word": "t.n.m.n",
+      "class": "v.",
+      "meaning_en": "(種を)まく",
+      "meaning_ja": "(種を)まく",
+      "dialect": "Pastalie",
+      "pron": "トンムン",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "t.n.m.n.",
       "class": "E.v.",
       "meaning_en": "(種を)まく、植える",
@@ -8330,6 +8848,16 @@
       "pron": "トンムン (tonmun) /təɴməɴ/",
       "notes": "JP: (種を)まく、植える | EN: scatter (seeds), (to) plant",
       "meaning_ja": "(種を)まく、植える"
+    },
+    {
+      "word": "t.r.m",
+      "class": "v.",
+      "meaning_en": "展開する",
+      "meaning_ja": "展開する",
+      "dialect": "Pastalie",
+      "pron": "トルム",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "t.r.m.",
@@ -8453,6 +8981,16 @@
       "notes": "JP: 直後 まもなく すぐに | EN: immediately, right after"
     },
     {
+      "word": "teiwaz",
+      "class": "Com.",
+      "meaning_en": "戦神",
+      "meaning_ja": "戦神",
+      "dialect": "Unknown",
+      "pron": "テイワズ",
+      "notes": "ミュール（とオリカ）のヒュムネコード。　元ネタのルーン文字では戦いの神、テュール神を指す",
+      "source": "hymmnogram"
+    },
+    {
       "word": "tek",
       "class": "v.",
       "meaning_en": "行く",
@@ -8523,6 +9061,14 @@
       "meaning_ja": ""
     },
     {
+      "word": "tie",
+      "class": "v.",
+      "dialect": "Kurt Ciel",
+      "meaning_en": "catch, restrain",
+      "pron": "",
+      "notes": "Kurt Ciel verb; homograph of Pastalie conj. tie"
+    },
+    {
       "word": "tienar",
       "class": "adv.",
       "meaning_en": "止まらない とめどなく",
@@ -8575,6 +9121,16 @@
       "pron": "ティティリア (titilia) /titilia/",
       "notes": "JP: 小さい | EN: small, little, tiny",
       "meaning_ja": "小さい"
+    },
+    {
+      "word": "tn",
+      "class": "Com.",
+      "meaning_en": "変数",
+      "meaning_ja": "変数",
+      "dialect": "Unknown",
+      "pron": "ティーエヌ",
+      "notes": "#5100 --x tArm azit tn='METAFALICA'　ID5100（メタファリカ）をHCからレーヴァテイルへ想いを展開します。　（２本編）",
+      "source": "hymmnogram"
     },
     {
       "word": "toe",
@@ -8844,6 +9400,16 @@
       "meaning_ja": "まどろむ"
     },
     {
+      "word": "v.a",
+      "class": "v.",
+      "meaning_en": "生む",
+      "meaning_ja": "生む",
+      "dialect": "Pastalie",
+      "pron": "ヴァ",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "v.a.",
       "class": "E.v.",
       "meaning_en": "produce, craft",
@@ -8851,11 +9417,31 @@
       "pron": "ヴァ"
     },
     {
+      "word": "v.s.k",
+      "class": "v.",
+      "meaning_en": "体感する",
+      "meaning_ja": "体感する",
+      "dialect": "Pastalie",
+      "pron": "ヴィスク",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "v.s.k.",
       "class": "E.v.",
       "meaning_en": "experience, feel, sense",
       "dialect": "Pastalie",
       "pron": "ヴィスク"
+    },
+    {
+      "word": "v.t",
+      "class": "v.",
+      "meaning_en": "生きる",
+      "meaning_ja": "生きる",
+      "dialect": "Pastalie",
+      "pron": "ヴッ",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "v.t.",
@@ -8958,6 +9544,16 @@
       "dialect": "Central",
       "pron": "ヴェルソグ(velsog) /belsog/",
       "notes": "JP: 戦争 戦い | EN: war, battle"
+    },
+    {
+      "word": "vew",
+      "class": "n.",
+      "meaning_en": "誕生日",
+      "meaning_ja": "誕生日",
+      "dialect": "Unknown",
+      "pron": "ヴェウ",
+      "notes": "sev AVew=Lea_16 qym/:　１６歳の誕生祭の日　（ALTERNATION）",
+      "source": "hymmnogram"
     },
     {
       "word": "vezedo",
@@ -9099,6 +9695,16 @@
       "notes": "JP: 啓示する | EN: give a divine revelation, deliver a holy oracle"
     },
     {
+      "word": "vvi",
+      "class": "Com.",
+      "meaning_en": "ここからスタート",
+      "meaning_ja": "ここからスタート",
+      "dialect": "Unknown",
+      "pron": "ヴィヴィ",
+      "notes": "想音の保証定義構文 | 想音の保証定義構文",
+      "source": "hymmnogram"
+    },
+    {
       "word": "w.f.",
       "class": "E.v.",
       "meaning_en": "～したい",
@@ -9117,6 +9723,16 @@
       "meaning_ja": "感じる"
     },
     {
+      "word": "w.n.s",
+      "class": "v.",
+      "meaning_en": "訪れる",
+      "meaning_ja": "訪れる",
+      "dialect": "Pastalie",
+      "pron": "ウンス",
+      "notes": "",
+      "source": "hymmnogram"
+    },
+    {
       "word": "w.n.s.",
       "class": "E.v.",
       "meaning_en": "訪れる, 響く",
@@ -9132,6 +9748,16 @@
       "dialect": "Pastalie",
       "pron": "ウルグ (urugu) /ɯɾəgə/",
       "notes": "JP: ～なければならない | EN: must do, must be done"
+    },
+    {
+      "word": "w.r.l",
+      "class": "v.",
+      "meaning_en": "目指す",
+      "meaning_ja": "目指す",
+      "dialect": "Pastalie",
+      "pron": "ウルル",
+      "notes": "",
+      "source": "hymmnogram"
     },
     {
       "word": "w.r.l.",
@@ -9615,6 +10241,14 @@
       "meaning_ja": "〜である"
     },
     {
+      "word": "with.",
+      "class": "part.",
+      "dialect": "Central",
+      "meaning_en": "song title infix (hybrid)",
+      "pron": "",
+      "notes": "Song title schema element"
+    },
+    {
       "word": "wol",
       "class": "E.s.II",
       "meaning_en": "猛進、熱血（第Ⅱ想音）",
@@ -9656,6 +10290,16 @@
       "dialect": "Pastalie",
       "pron": "（ズ）ノフル ((dzu)nohul) (/zu/) /noɸul/",
       "notes": "JP: 辿る 進む 向かう | EN: head to, head for, advancing to (Note: There is a possibility the \"xU\" at the start of this word's only occurrence is a copy-paste mistake and the word is supposed to be only \"nohul\" or “x.n.h.l.”. This would make it uncertain whether it is an Emotion Verb or a simple verb, and whether it belongs to New Testament of Pastalie or another Note.) | UNCERTAIN dialect (Pastalie/Unknown per source)"
+    },
+    {
+      "word": "x.v",
+      "class": "v.",
+      "meaning_en": "壊す",
+      "meaning_ja": "壊す",
+      "dialect": "Unknown",
+      "pron": "",
+      "notes": "xLYIvO!　xLYlvO!!　訳不明　（SUBLIMATION２）",
+      "source": "hymmnogram"
     },
     {
       "word": "x.v.",
@@ -9784,6 +10428,16 @@
       "dialect": "Central",
       "pron": "ズトス (ztos) /dzətos/",
       "notes": "JP: その それ | EN: that"
+    },
+    {
+      "word": "y.g.l",
+      "class": "v.",
+      "meaning_en": "誓う",
+      "meaning_ja": "誓う",
+      "dialect": "Unknown",
+      "pron": "イグル",
+      "notes": "yAgAl/.　誓う　　（ALTERNATION）",
+      "source": "hymmnogram"
     },
     {
       "word": "y.g.l.",
@@ -10453,148 +11107,14 @@
       "meaning_ja": "否定"
     },
     {
-      "word": "tie",
-      "class": "v.",
-      "dialect": "Kurt Ciel",
-      "meaning_en": "catch, restrain",
-      "pron": "",
-      "notes": "Kurt Ciel verb; homograph of Pastalie conj. tie"
-    },
-    {
-      "word": "DIA",
-      "class": "Com.",
-      "dialect": "Central",
-      "meaning_en": "input (dialog)",
-      "pron": "ダイア (daia)",
-      "notes": "Server command; homograph of dia n. king/throne"
-    },
-    {
-      "word": "/:",
-      "class": "part.",
-      "dialect": "Pastalie",
-      "meaning_en": "quotation closer (pairs with :/)",
-      "pron": "",
-      "notes": "Closes :/ ... /: quotation"
-    },
-    {
-      "word": "i",
-      "class": "E.s.II",
-      "dialect": "Central",
-      "meaning_en": "impatient, irritated",
-      "pron": "イ (i) /i/",
-      "notes": "Central emotion sound level II"
-    },
-    {
-      "word": "i",
-      "class": "E.s.",
-      "dialect": "Pastalie",
-      "meaning_en": "pain, agony, want to escape",
-      "pron": "イ (i) /i/",
-      "notes": "Pastalie Level-1 emotion vowel; distinct from Central E.s.II i"
-    },
-    {
-      "word": "METHOD",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "song title prefix (Infel Phira)",
-      "pron": "",
-      "notes": "Song title schema element"
-    },
-    {
-      "word": "over.",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "song title infix (hybrid)",
-      "pron": "",
-      "notes": "Song title schema element"
-    },
-    {
-      "word": "with.",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "song title infix (hybrid)",
-      "pron": "",
-      "notes": "Song title schema element"
-    },
-    {
-      "word": "FLIP",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "song title command (Flipsphere)",
-      "pron": "",
-      "notes": "Song title schema element"
-    },
-    {
-      "word": "FYUSION",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "song title element",
-      "pron": "",
-      "notes": "Song title schema element"
-    },
-    {
-      "word": "PLUGINs",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "song title element",
-      "pron": "",
-      "notes": "Song title schema element"
-    },
-    {
-      "word": "includes.Ex",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "song title element",
-      "pron": "",
-      "notes": "Song title schema element"
-    },
-    {
-      "word": "0x",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "parameter/channel header (ogu)",
-      "pron": "",
-      "notes": "Used in METHOD_/EXEC_ song headers"
-    },
-    {
-      "word": "1x",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "parameter/channel header (igu)",
-      "pron": "",
-      "notes": "Used in METHOD_/EXEC_ song headers"
-    },
-    {
-      "word": "-ra",
-      "class": "part.",
-      "dialect": "Pastalie",
-      "meaning_en": "nth digit from the right (positional numeral)",
-      "pron": "ラ (ra)",
-      "notes": "e.g., noifefura noi = 1001"
-    },
-    {
-      "word": "!",
-      "class": "part.",
-      "dialect": "Pastalie",
-      "meaning_en": "sentence end (no invoke)",
-      "pron": "",
-      "notes": "Sentence terminator"
-    },
-    {
-      "word": "?",
-      "class": "part.",
-      "dialect": "Pastalie",
-      "meaning_en": "question marker (no invoke)",
-      "pron": "",
-      "notes": "Sentence terminator"
-    },
-    {
-      "word": "2x1/0",
-      "class": "part.",
-      "dialect": "Central",
-      "meaning_en": "Binasphere two-line header",
-      "pron": "ジグイオ (jiguio)",
-      "notes": "Used in EXEC hymme 2x1/0>>"
+      "word": "zzx",
+      "class": "n.",
+      "meaning_en": "(unknown)",
+      "meaning_ja": "（不明）",
+      "dialect": "Unknown",
+      "pron": "ゼクス",
+      "notes": "ゼクス・ルゥ（アルトネリコ３ラスボス名。○○の意志、と思われる）",
+      "source": "hymmnogram"
     }
   ]
 }
