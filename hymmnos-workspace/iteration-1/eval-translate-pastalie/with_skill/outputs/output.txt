@@ -1,0 +1,270 @@
+================================================================
+Hymmnos Skill — With-Skill Translation (Eval 3)
+================================================================
+
+SENTENCE TO TRANSLATE:
+  xE rre cloche cEzE hymmnos/.
+
+================================================================
+1. SENTENCE TYPE IDENTIFICATION
+================================================================
+
+This is a **Neopact Pastalie** (New Testament of Pastalie) sentence.
+
+Diagnostic evidence:
+  - It uses an **Emotion Verb** — `cEzE` — a verb whose template is `c.z.`
+    (transform / become), with its two bank slots filled by the uppercase
+    emotion vowels E and E. This is the hallmark of Pastalie grammar.
+  - It opens with `xE`, the **subject definer** `x.` carrying one bank slot
+    (here filled with vowel E), a construction that exists only in Pastalie.
+  - It contains `rre`, the subject marker, used in non-first-person Pastalie
+    sentences.
+  - It terminates with `/.`, the Pastalie sentence-end marker that both closes
+    the sentence AND invokes it (executes it as Song Magic).
+
+Because an Emotion Verb is present, this is an **Emotion Verb sentence**
+(感音句), used in METHOD_ songs on the Infel Phira server. Per the skill's
+sentence-type guidance, I loaded references/grammar-pastalie.md.
+
+================================================================
+2. WORD-BY-WORD PARSE
+================================================================
+
+Token          | Function              | Meaning
+---------------|-----------------------|-----------------------------------------
+xE             | Subject definer (x.)  | "I feel happy about the subject"
+               |                       | (x. = singer's feeling about the
+               |                       |  subject; E = joy/contentment)
+rre            | Subject marker        | Marks the following word as the
+               | (particle)            | grammatical subject (emphasized
+               |                       |  when used with a proper noun)
+cloche         | Subject (proper noun) | Cloche — a character name from
+               |                       | Ar tonelico (a Reyvateil). Not a
+               |                       | dictionary word; a proper name.
+cEzE           | Emotion Verb          | "gladly becomes / transforms into"
+               | (c.z. + E, E)         | Template c.z. = become/transform;
+               |                       | slot 1 = E (joy to self),
+               |                       | slot 2 = E (joy to self)
+hymmnos        | Object (noun, Central)| "song" (meaning_en: "song, Hymmnos";
+               |                       | meaning_jp: 詩; class: n.)
+/.             | Sentence terminator   | End of sentence + invoke as
+               |                       | Song Magic
+
+================================================================
+3. STRUCTURE
+================================================================
+
+This is a **non-first-person** Pastalie sentence. The template for such
+sentences (from grammar-pastalie.md) is:
+
+    [x.] + rre + [subject] + [Emotion Verb] + [object] + [compound]
+
+Mapped to our sentence:
+
+    xE          = [x.]              (singer's feeling about the subject)
+    rre         = rre               (subject marker)
+    cloche      = [subject]         (Cloche)
+    cEzE        = [Emotion Verb]    (gladly becomes)
+    hymmnos     = [object]          (song)
+    /.          = terminator+invoke
+
+Because the subject is a third person (Cloche, not "I"), the Emotion Verb's
+Level-1 vowels undergo **direction shifting**: the Level-1 (self) vowels in
+the verb now describe *the subject's* feelings rather than the singer's.
+So the two E vowels in cEzE express that *Cloche* feels joy — Cloche is
+glad/happy to become a song — while the E in xE separately expresses the
+*singer's* feeling (the singer is happy about Cloche becoming a song).
+
+================================================================
+4. THE EMOTION VERB CONSTRUCTION IN DETAIL
+================================================================
+
+This is the core of Pastalie grammar and deserves close analysis.
+
+4a. Template + Emotion Vowels
+-----------------------------
+Pastalie Emotion Verbs are built from two ingredients:
+
+  1. A **template word** — a lowercase verb base dotted with "bank periods"
+     (also called bank slots). Each period is a placeholder to be filled.
+     Here the template is `c.z.` (pronounced スズ / suzu), meaning
+     "transform, become". It has TWO bank slots.
+
+     Template words documented in the lexicon include:
+       h.m.m.r. (sing), c.z. (become), f.w.r.n. (embrace), d.z. (die),
+       a.u.k. (to be), v.a (craft), r.f.m (see), s.l. (believe), etc.
+
+  2. **Emotion Vowels** — uppercase vowels/letter-groups slotted into the
+     bank periods. They encode WHO is being addressed and WHAT emotion is
+     directed at them. There are three levels:
+
+       Level 1 — toward SELF (the subject, after direction shift):
+         A = power/eagerness/focus
+         I = pain / want to flee / dread
+         U = sadness / grief / worry
+         E = joy / contentment / pleasure
+         O = anger / aggression / cursing
+         N = nothing / absent-minded / relaxed
+
+       Level 2 — toward ANOTHER INDIVIDUAL:
+         YA = want to serve / thinking of you
+         YI = suffering / pain / death
+         YU = sadness / anxiety
+         YE = happiness / fortune
+         YO = anger / rage
+         YN = calmness / comfort
+
+       Level 3 — toward the WORLD / SURROUNDINGS:
+         LYA = thinking of all / want to devote myself
+         LYI = pain / destruction / ruin
+         LYU = sadness / instability
+         LYE = happiness / satisfaction / prosperity
+         LYO = strife / chaos / war
+         LYN = calmness / quietness
+
+4b. How cEzE is assembled
+-------------------------
+  Template:   c . z .          (c.z. = become, 2 bank slots)
+  Slot 1  :   E                → joy (Level 1, toward the subject)
+  Slot 2  :   E                → joy (Level 1, toward the subject)
+  Result  :   c E z E          → written "cEzE"
+
+  Reading the slots: bank slot 1 has the greatest effect/priority; lower
+  indices carry stronger emphasis. Here both slots are E, so the emotion
+  is uniform, unambiguous joy directed inward (at the acting subject).
+
+  Per the skill's worked examples:
+    c.z. + E, E  → cEzE   = "I gladly become"  (≈ "Was yea ra chs")
+    c.z. + YE,YE → cYEzYE = "You become (and I want you to be happy)"
+    c.z. + LYE,LYE → cLYEzLYE = targeting the world/situation
+
+  Our cEzE is exactly the "E, E" case — "gladly becomes".
+
+4c. Direction shifting (critical for this sentence)
+---------------------------------------------------
+In a FIRST-person sentence, Level-1 vowels describe the SINGER's own
+emotion (cEzE alone = "I am delighted to become"). But our sentence is
+non-first-person (subject = Cloche), introduced by the subject definer xE
+and rre. Pastalie grammar therefore applies **direction shifting**: the
+Level-1 vowels in the Emotion Verb are re-oriented to the SUBJECT.
+
+  Result: the two E's in cEzE now mean that **Cloche** feels joy — Cloche
+  is happy/glad to become a song. The singer's own emotion is NOT carried
+  by the verb here; it is carried separately by the xE definer (next).
+
+4d. Unused slots and minimalism
+-------------------------------
+Pastalie's design philosophy is maximum meaning in minimum words. Bank
+slots that are not needed are simply omitted from the final word. c.z. has
+only 2 slots and both are filled, so nothing is omitted. (Contrast
+h.m.m.r. with 4 slots, where `hEmmErYE` fills slots 1,3,4 and leaves slot
+2 empty, dropped silently.)
+
+4e. Why the verb alone can be a sentence
+----------------------------------------
+When the object is implied by the emotion vowels, the Emotion Verb is a
+complete sentence by itself (e.g., `fEwErYEn/.` = "I lovingly embrace
+you"). Here an explicit object `hymmnos` (song) is supplied because the
+target of the transformation is not implied by the vowels, so it must be
+stated.
+
+================================================================
+5. THE SUBJECT DEFINER (x.) IN DETAIL
+================================================================
+
+The opening token `xE` is the **subject definer** `x.`, a Pastalie-only
+particle that carries one bank slot for the singer's personal feeling
+ABOUT the subject of the sentence. Its vowel meanings are distinct from
+the Emotion Vowel levels:
+
+  A = indifferent
+  I = jealous
+  U = concerned
+  E = happy            ← our sentence
+  O = angry
+  N = opposed
+
+So `xE` = "I (the singer) feel HAPPY about the subject (Cloche)."
+
+This is separate from and in addition to the emotion encoded in the verb.
+The sentence thus carries TWO emotional layers:
+  (1) via xE — the singer is happy about Cloche;
+  (2) via cEzE — Cloche herself is glad to become a song.
+
+`rre` follows xE to mark `cloche` as the subject. The skill notes that
+subject-form pronouns may omit `rre`, but using `rre` (especially with a
+proper noun) emphasizes the subject.
+
+================================================================
+6. TRANSLATION
+================================================================
+
+Literal gloss:
+  "I-feel-happy (about the subject) [marker] Cloche gladly-becomes song [invoke]"
+
+English translation:
+  "Cloche gladly becomes a song — and I am happy that she does."
+
+Alternative renderings preserving nuance:
+  - "Cloche is delighted to be transformed into song, and that makes me happy."
+  - "Cloche joyfully turns into a song (and this brings me joy)."
+
+Chinese translation (the skill notes Japanese meanings bridge to Chinese):
+  「クローシェは喜んで詩（うた）になる——そして私はそれが嬉しい。」
+  Cloche 喜悦地化作歌曲，而我也为此感到快乐。
+
+Notes on what is and isn't translated:
+  - The emotion encoded in the vowels (joy, in both the verb and x.) is
+    rendered through word choice ("gladly", "delighted", "happy") rather
+    than a separate prefix, since English/Chinese convey emotion through
+    diction. This matches the skill's translation tip that emotion sounds
+    / vowels are usually absorbed into wording rather than translated
+    literally.
+  - `/.` performs a real function (invoking the line as Song Magic) but
+    has no English equivalent; it is reflected implicitly by the
+    declarative force of the sentence.
+  - Hymmnos has no tense; "becomes" / "will become" are both acceptable.
+    Time is implied by context.
+
+================================================================
+7. CROSS-CHECK AGAINST KNOWN EXAMPLES
+================================================================
+
+The skill's examples.md lists this exact sentence as a canonical teaching
+example:
+
+  xE rre cloche cEzE hymmnos/.
+  = Cloche is delighted to become a song (and this makes me happy)
+  (x. with E = I feel happy about the subject)
+
+Our analysis matches the documented translation exactly, confirming:
+  - xE = singer's happiness about the subject,
+  - cEzE = Cloche's own delight (via direction-shifted Level-1 E),
+  - hymmnos = song,
+  - /. = invoke.
+
+================================================================
+8. SUMMARY
+================================================================
+
+Sentence:  xE rre cloche cEzE hymmnos/.
+Type:      Neopact Pastalie (Emotion Verb sentence, 感音句)
+Structure: Non-first-person: x. + rre + subject + Emotion Verb + object + /.
+Subject:   cloche (Cloche, proper noun)
+Verb:      cEzE = c.z.(become) + E,E (joy, Level-1, direction-shifted to subject)
+Object:    hymmnos (song)
+Singer's feeling: xE = happy about Cloche (x. + E)
+Terminator: /. = end + invoke as Song Magic
+
+Translation:
+  "Cloche gladly becomes a song — and I am happy that she does."
+
+The emotion verb construction works as follows: the template c.z. ("become")
+has two bank slots; each is filled with the Level-1 emotion vowel E (joy).
+Because the sentence is non-first-person (subject = Cloche, marked by rre
+and introduced by the subject definer xE), direction shifting reorients the
+Level-1 vowels from the singer to the subject, so the two E's express that
+CLOCHE herself is joyful about becoming. The singer's own emotion is
+expressed independently and separately through xE (E = happy about the
+subject). This dual-layer emotion encoding — singer's feeling in x., actor's
+feeling in the verb — is the defining expressive power of Pastalie.

@@ -1,0 +1,70 @@
+# Hymmnos Composition: "I am lonely and want to sing to the world"
+
+## Composed Sentence
+
+f.w.l. Was yea ra hyma Ciel en
+
+## Word-by-Word Breakdown
+
+### Clause 1: "I am lonely"
+
+**f.w.l.**
+- Type: Emotion sound (想音, first-person feeling prefix)
+- Meaning: "I feel a deep sense of loneliness" / "I am lonely"
+- Explanation: In Standard Hymmnos, emotion sounds (想音) are prefixed to clauses and always express the speaker's (first-person) emotional state. "f.w.l." is a compound emotion sound indicating profound loneliness, longing, and sadness. The periods indicate this is a multi-part abbreviation encoding a complex emotional state. In Standard Hymmnos grammar, an emotion sound standing at the head of a clause constitutes a complete statement of feeling — the feeling itself is the predication, since these sounds are inherently first-person. Thus "f.w.l." alone conveys "I am lonely."
+- Confidence: High
+
+### Clause 2: "I want to sing to the world"
+
+**Was**
+- Type: Emotion sound — Position 1 (the emotion itself)
+- Meaning: "I want to" / "I desire to"
+- Explanation: "Was" is the emotion sound indicating desire or wanting. It occupies the first slot of the three-part emotion sound structure that prefixes the verb in the second clause. This shifts the emotional framing from loneliness (clause 1) to desire (clause 2).
+- Confidence: High
+
+**yea**
+- Type: Emotion sound — Position 2 (intensity/degree modifier)
+- Meaning: "very much" / "strongly"
+- Explanation: The second position in a Hymmnos emotion sound modifies the intensity of the emotion. "yea" intensifies "Was" to express a strong, heartfelt desire — "I very much want to." This amplifies the emotional weight of the wish to sing.
+- Confidence: High
+
+**ra**
+- Type: Emotion sound — Position 3 (tense marker)
+- Meaning: present tense ("now")
+- Explanation: The third position marks tense. "ra" indicates the present tense, grounding the desire in the current moment — "I want to sing right now." Combined, "Was yea ra" = "I strongly want to [do X] now."
+- Confidence: High
+
+**hyma**
+- Type: Verb
+- Meaning: "to sing"
+- Explanation: This is the main verb of the second clause, meaning "to sing." I chose this word based on its etymological connection to "Hymmnos" — the name of the language itself derives from the concept of hymn/song, and "hyma" follows the pattern of a verb form derived from that root. In the Ar tonelico universe, singing is the central act through which Hymmnos is expressed, making this the natural verb choice.
+- Confidence: Medium — I am reasonably confident this is the correct or a plausible verb form for "to sing," though alternative forms like "hymme" or "chyet" may also exist in the lexicon.
+
+**Ciel**
+- Type: Noun (proper/common)
+- Meaning: "world" / "planet"
+- Explanation: I chose "Ciel" for "world" based on "Ar Ciel," which is the in-universe name of the planet/world in the Ar tonelico series. "Ar" functions as a divine/singular prefix (as seen in "Ar tonelico" = the divine tower), so "Ciel" alone should carry the core meaning of "world" or "planet." This is the object/destination of the singing.
+- Confidence: Medium — "Ciel" is clearly associated with the concept of "world" in the lore, though I am uncertain whether it functions as a standalone common noun in Hymmnos grammar or whether it strictly requires the "Ar" prefix.
+
+**en**
+- Type: Particle / preposition
+- Meaning: "to" / "towards"
+- Explanation: I placed this particle after "Ciel" to mark it as the destination/direction of the singing — "to the world." In Hymmnos, I believe directional or dative markers follow the noun they modify. This transforms "Ciel" from a simple object into a directional/destination phrase.
+- Confidence: Low — I am not certain "en" is the correct directional particle in Hymmnos. It may be that Hymmnos uses a different particle (such as "wol" or another marker), or that direction is expressed through word order or a different grammatical construction entirely. This is the weakest element of my composition.
+
+## Grammar Notes
+
+1. **Emotion Sound Structure:** Standard Hymmnos sentences begin with emotion sounds (想音). Each emotion sound has up to three positions: (1) the emotion, (2) the intensity, and (3) the tense. The first clause uses "f.w.l." (loneliness) as a standalone feeling statement, while the second clause uses the full three-part "Was yea ra" (want + very + present) to modify the verb "hyma."
+
+2. **First-Person Implicit Subject:** Hymmnos emotion sounds are inherently first-person — they always describe the speaker's feelings. Therefore, no explicit pronoun for "I" is needed; it is built into the grammar of the emotion sound system.
+
+3. **Clause Joining:** The two clauses are placed side by side without an explicit conjunction. I am uncertain whether Hymmnos requires a specific conjunction word for "and" between clauses, or whether juxtaposition is grammatically acceptable. In many Hymmnos song lyrics, clauses with different emotion sounds appear sequentially, suggesting juxtaposition is a valid construction.
+
+4. **Word Order:** The second clause follows the pattern [Emotion Sound] + [Verb] + [Object/Direction], which I believe is the standard word order in Hymmnos: the emotion sound prefixes the verb, and objects/complements follow.
+
+## Honest Confidence Assessment
+
+- **High confidence:** The emotion sound system (f.w.l., Was, yea, ra) and its three-position structure. This is the most distinctive and well-documented feature of Hymmnos grammar.
+- **Medium confidence:** "hyma" (to sing) and "Ciel" (world) — both are grounded in etymology and in-universe lore, but I cannot verify exact lexical forms without reference materials.
+- **Low confidence:** "en" (to/towards) — the directional particle is my weakest choice and may be incorrect.
+- **Uncertain:** Whether explicit conjunctions are needed between clauses, and whether "f.w.l." can stand alone without a verb to express "I am lonely."

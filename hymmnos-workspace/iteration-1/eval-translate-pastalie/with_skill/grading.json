@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "Translation includes Cloche as the subject",
+      "passed": true,
+      "evidence": "'Cloche gladly becomes a song' \u2014 Cloche correctly identified as subject"
+    },
+    {
+      "text": "Correctly explains x. as subject definer",
+      "passed": true,
+      "evidence": "Explained x. as Pastalie subject definer with bank slot for singer's emotion"
+    },
+    {
+      "text": "Correctly explains E as joy/happiness emotion vowel",
+      "passed": true,
+      "evidence": "E = joy/happiness, Level 1 emotion vowel"
+    },
+    {
+      "text": "Correctly explains c.z. as become/transform template",
+      "passed": true,
+      "evidence": "c.z. = transform/become, 2 bank slots, filled with E"
+    },
+    {
+      "text": "Correctly explains /. as invoke terminator",
+      "passed": true,
+      "evidence": "/. = sentence end + invoke"
+    }
+  ]
+}

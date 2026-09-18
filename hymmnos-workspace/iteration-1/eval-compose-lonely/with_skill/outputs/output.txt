@@ -1,0 +1,70 @@
+# Composition: "I am lonely and want to sing to the world"
+
+## Composed Hymmnos Sentence
+
+**Wee jyel ra hymme tes ar ciel**
+
+Pronunciation: Wee jail rah him-meh tes ar see-el
+
+English translation: "I am lonely, and I want to sing to the world."
+
+Dialect: Central Standard Note (Emotion Sound sentence, self-type / first-person)
+
+---
+
+## Sentence Type
+
+This is an **Emotion Sound sentence** (想音句) in Standard Hymmnos (Central Standard Note) — the most common sentence type, used in EXEC_ songs. It follows the self-type (first-person) structure in which the subject "I" is implicit and omitted:
+
+```
+[Emotion Sound] + [verb] + [compound]
+```
+
+The three-word Emotion Sound prefix encodes the speaker's emotional state and is what allows the sentence to be processed by a Tower as Song Magic.
+
+---
+
+## Word-by-Word Breakdown
+
+| # | Word | Pronunciation | Part of Speech | Meaning | Role in Sentence |
+|---|------|---------------|----------------|---------|------------------|
+| 1 | Wee | like "whee" | Emotion Sound I (intensity) | fairly, quite | Sets the degree of the emotion — a genuine, felt (but not overwhelming) loneliness. Chosen over *Was* (very intensely) because "I am lonely" is a reflective, melancholic state rather than a consuming one, and over *Fou* (a little) because the feeling is real and present, not slight. |
+| 2 | jyel | "jail" | Emotion Sound II (emotion type) | lonely | The heart of the sentence. This single word carries the entire meaning "I am lonely," since the Emotion Sound is always first-person ("I"). It colors the whole action of singing with loneliness. |
+| 3 | ra | "raw" | Emotion Sound III (desirability) | I want this to continue (default) | Encodes the "want to" component. In Hymmnos the desirability word expresses the speaker's stance toward the emotional action continuing — *ra* (want it to continue) translates naturally as "I want to [do this]." This is the same mechanism by which *Was yea ra* reads as "I am delighted to…" in the canonical sentence. |
+| 4 | hymme | him-meh | verb (v.) | sing, play, resonate | The action. Chosen over *sonwe* (sing, Ancient Metafalss dialect) because *hymme* is the Central-dialect verb for singing/resonating and pairs cleanly with the Central Standard Emotion Sound. *hymme* also carries the nuance of resonating — fitting for singing out to the world. |
+| 5 | tes | tes | preposition | to (destination) | Marks the destination of the singing. Prepositional phrases attach after the verb (and any direct object) following the pattern verb + [preposition + destination]. |
+| 6 | ar | ar | adjective | only, unique | Modifies *ciel*; together *ar ciel* = "the (one/this) world." This is the same construction seen in the real example *Was yea erra melenas tes ar ciel* = "I will be eternally glad to give my love to this world." The word *ar* (only/unique) lends *ciel* a demonstrative force — "this world, the one world." |
+| 7 | ciel | see-el | noun (n.) | sky, world | The destination — the world the speaker wants to sing to. |
+
+---
+
+## Grammar Notes
+
+- **First-person (self-type):** No explicit subject pronoun is needed. The Emotion Sound is inherently first-person ("I"), so the subject is implicit. Adding *mea* (I/me) is optional and would be redundant emphasis; the canonical teaching sentence *Was yea ra chs hymmnos mea* includes *mea* only as the object ("myself"), not as subject.
+- **No tense:** Hymmnos has no tense markers. Time is implied by context. Here the present feeling of loneliness plus the desire to sing is conveyed entirely by the Emotion Sound.
+- **No plural marker:** *ciel* is number-neutral, but as "world" it is inherently singular in sense.
+- **Prepositional phrase order:** The destination phrase *tes ar ciel* follows the verb directly, per the rule "Prepositional phrases attach after the verb and its direct object, following the pattern: verb + object + [preposition + destination]." Here there is no direct object, so the phrase follows the verb immediately.
+- **Emotion encoding carries double duty:** The phrase "I am lonely AND want to sing" maps elegantly onto Hymmnos grammar because the Emotion Sound simultaneously states the emotion (*jyel* = lonely → "I am lonely") and the volitional stance (*ra* = want to continue → "want to"). The verb then supplies the action ("sing") and the prepositional phrase supplies the recipient ("to the world").
+
+---
+
+## How the Meaning Maps
+
+| English clause | Hymmnos encoding |
+|----------------|------------------|
+| "I am lonely"  | *Wee jyel* — the Emotion Sound's intensity + emotion type. The first-person "I" is implicit in every Emotion Sound. |
+| "want to"      | *ra* — the desirability word meaning "I want this to continue." |
+| "sing"         | *hymme* — verb, "sing / resonate." |
+| "to the world" | *tes ar ciel* — preposition *tes* (to) + *ar ciel* (the/this world). |
+
+---
+
+## Cross-Check Against Real Examples
+
+The construction mirrors attested Hymmnos sentences:
+
+- *Was yea erra melenas tes ar ciel* = "I will be eternally glad to give my love to this world" — confirms *tes ar ciel* = "to the world."
+- *Was yea ra chs hymmnos mea* = "I am delighted to express myself through song" — confirms the self-type [ES] + verb + compound structure and that *ra* conveys the volitional "to / want to" gloss.
+- *Was yea ra sonwe mea hymmnos mea* = "I will be glad to sing my song to myself" — confirms *sonwe/hymme* as the singing verb in this exact template.
+
+This gives confidence that *Wee jyel ra hymme tes ar ciel* is grammatical Standard Hymmnos and faithfully renders "I am lonely and want to sing to the world."

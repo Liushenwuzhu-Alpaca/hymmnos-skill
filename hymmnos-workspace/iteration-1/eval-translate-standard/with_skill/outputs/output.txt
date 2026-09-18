@@ -1,0 +1,143 @@
+================================================================================
+HYMMNOS TRANSLATION — "Was yea ra chs hymmnos mea"
+================================================================================
+
+SENTENCE: Was yea ra chs hymmnos mea
+
+SENTENCE TYPE: Emotion Sound sentence (想音句) — Standard Hymmnos (Central
+Standard Note), First-Person Self-type. This is the most common sentence type
+(~80% of all Hymmnos text), used in EXEC_ songs.
+
+STRUCTURE: [Emotion Sound] + [verb] + [object] + [compound]
+            [Was yea ra]  + [chs]  + [hymmnos] + [mea]
+
+The subject "I" is implicit and omitted in self-type sentences (Hymmnos nouns
+have no tense or plural marker; the speaker is always "I" when an Emotion Sound
+is present).
+
+================================================================================
+WORD-BY-WORD BREAKDOWN
+================================================================================
+
+--- EMOTION SOUND PREFIX (想音) ---
+The three-word prefix encodes the SPEAKER's emotional state. It is always
+first-person ("I") and is required for Tower processing (Song Magic).
+
+1. Was
+   - Role: First word — Intensity (强度)
+   - Pronunciation: rhymes with "sauce"
+   - Meaning: "very intensely"
+   - Notes: Second-highest intensity level, below Rrha (trance-like, consumed
+     with). Indicates the speaker feels the emotion with strong force.
+
+2. yea
+   - Role: Second word — Emotion Type (感情类型)
+   - Pronunciation: like "yeah"
+   - Meaning: "happy"
+   - Dialect: Central
+   - Notes: The core emotion of the sentence — happiness/delight.
+
+3. ra
+   - Role: Third word — Desirability (愿望/持续性)
+   - Pronunciation: like "raw"
+   - Meaning: "I want this to continue" (default)
+   - Notes: The most common desirability word. Due to overuse, "ra" is
+     near-meaningless and usually safe to ignore in translation; it conveys
+     "let this feeling/state continue."
+
+   → COMBINED EMOTION SOUND: "Was yea ra" =
+     "I feel very intensely happy, and I want this feeling to continue."
+     (Concisely: "I am very happy" / "delighted")
+
+--- VERB ---
+
+4. chs
+   - Role: Verb
+   - Pronunciation: —
+   - Meaning: "become" / "turn into" / "transform into"
+   - Word class: verb (v.)
+   - Dialect: Central
+   - Notes: The main verb of the sentence. In self-type structure the verb
+     follows the Emotion Sound directly.
+
+--- OBJECT ---
+
+5. hymmnos
+   - Role: Noun (direct object)
+   - Pronunciation: —
+   - Meaning: "song" (more specifically, a Hymmnos — a song of emotion/Song
+     Magic; also the name of the language itself)
+   - Word class: noun (n.)
+   - Notes: The thing the speaker is becoming. "hymmnos" carries the nuance of
+     a song that expresses emotion or invokes Tower magic, beyond a mere "sarla"
+     (ordinary song).
+
+--- COMPOUND ---
+
+6. mea
+   - Role: Pronoun (first person)
+   - Pronunciation: —
+   - Meaning: "I" / "me"
+   - Word class: pronoun (pro.)
+   - Notes: The object form of the first-person pronoun (mea serves as both
+     object "me" and subject "I" — Hymmnos has no true distinct subject form for
+     the first person). Here it appears in the compound slot after the object,
+     functioning as a possessive/identity marker via juxtaposition:
+     "hymmnos mea" = "my song" / "the song that is me."
+
+================================================================================
+PARSING SUMMARY
+================================================================================
+
+[Was yea ra]  = Emotion Sound: "Very intensely happy, wanting it to continue"
+[chs]         = Verb: "become / turn into"
+[hymmnos]     = Noun (object): "song (of emotion / Song Magic)"
+[mea]         = Pronoun (compound): "me / my"
+
+Literal gloss:
+  [INTENSITY: very] [EMOTION: happy] [DESIRABILITY: continue]
+  [become] [song] [me/my]
+  = "I, very happily wanting this to continue, become [my] song."
+
+================================================================================
+TRANSLATION
+================================================================================
+
+ENGLISH:
+  I am delighted to become a song (to express myself through song).
+  / I happily turn myself into song.
+
+  (More fully, accounting for the emotion encoding:)
+  "I feel very intensely happy — and I want this to continue — to become a song
+   that is myself." / "I am delighted to express myself through song."
+
+CHINESE:
+  我非常快乐地化为一首歌（通过歌声来表达自我）。
+
+  (完整译法，含情感编码:)
+  "我怀着强烈且希望延续的喜悦，将自己化为一首属于我的歌。"
+  / "我满心欢喜地化作歌声，以此表达自我。"
+
+================================================================================
+NOTES
+================================================================================
+
+1. This sentence is the canonical example of a Standard Hymmnos Emotion Sound
+   sentence, cited directly in the grammar reference
+   (grammar-standard.md, line 67):
+     "Was yea ra chs hymmnos mea = I am delighted to express myself through song"
+
+2. The Emotion Sound is often omitted in the surface translation because
+   English and Chinese convey emotion through word choice ("delighted" /
+   "满心欢喜") rather than a separate grammatical prefix.
+
+3. The "ra" desirability word is near-meaningless due to overuse and is usually
+   safe to ignore in translation.
+
+4. No tenses exist in Hymmnos; "become" can read as "am becoming" or "will
+   become" depending on context. The example gloss uses the present/ongoing
+   sense.
+
+5. "hymmnos mea" uses juxtapositional possession (common in Hymmnos): placing
+   the pronoun after the noun marks it as "my" / belonging to me. So "hymmnos
+   mea" = "my song" / "the song that is me."

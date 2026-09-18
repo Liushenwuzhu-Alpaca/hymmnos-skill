@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "Uses jyel (lonely) as emotion sound",
+      "passed": true,
+      "evidence": "Used 'Wee jyel ra' \u2014 jyel correctly identified as 'lonely'"
+    },
+    {
+      "text": "Uses sonwe or hymme (sing) as verb",
+      "passed": true,
+      "evidence": "Used 'hymme' (sing/play/resonate)"
+    },
+    {
+      "text": "Uses ciel or sphaela (world) as object",
+      "passed": true,
+      "evidence": "Used 'tes ar ciel' \u2014 ciel=world"
+    },
+    {
+      "text": "Sentence starts with valid 3-word emotion sound structure",
+      "passed": true,
+      "evidence": "'Wee jyel ra' = intensity + emotion + desirability"
+    },
+    {
+      "text": "Provides word-by-word breakdown with grammar explanation",
+      "passed": true,
+      "evidence": "Full breakdown with grammar notes, cross-check with attested examples"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{"eval_id": 1, "eval_name": "translate-standard", "prompt": "Translate this Hymmnos sentence to English and Chinese: Was yea ra chs hymmnos mea", "assertions": [
+  {"text": "Translation includes the meaning of 'song' or 'poem' (诗)"}
+, {"text": "Correctly identifies Was=very, yea=happy, ra=continue"}
+, {"text": "Correctly translates chs=become"}
+, {"text": "Translation is first-person (I/我)"}
+, {"text": "Provides word-by-word breakdown"}
+]}

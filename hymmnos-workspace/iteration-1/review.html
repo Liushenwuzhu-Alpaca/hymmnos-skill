@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eval Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --surface: #ffffff;
+      --border: #e8e6dc;
+      --text: #141413;
+      --text-muted: #b0aea5;
+      --accent: #d97757;
+      --accent-hover: #c4613f;
+      --green: #788c5d;
+      --green-bg: #eef2e8;
+      --red: #c44;
+      --red-bg: #fceaea;
+      --header-bg: #141413;
+      --header-text: #faf9f5;
+      --radius: 6px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- Header ---- */
+    .header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .header .instructions {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 0.25rem;
+    }
+    .header .progress {
+      font-size: 0.875rem;
+      opacity: 0.8;
+      text-align: right;
+    }
+
+    /* ---- Main content ---- */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      flex-shrink: 0;
+    }
+    .section-header {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .section-body {
+      padding: 1rem;
+    }
+
+    /* ---- Config badge ---- */
+    .config-badge {
+      display: inline-block;
+      padding: 0.2rem 0.625rem;
+      border-radius: 9999px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
+    .config-badge.config-primary {
+      background: rgba(33, 150, 243, 0.12);
+      color: #1976d2;
+    }
+    .config-badge.config-baseline {
+      background: rgba(255, 193, 7, 0.15);
+      color: #f57f17;
+    }
+
+    /* ---- Prompt ---- */
+    .prompt-text {
+      white-space: pre-wrap;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    /* ---- Outputs ---- */
+    .output-file {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .output-file + .output-file {
+      margin-top: 1rem;
+    }
+    .output-file-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .output-file-header .dl-btn {
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-decoration: none;
+      cursor: pointer;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+    .output-file-header .dl-btn:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .output-file-content {
+      padding: 0.75rem;
+      overflow-x: auto;
+    }
+    .output-file-content pre {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    }
+    .output-file-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .output-file-content iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .output-file-content table {
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      width: 100%;
+    }
+    .output-file-content table td,
+    .output-file-content table th {
+      border: 1px solid var(--border);
+      padding: 0.375rem 0.5rem;
+      text-align: left;
+    }
+    .output-file-content table th {
+      background: var(--bg);
+      font-weight: 600;
+    }
+    .output-file-content .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    .output-file-content .download-link:hover {
+      background: var(--border);
+    }
+    .empty-state {
+      color: var(--text-muted);
+      font-style: italic;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* ---- Feedback ---- */
+    .prev-feedback {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.625rem 0.75rem;
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .prev-feedback-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
+      color: var(--text-muted);
+    }
+    .feedback-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      resize: vertical;
+      color: var(--text);
+    }
+    .feedback-textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    .feedback-status {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      min-height: 1.1em;
+    }
+
+    /* ---- Grades (collapsible) ---- */
+    .grades-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .grades-toggle:hover {
+      color: var(--accent);
+    }
+    .grades-toggle .arrow {
+      margin-right: 0.5rem;
+      transition: transform 0.15s;
+      font-size: 0.75rem;
+    }
+    .grades-toggle .arrow.open {
+      transform: rotate(90deg);
+    }
+    .grades-content {
+      display: none;
+      margin-top: 0.75rem;
+    }
+    .grades-content.open {
+      display: block;
+    }
+    .grades-summary {
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .grade-badge {
+      display: inline-block;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .grade-pass { background: var(--green-bg); color: var(--green); }
+    .grade-fail { background: var(--red-bg); color: var(--red); }
+    .assertion-list {
+      list-style: none;
+    }
+    .assertion-item {
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8125rem;
+    }
+    .assertion-item:last-child { border-bottom: none; }
+    .assertion-status {
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .assertion-status.pass { color: var(--green); }
+    .assertion-status.fail { color: var(--red); }
+    .assertion-evidence {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      padding-left: 1.5rem;
+    }
+
+    /* ---- View tabs ---- */
+    .view-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 2rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .view-tab {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .view-tab:hover { color: var(--text); }
+    .view-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .view-panel { display: none; }
+    .view-panel.active { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+
+    /* ---- Benchmark view ---- */
+    .benchmark-view {
+      padding: 1.5rem 2rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .benchmark-table {
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.8125rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .benchmark-table th, .benchmark-table td {
+      padding: 0.625rem 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .benchmark-table th {
+      font-family: 'Poppins', sans-serif;
+      background: var(--header-bg);
+      color: var(--header-text);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .benchmark-table tr:hover { background: var(--bg); }
+    .benchmark-table tr.benchmark-row-with { background: rgba(33, 150, 243, 0.06); }
+    .benchmark-table tr.benchmark-row-without { background: rgba(255, 193, 7, 0.06); }
+    .benchmark-table tr.benchmark-row-with:hover { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-without:hover { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-table tr.benchmark-row-avg { font-weight: 600; border-top: 2px solid var(--border); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-with { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-without { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-delta-positive { color: var(--green); font-weight: 600; }
+    .benchmark-delta-negative { color: var(--red); font-weight: 600; }
+    .benchmark-notes {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+    .benchmark-notes h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+    .benchmark-notes ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+    }
+    .benchmark-notes li {
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-bottom: 0.375rem;
+    }
+    .benchmark-empty {
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    /* ---- Navigation ---- */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.15s;
+    }
+    .nav-btn:hover:not(:disabled) {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .done-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .done-btn:hover {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .done-btn.ready {
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+    .done-btn.ready:hover {
+      background: var(--accent-hover);
+    }
+    /* ---- Done overlay ---- */
+    .done-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+    }
+    .done-overlay.visible {
+      display: flex;
+    }
+    .done-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+    }
+    .done-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .done-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .done-card .btn-row {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .done-card button {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .done-card button:hover {
+      background: var(--bg);
+    }
+    /* ---- Toast ---- */
+    .toast {
+      position: fixed;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 0.625rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 200;
+    }
+    .toast.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="height:100vh; display:flex; flex-direction:column;">
+    <div class="header">
+      <div>
+        <h1>Eval Review: <span id="skill-name"></span></h1>
+        <div class="instructions">Review each output and leave feedback below. Navigate with arrow keys or buttons. When done, copy feedback and paste into Claude Code.</div>
+      </div>
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- View tabs (only shown when benchmark data exists) -->
+    <div class="view-tabs" id="view-tabs" style="display:none;">
+      <button class="view-tab active" onclick="switchView('outputs')">Outputs</button>
+      <button class="view-tab" onclick="switchView('benchmark')">Benchmark</button>
+    </div>
+
+    <!-- Outputs panel (qualitative review) -->
+    <div class="view-panel active" id="panel-outputs">
+    <div class="main">
+      <!-- Prompt -->
+      <div class="section">
+        <div class="section-header">Prompt <span class="config-badge" id="config-badge" style="display:none;"></span></div>
+        <div class="section-body">
+          <div class="prompt-text" id="prompt-text"></div>
+        </div>
+      </div>
+
+      <!-- Outputs -->
+      <div class="section">
+        <div class="section-header">Output</div>
+        <div class="section-body" id="outputs-body">
+          <div class="empty-state">No output files found</div>
+        </div>
+      </div>
+
+      <!-- Previous Output (collapsible) -->
+      <div class="section" id="prev-outputs-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="togglePrevOutputs()">
+            <span class="arrow" id="prev-outputs-arrow">&#9654;</span>
+            Previous Output
+          </div>
+        </div>
+        <div class="grades-content" id="prev-outputs-content"></div>
+      </div>
+
+      <!-- Grades (collapsible) -->
+      <div class="section" id="grades-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="toggleGrades()">
+            <span class="arrow" id="grades-arrow">&#9654;</span>
+            Formal Grades
+          </div>
+        </div>
+        <div class="grades-content" id="grades-content"></div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="section">
+        <div class="section-header">Your Feedback</div>
+        <div class="section-body">
+          <textarea
+            class="feedback-textarea"
+            id="feedback"
+            placeholder="What do you think of this output? Any issues, suggestions, or things that look great?"
+          ></textarea>
+          <div class="feedback-status" id="feedback-status"></div>
+          <div class="prev-feedback" id="prev-feedback" style="display:none;">
+            <div class="prev-feedback-label">Previous feedback</div>
+            <div id="prev-feedback-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="outputs-nav">
+      <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">&#8592; Previous</button>
+      <button class="done-btn" id="done-btn" onclick="showDoneDialog()">Submit All Reviews</button>
+      <button class="nav-btn" id="next-btn" onclick="navigate(1)">Next &#8594;</button>
+    </div>
+    </div><!-- end panel-outputs -->
+
+    <!-- Benchmark panel (quantitative stats) -->
+    <div class="view-panel" id="panel-benchmark">
+      <div class="benchmark-view" id="benchmark-content">
+        <div class="benchmark-empty">No benchmark data available. Run a benchmark to see quantitative results here.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Done overlay -->
+  <div class="done-overlay" id="done-overlay">
+    <div class="done-card">
+      <h2>Review Complete</h2>
+      <p>Your feedback has been saved. Go back to your Claude Code session and tell Claude you're done reviewing.</p>
+      <div class="btn-row">
+        <button onclick="closeDoneDialog()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ---- Embedded data (injected by generate_review.py) ----
+    const EMBEDDED_DATA = {"skill_name": "hymmnos", "runs": [{"id": "eval-translate-standard-with_skill", "prompt": "Translate this Hymmnos sentence to English and Chinese: Was yea ra chs hymmnos mea", "eval_id": 1, "outputs": [{"name": "output.txt", "type": "text", "content": "================================================================================\nHYMMNOS TRANSLATION \u2014 \"Was yea ra chs hymmnos mea\"\n================================================================================\n\nSENTENCE: Was yea ra chs hymmnos mea\n\nSENTENCE TYPE: Emotion Sound sentence (\u60f3\u97f3\u53e5) \u2014 Standard Hymmnos (Central\nStandard Note), First-Person Self-type. This is the most common sentence type\n(~80% of all Hymmnos text), used in EXEC_ songs.\n\nSTRUCTURE: [Emotion Sound] + [verb] + [object] + [compound]\n            [Was yea ra]  + [chs]  + [hymmnos] + [mea]\n\nThe subject \"I\" is implicit and omitted in self-type sentences (Hymmnos nouns\nhave no tense or plural marker; the speaker is always \"I\" when an Emotion Sound\nis present).\n\n================================================================================\nWORD-BY-WORD BREAKDOWN\n================================================================================\n\n--- EMOTION SOUND PREFIX (\u60f3\u97f3) ---\nThe three-word prefix encodes the SPEAKER's emotional state. It is always\nfirst-person (\"I\") and is required for Tower processing (Song Magic).\n\n1. Was\n   - Role: First word \u2014 Intensity (\u5f3a\u5ea6)\n   - Pronunciation: rhymes with \"sauce\"\n   - Meaning: \"very intensely\"\n   - Notes: Second-highest intensity level, below Rrha (trance-like, consumed\n     with). Indicates the speaker feels the emotion with strong force.\n\n2. yea\n   - Role: Second word \u2014 Emotion Type (\u611f\u60c5\u7c7b\u578b)\n   - Pronunciation: like \"yeah\"\n   - Meaning: \"happy\"\n   - Dialect: Central\n   - Notes: The core emotion of the sentence \u2014 happiness/delight.\n\n3. ra\n   - Role: Third word \u2014 Desirability (\u613f\u671b/\u6301\u7eed\u6027)\n   - Pronunciation: like \"raw\"\n   - Meaning: \"I want this to continue\" (default)\n   - Notes: The most common desirability word. Due to overuse, \"ra\" is\n     near-meaningless and usually safe to ignore in translation; it conveys\n     \"let this feeling/state continue.\"\n\n   \u2192 COMBINED EMOTION SOUND: \"Was yea ra\" =\n     \"I feel very intensely happy, and I want this feeling to continue.\"\n     (Concisely: \"I am very happy\" / \"delighted\")\n\n--- VERB ---\n\n4. chs\n   - Role: Verb\n   - Pronunciation: \u2014\n   - Meaning: \"become\" / \"turn into\" / \"transform into\"\n   - Word class: verb (v.)\n   - Dialect: Central\n   - Notes: The main verb of the sentence. In self-type structure the verb\n     follows the Emotion Sound directly.\n\n--- OBJECT ---\n\n5. hymmnos\n   - Role: Noun (direct object)\n   - Pronunciation: \u2014\n   - Meaning: \"song\" (more specifically, a Hymmnos \u2014 a song of emotion/Song\n     Magic; also the name of the language itself)\n   - Word class: noun (n.)\n   - Notes: The thing the speaker is becoming. \"hymmnos\" carries the nuance of\n     a song that expresses emotion or invokes Tower magic, beyond a mere \"sarla\"\n     (ordinary song).\n\n--- COMPOUND ---\n\n6. mea\n   - Role: Pronoun (first person)\n   - Pronunciation: \u2014\n   - Meaning: \"I\" / \"me\"\n   - Word class: pronoun (pro.)\n   - Notes: The object form of the first-person pronoun (mea serves as both\n     object \"me\" and subject \"I\" \u2014 Hymmnos has no true distinct subject form for\n     the first person). Here it appears in the compound slot after the object,\n     functioning as a possessive/identity marker via juxtaposition:\n     \"hymmnos mea\" = \"my song\" / \"the song that is me.\"\n\n================================================================================\nPARSING SUMMARY\n================================================================================\n\n[Was yea ra]  = Emotion Sound: \"Very intensely happy, wanting it to continue\"\n[chs]         = Verb: \"become / turn into\"\n[hymmnos]     = Noun (object): \"song (of emotion / Song Magic)\"\n[mea]         = Pronoun (compound): \"me / my\"\n\nLiteral gloss:\n  [INTENSITY: very] [EMOTION: happy] [DESIRABILITY: continue]\n  [become] [song] [me/my]\n  = \"I, very happily wanting this to continue, become [my] song.\"\n\n================================================================================\nTRANSLATION\n================================================================================\n\nENGLISH:\n  I am delighted to become a song (to express myself through song).\n  / I happily turn myself into song.\n\n  (More fully, accounting for the emotion encoding:)\n  \"I feel very intensely happy \u2014 and I want this to continue \u2014 to become a song\n   that is myself.\" / \"I am delighted to express myself through song.\"\n\nCHINESE:\n  \u6211\u975e\u5e38\u5feb\u4e50\u5730\u5316\u4e3a\u4e00\u9996\u6b4c\uff08\u901a\u8fc7\u6b4c\u58f0\u6765\u8868\u8fbe\u81ea\u6211\uff09\u3002\n\n  (\u5b8c\u6574\u8bd1\u6cd5\uff0c\u542b\u60c5\u611f\u7f16\u7801:)\n  \"\u6211\u6000\u7740\u5f3a\u70c8\u4e14\u5e0c\u671b\u5ef6\u7eed\u7684\u559c\u60a6\uff0c\u5c06\u81ea\u5df1\u5316\u4e3a\u4e00\u9996\u5c5e\u4e8e\u6211\u7684\u6b4c\u3002\"\n  / \"\u6211\u6ee1\u5fc3\u6b22\u559c\u5730\u5316\u4f5c\u6b4c\u58f0\uff0c\u4ee5\u6b64\u8868\u8fbe\u81ea\u6211\u3002\"\n\n================================================================================\nNOTES\n================================================================================\n\n1. This sentence is the canonical example of a Standard Hymmnos Emotion Sound\n   sentence, cited directly in the grammar reference\n   (grammar-standard.md, line 67):\n     \"Was yea ra chs hymmnos mea = I am delighted to express myself through song\"\n\n2. The Emotion Sound is often omitted in the surface translation because\n   English and Chinese convey emotion through word choice (\"delighted\" /\n   \"\u6ee1\u5fc3\u6b22\u559c\") rather than a separate grammatical prefix.\n\n3. The \"ra\" desirability word is near-meaningless due to overuse and is usually\n   safe to ignore in translation.\n\n4. No tenses exist in Hymmnos; \"become\" can read as \"am becoming\" or \"will\n   become\" depending on context. The example gloss uses the present/ongoing\n   sense.\n\n5. \"hymmnos mea\" uses juxtapositional possession (common in Hymmnos): placing\n   the pronoun after the noun marks it as \"my\" / belonging to me. So \"hymmnos\n   mea\" = \"my song\" / \"the song that is me.\"\n"}], "grading": {"expectations": [{"text": "Translation includes the meaning of 'song' or 'poem' (\u8bd7)", "passed": true, "evidence": "Translated as 'song' in English and '\u6b4c' in Chinese"}, {"text": "Correctly identifies Was=very, yea=happy, ra=continue", "passed": true, "evidence": "Was='very intensely', yea='happy', ra='want this to continue'"}, {"text": "Correctly translates chs=become", "passed": true, "evidence": "chs='become / turn into'"}, {"text": "Translation is first-person (I/\u6211)", "passed": true, "evidence": "'I am delighted to become a song' / '\u6211\u975e\u5e38\u5feb\u4e50\u5730\u5316\u4e3a\u6b4c'"}, {"text": "Provides word-by-word breakdown", "passed": true, "evidence": "Full word-by-word breakdown with pronunciation, role, and meaning for each word"}]}}, {"id": "eval-translate-standard-without_skill", "prompt": "Translate this Hymmnos sentence to English and Chinese: Was yea ra chs hymmnos mea", "eval_id": 1, "outputs": [{"name": "output.txt", "type": "text", "content": "# Hymmnos Sentence Translation (Without Skill \u2014 Baseline)\n\n## Source Sentence\n\"Was yea ra chs hymmnos mea\"\n\n---\n\n## Word-by-Word Breakdown\n\n### Emotion Sounds (Prefix)\nThe opening three words form a Hymmnos emotion-sound cluster. In Hymmnos grammar, sentences begin with one or more \"emotion sounds\" (\u60f3\u97f3) that convey the speaker's emotional state and modify the verb.\n\n1. **Was** \u2014 First-person emotion sound (\"I\"). Indicates the speaker is referring to themselves. In some analyses, \"Was\" is read as an emotion sound expressing the speaker's own feeling, roughly \"I (feel).\"\n2. **yea** \u2014 Emotion sound meaning \"happy / joyful / with gladness.\" It expresses that the emotion driving the sentence is happiness or joy.\n3. **ra** \u2014 Emotion sound meaning \"want to / wishing to / desire to.\" It expresses volition or wish.\n\nRead together as an emotion cluster: **\"I, with happiness, want to...\"** (\u7b2c\u4e00\u4eba\u79f0\uff0c\u6000\u7740\u559c\u60a6\u4e4b\u60c5\uff0c\u60f3\u8981\u2026\u2026)\n\n### Main Sentence Body\n4. **chs** \u2014 Verb meaning \"to become / to turn into\" (\u6210\u4e3a). This is the main verb of the sentence, governed by the preceding emotion sounds.\n5. **hymmnos** \u2014 Noun meaning \"song / hymn / poem\" (\u6b4c\u3001\u8bd7). Root of the language's own name. As the object/complement here it means \"a song\" or \"hymn.\"\n6. **mea** \u2014 Possessive pronoun meaning \"my / mine\" (\u6211\u7684). It modifies the preceding noun, so \"hymmnos mea\" = \"my song.\"\n\n---\n\n## Full Translation\n\n### English\n\"With joy, I want to become a song of mine.\" \u2014 or more naturally: \"I happily wish to become my song.\"\n\n(Literal parse: [I, with happiness, wish to] [become] [song] [my].)\n\n### Chinese\n\u6000\u7740\u559c\u60a6\uff0c\u6211\u60f3\u6210\u4e3a\u6211\u7684\u6b4c\u3002\n\uff08\u5b57\u9762\u89e3\u6790\uff1a[\u6211\uff0c\u6000\u7740\u559c\u60a6\uff0c\u60f3\u8981] [\u6210\u4e3a] [\u6b4c] [\u6211\u7684]\uff09\n\n---\n\n## Parsing Notes\n- The first three tokens (Was yea ra) are parsed as Hymmnos \"emotion sounds\" (\u60f3\u97f3), a grammatical prefix that conveys speaker person, emotional valence, and volition respectively. This is a characteristic feature of Hymmnos (the \"tower language\" from the Ar tonelico game series).\n- \"chs\" is the main verb; Hymmnos typically places the verb immediately after the emotion-sound prefix.\n- \"hymmnos mea\" follows a noun-possessor order; \"mea\" is a possessive determiner meaning \"my,\" so the phrase reads \"my song.\"\n- Overall meaning: the speaker expresses a heartfelt wish \u2014 spoken in the first person, colored by joy \u2014 to transform into their own song.\n\n### Confidence\n- **High confidence:** \"hymmnos\" = song/hymn; \"mea\" = my/mine; \"chs\" = become; \"Was\" = first-person emotion sound; \"yea\" = joy/happiness; \"ra\" = want/wish.\n- **Moderate confidence:** Exact grammatical categorization of each emotion sound and whether \"Was\" strictly encodes \"I\" vs. a more abstract first-person volition marker. Translations may vary slightly across Ar tonelico source materials.\n"}], "grading": {"expectations": [{"text": "Translation includes the meaning of 'song' or 'poem' (\u8bd7)", "passed": true, "evidence": "Translated as 'song' / '\u6b4c'"}, {"text": "Correctly identifies Was=very, yea=happy, ra=continue", "passed": false, "evidence": "Was='first-person emotion sound (I)' \u2014 INCORRECT, Was means 'very intensely' not 'I'; ra='want to' \u2014 partially correct but missed 'continue' nuance"}, {"text": "Correctly translates chs=become", "passed": true, "evidence": "chs='to become / to turn into'"}, {"text": "Translation is first-person (I/\u6211)", "passed": true, "evidence": "'With joy, I want to become my song'"}, {"text": "Provides word-by-word breakdown", "passed": true, "evidence": "Provides breakdown but less detailed than with-skill"}]}}, {"id": "eval-compose-lonely-with_skill", "prompt": "Compose an original Hymmnos sentence that means 'I am lonely and want to sing to the world'", "eval_id": 2, "outputs": [{"name": "output.txt", "type": "text", "content": "# Composition: \"I am lonely and want to sing to the world\"\n\n## Composed Hymmnos Sentence\n\n**Wee jyel ra hymme tes ar ciel**\n\nPronunciation: Wee jail rah him-meh tes ar see-el\n\nEnglish translation: \"I am lonely, and I want to sing to the world.\"\n\nDialect: Central Standard Note (Emotion Sound sentence, self-type / first-person)\n\n---\n\n## Sentence Type\n\nThis is an **Emotion Sound sentence** (\u60f3\u97f3\u53e5) in Standard Hymmnos (Central Standard Note) \u2014 the most common sentence type, used in EXEC_ songs. It follows the self-type (first-person) structure in which the subject \"I\" is implicit and omitted:\n\n```\n[Emotion Sound] + [verb] + [compound]\n```\n\nThe three-word Emotion Sound prefix encodes the speaker's emotional state and is what allows the sentence to be processed by a Tower as Song Magic.\n\n---\n\n## Word-by-Word Breakdown\n\n| # | Word | Pronunciation | Part of Speech | Meaning | Role in Sentence |\n|---|------|---------------|----------------|---------|------------------|\n| 1 | Wee | like \"whee\" | Emotion Sound I (intensity) | fairly, quite | Sets the degree of the emotion \u2014 a genuine, felt (but not overwhelming) loneliness. Chosen over *Was* (very intensely) because \"I am lonely\" is a reflective, melancholic state rather than a consuming one, and over *Fou* (a little) because the feeling is real and present, not slight. |\n| 2 | jyel | \"jail\" | Emotion Sound II (emotion type) | lonely | The heart of the sentence. This single word carries the entire meaning \"I am lonely,\" since the Emotion Sound is always first-person (\"I\"). It colors the whole action of singing with loneliness. |\n| 3 | ra | \"raw\" | Emotion Sound III (desirability) | I want this to continue (default) | Encodes the \"want to\" component. In Hymmnos the desirability word expresses the speaker's stance toward the emotional action continuing \u2014 *ra* (want it to continue) translates naturally as \"I want to [do this].\" This is the same mechanism by which *Was yea ra* reads as \"I am delighted to\u2026\" in the canonical sentence. |\n| 4 | hymme | him-meh | verb (v.) | sing, play, resonate | The action. Chosen over *sonwe* (sing, Ancient Metafalss dialect) because *hymme* is the Central-dialect verb for singing/resonating and pairs cleanly with the Central Standard Emotion Sound. *hymme* also carries the nuance of resonating \u2014 fitting for singing out to the world. |\n| 5 | tes | tes | preposition | to (destination) | Marks the destination of the singing. Prepositional phrases attach after the verb (and any direct object) following the pattern verb + [preposition + destination]. |\n| 6 | ar | ar | adjective | only, unique | Modifies *ciel*; together *ar ciel* = \"the (one/this) world.\" This is the same construction seen in the real example *Was yea erra melenas tes ar ciel* = \"I will be eternally glad to give my love to this world.\" The word *ar* (only/unique) lends *ciel* a demonstrative force \u2014 \"this world, the one world.\" |\n| 7 | ciel | see-el | noun (n.) | sky, world | The destination \u2014 the world the speaker wants to sing to. |\n\n---\n\n## Grammar Notes\n\n- **First-person (self-type):** No explicit subject pronoun is needed. The Emotion Sound is inherently first-person (\"I\"), so the subject is implicit. Adding *mea* (I/me) is optional and would be redundant emphasis; the canonical teaching sentence *Was yea ra chs hymmnos mea* includes *mea* only as the object (\"myself\"), not as subject.\n- **No tense:** Hymmnos has no tense markers. Time is implied by context. Here the present feeling of loneliness plus the desire to sing is conveyed entirely by the Emotion Sound.\n- **No plural marker:** *ciel* is number-neutral, but as \"world\" it is inherently singular in sense.\n- **Prepositional phrase order:** The destination phrase *tes ar ciel* follows the verb directly, per the rule \"Prepositional phrases attach after the verb and its direct object, following the pattern: verb + object + [preposition + destination].\" Here there is no direct object, so the phrase follows the verb immediately.\n- **Emotion encoding carries double duty:** The phrase \"I am lonely AND want to sing\" maps elegantly onto Hymmnos grammar because the Emotion Sound simultaneously states the emotion (*jyel* = lonely \u2192 \"I am lonely\") and the volitional stance (*ra* = want to continue \u2192 \"want to\"). The verb then supplies the action (\"sing\") and the prepositional phrase supplies the recipient (\"to the world\").\n\n---\n\n## How the Meaning Maps\n\n| English clause | Hymmnos encoding |\n|----------------|------------------|\n| \"I am lonely\"  | *Wee jyel* \u2014 the Emotion Sound's intensity + emotion type. The first-person \"I\" is implicit in every Emotion Sound. |\n| \"want to\"      | *ra* \u2014 the desirability word meaning \"I want this to continue.\" |\n| \"sing\"         | *hymme* \u2014 verb, \"sing / resonate.\" |\n| \"to the world\" | *tes ar ciel* \u2014 preposition *tes* (to) + *ar ciel* (the/this world). |\n\n---\n\n## Cross-Check Against Real Examples\n\nThe construction mirrors attested Hymmnos sentences:\n\n- *Was yea erra melenas tes ar ciel* = \"I will be eternally glad to give my love to this world\" \u2014 confirms *tes ar ciel* = \"to the world.\"\n- *Was yea ra chs hymmnos mea* = \"I am delighted to express myself through song\" \u2014 confirms the self-type [ES] + verb + compound structure and that *ra* conveys the volitional \"to / want to\" gloss.\n- *Was yea ra sonwe mea hymmnos mea* = \"I will be glad to sing my song to myself\" \u2014 confirms *sonwe/hymme* as the singing verb in this exact template.\n\nThis gives confidence that *Wee jyel ra hymme tes ar ciel* is grammatical Standard Hymmnos and faithfully renders \"I am lonely and want to sing to the world.\"\n"}], "grading": {"expectations": [{"text": "Uses jyel (lonely) as emotion sound", "passed": true, "evidence": "Used 'Wee jyel ra' \u2014 jyel correctly identified as 'lonely'"}, {"text": "Uses sonwe or hymme (sing) as verb", "passed": true, "evidence": "Used 'hymme' (sing/play/resonate)"}, {"text": "Uses ciel or sphaela (world) as object", "passed": true, "evidence": "Used 'tes ar ciel' \u2014 ciel=world"}, {"text": "Sentence starts with valid 3-word emotion sound structure", "passed": true, "evidence": "'Wee jyel ra' = intensity + emotion + desirability"}, {"text": "Provides word-by-word breakdown with grammar explanation", "passed": true, "evidence": "Full breakdown with grammar notes, cross-check with attested examples"}]}}, {"id": "eval-compose-lonely-without_skill", "prompt": "Compose an original Hymmnos sentence that means 'I am lonely and want to sing to the world'", "eval_id": 2, "outputs": [{"name": "output.txt", "type": "text", "content": "# Hymmnos Composition: \"I am lonely and want to sing to the world\"\n\n## Composed Sentence\n\nf.w.l. Was yea ra hyma Ciel en\n\n## Word-by-Word Breakdown\n\n### Clause 1: \"I am lonely\"\n\n**f.w.l.**\n- Type: Emotion sound (\u60f3\u97f3, first-person feeling prefix)\n- Meaning: \"I feel a deep sense of loneliness\" / \"I am lonely\"\n- Explanation: In Standard Hymmnos, emotion sounds (\u60f3\u97f3) are prefixed to clauses and always express the speaker's (first-person) emotional state. \"f.w.l.\" is a compound emotion sound indicating profound loneliness, longing, and sadness. The periods indicate this is a multi-part abbreviation encoding a complex emotional state. In Standard Hymmnos grammar, an emotion sound standing at the head of a clause constitutes a complete statement of feeling \u2014 the feeling itself is the predication, since these sounds are inherently first-person. Thus \"f.w.l.\" alone conveys \"I am lonely.\"\n- Confidence: High\n\n### Clause 2: \"I want to sing to the world\"\n\n**Was**\n- Type: Emotion sound \u2014 Position 1 (the emotion itself)\n- Meaning: \"I want to\" / \"I desire to\"\n- Explanation: \"Was\" is the emotion sound indicating desire or wanting. It occupies the first slot of the three-part emotion sound structure that prefixes the verb in the second clause. This shifts the emotional framing from loneliness (clause 1) to desire (clause 2).\n- Confidence: High\n\n**yea**\n- Type: Emotion sound \u2014 Position 2 (intensity/degree modifier)\n- Meaning: \"very much\" / \"strongly\"\n- Explanation: The second position in a Hymmnos emotion sound modifies the intensity of the emotion. \"yea\" intensifies \"Was\" to express a strong, heartfelt desire \u2014 \"I very much want to.\" This amplifies the emotional weight of the wish to sing.\n- Confidence: High\n\n**ra**\n- Type: Emotion sound \u2014 Position 3 (tense marker)\n- Meaning: present tense (\"now\")\n- Explanation: The third position marks tense. \"ra\" indicates the present tense, grounding the desire in the current moment \u2014 \"I want to sing right now.\" Combined, \"Was yea ra\" = \"I strongly want to [do X] now.\"\n- Confidence: High\n\n**hyma**\n- Type: Verb\n- Meaning: \"to sing\"\n- Explanation: This is the main verb of the second clause, meaning \"to sing.\" I chose this word based on its etymological connection to \"Hymmnos\" \u2014 the name of the language itself derives from the concept of hymn/song, and \"hyma\" follows the pattern of a verb form derived from that root. In the Ar tonelico universe, singing is the central act through which Hymmnos is expressed, making this the natural verb choice.\n- Confidence: Medium \u2014 I am reasonably confident this is the correct or a plausible verb form for \"to sing,\" though alternative forms like \"hymme\" or \"chyet\" may also exist in the lexicon.\n\n**Ciel**\n- Type: Noun (proper/common)\n- Meaning: \"world\" / \"planet\"\n- Explanation: I chose \"Ciel\" for \"world\" based on \"Ar Ciel,\" which is the in-universe name of the planet/world in the Ar tonelico series. \"Ar\" functions as a divine/singular prefix (as seen in \"Ar tonelico\" = the divine tower), so \"Ciel\" alone should carry the core meaning of \"world\" or \"planet.\" This is the object/destination of the singing.\n- Confidence: Medium \u2014 \"Ciel\" is clearly associated with the concept of \"world\" in the lore, though I am uncertain whether it functions as a standalone common noun in Hymmnos grammar or whether it strictly requires the \"Ar\" prefix.\n\n**en**\n- Type: Particle / preposition\n- Meaning: \"to\" / \"towards\"\n- Explanation: I placed this particle after \"Ciel\" to mark it as the destination/direction of the singing \u2014 \"to the world.\" In Hymmnos, I believe directional or dative markers follow the noun they modify. This transforms \"Ciel\" from a simple object into a directional/destination phrase.\n- Confidence: Low \u2014 I am not certain \"en\" is the correct directional particle in Hymmnos. It may be that Hymmnos uses a different particle (such as \"wol\" or another marker), or that direction is expressed through word order or a different grammatical construction entirely. This is the weakest element of my composition.\n\n## Grammar Notes\n\n1. **Emotion Sound Structure:** Standard Hymmnos sentences begin with emotion sounds (\u60f3\u97f3). Each emotion sound has up to three positions: (1) the emotion, (2) the intensity, and (3) the tense. The first clause uses \"f.w.l.\" (loneliness) as a standalone feeling statement, while the second clause uses the full three-part \"Was yea ra\" (want + very + present) to modify the verb \"hyma.\"\n\n2. **First-Person Implicit Subject:** Hymmnos emotion sounds are inherently first-person \u2014 they always describe the speaker's feelings. Therefore, no explicit pronoun for \"I\" is needed; it is built into the grammar of the emotion sound system.\n\n3. **Clause Joining:** The two clauses are placed side by side without an explicit conjunction. I am uncertain whether Hymmnos requires a specific conjunction word for \"and\" between clauses, or whether juxtaposition is grammatically acceptable. In many Hymmnos song lyrics, clauses with different emotion sounds appear sequentially, suggesting juxtaposition is a valid construction.\n\n4. **Word Order:** The second clause follows the pattern [Emotion Sound] + [Verb] + [Object/Direction], which I believe is the standard word order in Hymmnos: the emotion sound prefixes the verb, and objects/complements follow.\n\n## Honest Confidence Assessment\n\n- **High confidence:** The emotion sound system (f.w.l., Was, yea, ra) and its three-position structure. This is the most distinctive and well-documented feature of Hymmnos grammar.\n- **Medium confidence:** \"hyma\" (to sing) and \"Ciel\" (world) \u2014 both are grounded in etymology and in-universe lore, but I cannot verify exact lexical forms without reference materials.\n- **Low confidence:** \"en\" (to/towards) \u2014 the directional particle is my weakest choice and may be incorrect.\n- **Uncertain:** Whether explicit conjunctions are needed between clauses, and whether \"f.w.l.\" can stand alone without a verb to express \"I am lonely.\"\n"}], "grading": {"expectations": [{"text": "Uses jyel (lonely) as emotion sound", "passed": false, "evidence": "Did NOT use jyel. Used 'f.w.l.' which is NOT a valid Hymmnos emotion sound \u2014 it's a Pastalie emotion verb template format incorrectly used as an emotion sound"}, {"text": "Uses sonwe or hymme (sing) as verb", "passed": false, "evidence": "Used 'hyma' which means 'listen' not 'sing' \u2014 incorrect word choice"}, {"text": "Uses ciel or sphaela (world) as object", "passed": true, "evidence": "Used 'Ciel' (world)"}, {"text": "Sentence starts with valid 3-word emotion sound structure", "passed": false, "evidence": "Starts with 'f.w.l.' (invalid) then 'Was yea ra' \u2014 two emotion sound clusters in one sentence, which is grammatically invalid"}, {"text": "Provides word-by-word breakdown with grammar explanation", "passed": true, "evidence": "Provides breakdown but with multiple factual errors"}]}}, {"id": "eval-translate-pastalie-with_skill", "prompt": "Translate this Neopact Pastalie sentence: xE rre cloche cEzE hymmnos/. and explain the emotion verb construction", "eval_id": 3, "outputs": [{"name": "output.txt", "type": "text", "content": "================================================================\nHymmnos Skill \u2014 With-Skill Translation (Eval 3)\n================================================================\n\nSENTENCE TO TRANSLATE:\n  xE rre cloche cEzE hymmnos/.\n\n================================================================\n1. SENTENCE TYPE IDENTIFICATION\n================================================================\n\nThis is a **Neopact Pastalie** (New Testament of Pastalie) sentence.\n\nDiagnostic evidence:\n  - It uses an **Emotion Verb** \u2014 `cEzE` \u2014 a verb whose template is `c.z.`\n    (transform / become), with its two bank slots filled by the uppercase\n    emotion vowels E and E. This is the hallmark of Pastalie grammar.\n  - It opens with `xE`, the **subject definer** `x.` carrying one bank slot\n    (here filled with vowel E), a construction that exists only in Pastalie.\n  - It contains `rre`, the subject marker, used in non-first-person Pastalie\n    sentences.\n  - It terminates with `/.`, the Pastalie sentence-end marker that both closes\n    the sentence AND invokes it (executes it as Song Magic).\n\nBecause an Emotion Verb is present, this is an **Emotion Verb sentence**\n(\u611f\u97f3\u53e5), used in METHOD_ songs on the Infel Phira server. Per the skill's\nsentence-type guidance, I loaded references/grammar-pastalie.md.\n\n================================================================\n2. WORD-BY-WORD PARSE\n================================================================\n\nToken          | Function              | Meaning\n---------------|-----------------------|-----------------------------------------\nxE             | Subject definer (x.)  | \"I feel happy about the subject\"\n               |                       | (x. = singer's feeling about the\n               |                       |  subject; E = joy/contentment)\nrre            | Subject marker        | Marks the following word as the\n               | (particle)            | grammatical subject (emphasized\n               |                       |  when used with a proper noun)\ncloche         | Subject (proper noun) | Cloche \u2014 a character name from\n               |                       | Ar tonelico (a Reyvateil). Not a\n               |                       | dictionary word; a proper name.\ncEzE           | Emotion Verb          | \"gladly becomes / transforms into\"\n               | (c.z. + E, E)         | Template c.z. = become/transform;\n               |                       | slot 1 = E (joy to self),\n               |                       | slot 2 = E (joy to self)\nhymmnos        | Object (noun, Central)| \"song\" (meaning_en: \"song, Hymmnos\";\n               |                       | meaning_jp: \u8a69; class: n.)\n/.             | Sentence terminator   | End of sentence + invoke as\n               |                       | Song Magic\n\n================================================================\n3. STRUCTURE\n================================================================\n\nThis is a **non-first-person** Pastalie sentence. The template for such\nsentences (from grammar-pastalie.md) is:\n\n    [x.] + rre + [subject] + [Emotion Verb] + [object] + [compound]\n\nMapped to our sentence:\n\n    xE          = [x.]              (singer's feeling about the subject)\n    rre         = rre               (subject marker)\n    cloche      = [subject]         (Cloche)\n    cEzE        = [Emotion Verb]    (gladly becomes)\n    hymmnos     = [object]          (song)\n    /.          = terminator+invoke\n\nBecause the subject is a third person (Cloche, not \"I\"), the Emotion Verb's\nLevel-1 vowels undergo **direction shifting**: the Level-1 (self) vowels in\nthe verb now describe *the subject's* feelings rather than the singer's.\nSo the two E vowels in cEzE express that *Cloche* feels joy \u2014 Cloche is\nglad/happy to become a song \u2014 while the E in xE separately expresses the\n*singer's* feeling (the singer is happy about Cloche becoming a song).\n\n================================================================\n4. THE EMOTION VERB CONSTRUCTION IN DETAIL\n================================================================\n\nThis is the core of Pastalie grammar and deserves close analysis.\n\n4a. Template + Emotion Vowels\n-----------------------------\nPastalie Emotion Verbs are built from two ingredients:\n\n  1. A **template word** \u2014 a lowercase verb base dotted with \"bank periods\"\n     (also called bank slots). Each period is a placeholder to be filled.\n     Here the template is `c.z.` (pronounced \u30b9\u30ba / suzu), meaning\n     \"transform, become\". It has TWO bank slots.\n\n     Template words documented in the lexicon include:\n       h.m.m.r. (sing), c.z. (become), f.w.r.n. (embrace), d.z. (die),\n       a.u.k. (to be), v.a (craft), r.f.m (see), s.l. (believe), etc.\n\n  2. **Emotion Vowels** \u2014 uppercase vowels/letter-groups slotted into the\n     bank periods. They encode WHO is being addressed and WHAT emotion is\n     directed at them. There are three levels:\n\n       Level 1 \u2014 toward SELF (the subject, after direction shift):\n         A = power/eagerness/focus\n         I = pain / want to flee / dread\n         U = sadness / grief / worry\n         E = joy / contentment / pleasure\n         O = anger / aggression / cursing\n         N = nothing / absent-minded / relaxed\n\n       Level 2 \u2014 toward ANOTHER INDIVIDUAL:\n         YA = want to serve / thinking of you\n         YI = suffering / pain / death\n         YU = sadness / anxiety\n         YE = happiness / fortune\n         YO = anger / rage\n         YN = calmness / comfort\n\n       Level 3 \u2014 toward the WORLD / SURROUNDINGS:\n         LYA = thinking of all / want to devote myself\n         LYI = pain / destruction / ruin\n         LYU = sadness / instability\n         LYE = happiness / satisfaction / prosperity\n         LYO = strife / chaos / war\n         LYN = calmness / quietness\n\n4b. How cEzE is assembled\n-------------------------\n  Template:   c . z .          (c.z. = become, 2 bank slots)\n  Slot 1  :   E                \u2192 joy (Level 1, toward the subject)\n  Slot 2  :   E                \u2192 joy (Level 1, toward the subject)\n  Result  :   c E z E          \u2192 written \"cEzE\"\n\n  Reading the slots: bank slot 1 has the greatest effect/priority; lower\n  indices carry stronger emphasis. Here both slots are E, so the emotion\n  is uniform, unambiguous joy directed inward (at the acting subject).\n\n  Per the skill's worked examples:\n    c.z. + E, E  \u2192 cEzE   = \"I gladly become\"  (\u2248 \"Was yea ra chs\")\n    c.z. + YE,YE \u2192 cYEzYE = \"You become (and I want you to be happy)\"\n    c.z. + LYE,LYE \u2192 cLYEzLYE = targeting the world/situation\n\n  Our cEzE is exactly the \"E, E\" case \u2014 \"gladly becomes\".\n\n4c. Direction shifting (critical for this sentence)\n---------------------------------------------------\nIn a FIRST-person sentence, Level-1 vowels describe the SINGER's own\nemotion (cEzE alone = \"I am delighted to become\"). But our sentence is\nnon-first-person (subject = Cloche), introduced by the subject definer xE\nand rre. Pastalie grammar therefore applies **direction shifting**: the\nLevel-1 vowels in the Emotion Verb are re-oriented to the SUBJECT.\n\n  Result: the two E's in cEzE now mean that **Cloche** feels joy \u2014 Cloche\n  is happy/glad to become a song. The singer's own emotion is NOT carried\n  by the verb here; it is carried separately by the xE definer (next).\n\n4d. Unused slots and minimalism\n-------------------------------\nPastalie's design philosophy is maximum meaning in minimum words. Bank\nslots that are not needed are simply omitted from the final word. c.z. has\nonly 2 slots and both are filled, so nothing is omitted. (Contrast\nh.m.m.r. with 4 slots, where `hEmmErYE` fills slots 1,3,4 and leaves slot\n2 empty, dropped silently.)\n\n4e. Why the verb alone can be a sentence\n----------------------------------------\nWhen the object is implied by the emotion vowels, the Emotion Verb is a\ncomplete sentence by itself (e.g., `fEwErYEn/.` = \"I lovingly embrace\nyou\"). Here an explicit object `hymmnos` (song) is supplied because the\ntarget of the transformation is not implied by the vowels, so it must be\nstated.\n\n================================================================\n5. THE SUBJECT DEFINER (x.) IN DETAIL\n================================================================\n\nThe opening token `xE` is the **subject definer** `x.`, a Pastalie-only\nparticle that carries one bank slot for the singer's personal feeling\nABOUT the subject of the sentence. Its vowel meanings are distinct from\nthe Emotion Vowel levels:\n\n  A = indifferent\n  I = jealous\n  U = concerned\n  E = happy            \u2190 our sentence\n  O = angry\n  N = opposed\n\nSo `xE` = \"I (the singer) feel HAPPY about the subject (Cloche).\"\n\nThis is separate from and in addition to the emotion encoded in the verb.\nThe sentence thus carries TWO emotional layers:\n  (1) via xE \u2014 the singer is happy about Cloche;\n  (2) via cEzE \u2014 Cloche herself is glad to become a song.\n\n`rre` follows xE to mark `cloche` as the subject. The skill notes that\nsubject-form pronouns may omit `rre`, but using `rre` (especially with a\nproper noun) emphasizes the subject.\n\n================================================================\n6. TRANSLATION\n================================================================\n\nLiteral gloss:\n  \"I-feel-happy (about the subject) [marker] Cloche gladly-becomes song [invoke]\"\n\nEnglish translation:\n  \"Cloche gladly becomes a song \u2014 and I am happy that she does.\"\n\nAlternative renderings preserving nuance:\n  - \"Cloche is delighted to be transformed into song, and that makes me happy.\"\n  - \"Cloche joyfully turns into a song (and this brings me joy).\"\n\nChinese translation (the skill notes Japanese meanings bridge to Chinese):\n  \u300c\u30af\u30ed\u30fc\u30b7\u30a7\u306f\u559c\u3093\u3067\u8a69\uff08\u3046\u305f\uff09\u306b\u306a\u308b\u2014\u2014\u305d\u3057\u3066\u79c1\u306f\u305d\u308c\u304c\u5b09\u3057\u3044\u3002\u300d\n  Cloche \u559c\u60a6\u5730\u5316\u4f5c\u6b4c\u66f2\uff0c\u800c\u6211\u4e5f\u4e3a\u6b64\u611f\u5230\u5feb\u4e50\u3002\n\nNotes on what is and isn't translated:\n  - The emotion encoded in the vowels (joy, in both the verb and x.) is\n    rendered through word choice (\"gladly\", \"delighted\", \"happy\") rather\n    than a separate prefix, since English/Chinese convey emotion through\n    diction. This matches the skill's translation tip that emotion sounds\n    / vowels are usually absorbed into wording rather than translated\n    literally.\n  - `/.` performs a real function (invoking the line as Song Magic) but\n    has no English equivalent; it is reflected implicitly by the\n    declarative force of the sentence.\n  - Hymmnos has no tense; \"becomes\" / \"will become\" are both acceptable.\n    Time is implied by context.\n\n================================================================\n7. CROSS-CHECK AGAINST KNOWN EXAMPLES\n================================================================\n\nThe skill's examples.md lists this exact sentence as a canonical teaching\nexample:\n\n  xE rre cloche cEzE hymmnos/.\n  = Cloche is delighted to become a song (and this makes me happy)\n  (x. with E = I feel happy about the subject)\n\nOur analysis matches the documented translation exactly, confirming:\n  - xE = singer's happiness about the subject,\n  - cEzE = Cloche's own delight (via direction-shifted Level-1 E),\n  - hymmnos = song,\n  - /. = invoke.\n\n================================================================\n8. SUMMARY\n================================================================\n\nSentence:  xE rre cloche cEzE hymmnos/.\nType:      Neopact Pastalie (Emotion Verb sentence, \u611f\u97f3\u53e5)\nStructure: Non-first-person: x. + rre + subject + Emotion Verb + object + /.\nSubject:   cloche (Cloche, proper noun)\nVerb:      cEzE = c.z.(become) + E,E (joy, Level-1, direction-shifted to subject)\nObject:    hymmnos (song)\nSinger's feeling: xE = happy about Cloche (x. + E)\nTerminator: /. = end + invoke as Song Magic\n\nTranslation:\n  \"Cloche gladly becomes a song \u2014 and I am happy that she does.\"\n\nThe emotion verb construction works as follows: the template c.z. (\"become\")\nhas two bank slots; each is filled with the Level-1 emotion vowel E (joy).\nBecause the sentence is non-first-person (subject = Cloche, marked by rre\nand introduced by the subject definer xE), direction shifting reorients the\nLevel-1 vowels from the singer to the subject, so the two E's express that\nCLOCHE herself is joyful about becoming. The singer's own emotion is\nexpressed independently and separately through xE (E = happy about the\nsubject). This dual-layer emotion encoding \u2014 singer's feeling in x., actor's\nfeeling in the verb \u2014 is the defining expressive power of Pastalie.\n"}], "grading": {"expectations": [{"text": "Translation includes Cloche as the subject", "passed": true, "evidence": "'Cloche gladly becomes a song' \u2014 Cloche correctly identified as subject"}, {"text": "Correctly explains x. as subject definer", "passed": true, "evidence": "Explained x. as Pastalie subject definer with bank slot for singer's emotion"}, {"text": "Correctly explains E as joy/happiness emotion vowel", "passed": true, "evidence": "E = joy/happiness, Level 1 emotion vowel"}, {"text": "Correctly explains c.z. as become/transform template", "passed": true, "evidence": "c.z. = transform/become, 2 bank slots, filled with E"}, {"text": "Correctly explains /. as invoke terminator", "passed": true, "evidence": "/. = sentence end + invoke"}]}}, {"id": "eval-translate-pastalie-without_skill", "prompt": "Translate this Neopact Pastalie sentence: xE rre cloche cEzE hymmnos/. and explain the emotion verb construction", "eval_id": 3, "outputs": [{"name": "output.txt", "type": "text", "content": "================================================================================\nBASELINE TRANSLATION (WITHOUT SKILL)\n================================================================================\nSentence: \"xE rre cloche cEzE hymmnos/.\"\n================================================================================\n\n## TRANSLATION\n\n\"With the emotion of happiness, Cloche sings a song.\"\n\n(Alternative reading: \"Cloche happily sings a song.\")\n\n================================================================================\n## BREAKDOWN OF THE SENTENCE\n================================================================================\n\n### 1. xE \u2014 Emotion Sound (\u60f3\u97f3, Emotion Sound Prefix)\n\nThis is a Neopact Pastalie emotion sound, consisting of a lowercase consonant\n\"x\" and an uppercase vowel \"E\".\n\n- E (uppercase vowel) = happiness / the desire to be happy. This is one of the\n  core emotion vowels in Hymmnos. The uppercase E indicates the singer/speaker\n  is experiencing or wishes to express happiness.\n- x (lowercase consonant) = The exact semantic contribution of the consonant\n  \"x\" in the Pastalie emotion sound system is uncertain to me. In the Pastalie\n  system, the consonant may serve as an intensity modifier or a sub-type\n  classifier for the emotion, but I cannot state its precise meaning with\n  confidence.\n\nIn Neopact Pastalie, emotion sounds are condensed into compact single syllables\n(consonant + vowel), unlike Standard Hymmnos which uses three-word emotion\nphrases (e.g., \"Was yea ra\"). The emotion sound at the start of the sentence\nsets the overall emotional tone for the entire utterance.\n\n### 2. rre cloche \u2014 Subject Phrase\n\n- rre = subject marker particle. In Hymmnos, the default grammatical subject is\n  the first person (the singer/speaker themself). The particle \"rre\" is used to\n  explicitly mark a different subject \u2014 a third person. Without \"rre\", the\n  sentence would be about the speaker; with \"rre\", the subject shifts to the\n  noun that follows.\n- cloche = proper noun, almost certainly referring to Cloche, a major character\n  from the video game Ar tonelico II (Cloche Leythal Pastalie, the Holy Maiden\n  of Metafalss). The name is written in lowercase per Hymmnos orthographic\n  convention (proper nouns are typically lowercase in Hymmnos script).\n\nSo \"rre cloche\" establishes Cloche as the subject performing the action.\n\n### 3. cEzE \u2014 Emotion Verb (Pastalie Verb with Embedded Emotion)\n\nThis is the core verb of the sentence, rendered in the Neopact Pastalie style\nwith embedded emotion markers.\n\n- The verb root is \"cze\" (with lowercase vowels in its plain form).\n- In Neopact Pastalie, the vowels within a verb can be capitalized to embed\n  the speaker's emotional state directly into the action being described.\n- Here, both vowels are capitalized as \"E\", embedding the emotion of happiness\n  (E = happiness / wanting to be happy) into the verb.\n- The base verb \"cze\" most likely means \"to sing\" \u2014 this is inferred from\n  context, since the object of the sentence is \"hymmnos\" (song). However, I\n  am not fully certain of this lexical meaning from my own knowledge alone.\n\nThe capitalization pattern c-E-z-E shows that the emotion of happiness is\nwoven through the entire verb, coloring the action itself with the speaker's\nemotional state.\n\n### 4. hymmnos \u2014 Object\n\n- hymmnos = \"song\" or \"hymn.\" This is one of the most fundamental words in the\n  Hymmnos language. In the game lore, \"Hymmnos\" also refers to the language\n  itself and to the magical songs sung by Reyvateils. Here it functions as the\n  direct object \u2014 the thing being sung.\n\n### 5. /. \u2014 Sentence Terminator\n\n- The forward slash \"/\" is a Neopact Pastalie sentence-ending marker. It\n  signals the end of a complete Hymmnos sentence, analogous to a period in\n  English. The \".\" that follows appears to be standard punctuation (or part of\n  the terminator notation). This is a hallmark of the Pastalie dialect, as\n  Standard Hymmnos does not typically use this terminator.\n\n================================================================================\n## EMOTION VERB CONSTRUCTION \u2014 DETAILED EXPLANATION\n================================================================================\n\n### Overview of the Pastalie Emotion Verb System\n\nNeopact Pastalie introduces a powerful feature not found (or found in a\ndifferent form) in Standard Hymmnos: the ability to embed emotion sounds\ndirectly into verbs through capitalization. This allows a single verb to\nexpress both an action AND the emotional state associated with that action,\nmaking Pastalie a highly compact and emotionally expressive dialect.\n\n### How It Works\n\n1. VERB ROOT: Every Pastalie verb has a base root form written entirely in\n   lowercase (e.g., \"cze\"). This root carries the lexical meaning of the\n   action.\n\n2. EMOTION EMBEDDING: To embed an emotion, one or more vowels in the verb root\n   are changed from lowercase to uppercase. The uppercase vowel is no longer\n   just a phonetic vowel \u2014 it now functions as an emotion sound (\u60f3\u97f3).\n\n3. EMOTION VOWEL MEANINGS: Each uppercase vowel maps to a specific emotion:\n   - A = power, the desire to be strong\n   - I = pain, the desire to escape from pain\n   - U = hatred, the desire to destroy\n   - E = happiness, the desire to be happy\n   - O = sadness, the desire to be released from sadness\n   - N = nervousness / anxiety\n\n4. MULTIPLE EMBEDDINGS: A verb can have more than one vowel capitalized,\n   allowing the same emotion (or different emotions) to be emphasized at\n   multiple points within the verb. In \"cEzE\", both vowels are \"E\", so the\n   emotion of happiness permeates the entire verb.\n\n### Applied to \"cEzE\"\n\n- Root verb: cze (lowercase) \u2014 the plain action verb, likely \"to sing\"\n- Emotion-embedded form: cEzE \u2014 the same verb, now infused with happiness\n- The two uppercase E's indicate that the singer feels happiness in relation\n  to the action of singing. The emotion is not stated separately \u2014 it is\n  structurally part of the verb itself.\n- This is more than an adverb (\"happily sings\"); the emotion is grammatically\n  fused with the verb, reflecting the Pastalie philosophy that emotion and\n  action are inseparable in the Song Magic of Ar tonelico.\n\n### Relationship to the Initial Emotion Sound (xE)\n\nThe sentence has two layers of emotion expression:\n\n1. SENTENCE-LEVEL EMOTION: The prefix \"xE\" sets the overall emotional tone\n   for the entire sentence. This is the general emotional context.\n\n2. VERB-LEVEL EMOTION: The embedded \"E\"s in \"cEzE\" provide emotion specific\n   to the action of the verb. This can reinforce, nuance, or even contrast\n   with the sentence-level emotion.\n\nIn this sentence, both layers use the \"E\" (happiness) emotion, creating a\nconsistent emotional tone: the singer is happy, and the action of Cloche\nsinging is also associated with happiness.\n\n### Contrast with Standard Hymmnos\n\nIn Standard Hymmnos (Central Standard Note), emotion is expressed through a\nthree-word emotion phrase at the beginning of the sentence (e.g., \"Was yea ra\"\n= \"I want to be happy to want to do this\"). The verb itself does not carry\nembedded emotion. Pastalie's innovation is the ability to embed emotion\ndirectly into the verb through capitalization, making the language more\ncompact and allowing finer-grained emotional expression tied to specific\nactions within a sentence.\n\n================================================================================\n## OVERALL SENTENCE STRUCTURE\n================================================================================\n\nxE        rre cloche      cEzE         hymmnos     /.\n[emotion] [subject marker] [emotion    [object]    [terminator]\n           + subject noun]  verb]\n\nWord order: Emotion prefix \u2192 Subject (rre + noun) \u2192 Verb \u2192 Object \u2192 Terminator\n\nThis follows the typical Hymmnos sentence pattern where emotion sounds come\nfirst, followed by the subject (if explicitly marked with \"rre\"), then the\nverb, and finally the object. The Pastalie terminator \"/\" marks the end.\n\n================================================================================\n## SUMMARY\n\nThe sentence \"xE rre cloche cEzE hymmnos/.\" translates approximately to:\n\n  \"With happiness, Cloche sings a song.\"\n\nThe key feature is the Pastalie emotion verb \"cEzE\", where the root verb\n\"cze\" (to sing) has its vowels capitalized to \"E\" to embed the emotion of\nhappiness directly into the action. This, combined with the initial emotion\nsound \"xE\", creates a sentence where the emotional state of happiness is\nexpressed at both the sentence level and the verb level, illustrating the\nPastalie dialect's characteristic fusion of emotion and action.\n\n================================================================================\n## CONFIDENCE NOTES\n================================================================================\n\n- HIGH CONFIDENCE: rre = subject marker; hymmnos = song; E = happiness emotion;\n  / = Pastalie sentence terminator; cloche = proper noun (character name);\n  the general Pastalie structure of emotion-embedded verbs via capitalization.\n\n- MEDIUM CONFIDENCE: The verb root \"cze\" meaning \"to sing\" (inferred from\n  context \u2014 the object is \"song\"); the overall translation.\n\n- LOW CONFIDENCE: The precise meaning of the consonant \"x\" in the emotion\n  sound \"xE\"; the exact lexical entry for \"cze\" from my own knowledge.\n"}], "grading": {"expectations": [{"text": "Translation includes Cloche as the subject", "passed": true, "evidence": "'Cloche sings a song' \u2014 Cloche as subject"}, {"text": "Correctly explains x. as subject definer", "passed": false, "evidence": "Described xE as 'emotion sound prefix' \u2014 INCORRECT, x. is a subject definer with bank slot, not a standard emotion sound"}, {"text": "Correctly explains E as joy/happiness emotion vowel", "passed": true, "evidence": "E = happiness (correctly identified)"}, {"text": "Correctly explains c.z. as become/transform template", "passed": false, "evidence": "Described cEzE root as 'cze' meaning 'to sing' \u2014 INCORRECT, c.z. means 'become/transform' not 'sing'"}, {"text": "Correctly explains /. as invoke terminator", "passed": true, "evidence": "Identified /. as Pastalie sentence terminator (partially correct, missed 'invoke' aspect)"}]}}], "previous_feedback": {}, "previous_outputs": {}, "benchmark": {"skill_name": "hymmnos", "iteration": 1, "configs": ["with_skill", "without_skill"], "results": {"with_skill": [{"eval": "eval-translate-standard", "pass_rate": 1.0, "passed": 5, "total": 5}, {"eval": "eval-compose-lonely", "pass_rate": 1.0, "passed": 5, "total": 5}, {"eval": "eval-translate-pastalie", "pass_rate": 1.0, "passed": 5, "total": 5}], "without_skill": [{"eval": "eval-translate-standard", "pass_rate": 0.8, "passed": 4, "total": 5}, {"eval": "eval-compose-lonely", "pass_rate": 0.4, "passed": 2, "total": 5}, {"eval": "eval-translate-pastalie", "pass_rate": 0.6, "passed": 3, "total": 5}]}}};
+
+    // ---- State ----
+    let feedbackMap = {};  // run_id -> feedback text
+    let currentIndex = 0;
+    let visitedRuns = new Set();
+
+    // ---- Init ----
+    async function init() {
+      // Load saved feedback from server — but only if this isn't a fresh
+      // iteration (indicated by previous_feedback being present). When
+      // previous feedback exists, the feedback.json on disk is stale from
+      // the prior iteration and should not pre-fill the textareas.
+      const hasPrevious = Object.keys(EMBEDDED_DATA.previous_feedback || {}).length > 0
+        || Object.keys(EMBEDDED_DATA.previous_outputs || {}).length > 0;
+      if (!hasPrevious) {
+        try {
+          const resp = await fetch("/api/feedback");
+          const data = await resp.json();
+          if (data.reviews) {
+            for (const r of data.reviews) feedbackMap[r.run_id] = r.feedback;
+          }
+        } catch { /* first run, no feedback yet */ }
+      }
+
+      document.getElementById("skill-name").textContent = EMBEDDED_DATA.skill_name;
+      showRun(0);
+
+      // Wire up feedback auto-save
+      const textarea = document.getElementById("feedback");
+      let saveTimeout = null;
+      textarea.addEventListener("input", () => {
+        clearTimeout(saveTimeout);
+        document.getElementById("feedback-status").textContent = "";
+        saveTimeout = setTimeout(() => saveCurrentFeedback(), 800);
+      });
+    }
+
+    // ---- Navigation ----
+    function navigate(delta) {
+      const newIndex = currentIndex + delta;
+      if (newIndex >= 0 && newIndex < EMBEDDED_DATA.runs.length) {
+        saveCurrentFeedback();
+        showRun(newIndex);
+      }
+    }
+
+    function updateNavButtons() {
+      document.getElementById("prev-btn").disabled = currentIndex === 0;
+      document.getElementById("next-btn").disabled =
+        currentIndex === EMBEDDED_DATA.runs.length - 1;
+    }
+
+    // ---- Show a run ----
+    function showRun(index) {
+      currentIndex = index;
+      const run = EMBEDDED_DATA.runs[index];
+
+      // Progress
+      document.getElementById("progress").textContent =
+        `${index + 1} of ${EMBEDDED_DATA.runs.length}`;
+
+      // Prompt
+      document.getElementById("prompt-text").textContent = run.prompt;
+
+      // Config badge
+      const badge = document.getElementById("config-badge");
+      const configMatch = run.id.match(/(with_skill|without_skill|new_skill|old_skill)/);
+      if (configMatch) {
+        const config = configMatch[1];
+        const isBaseline = config === "without_skill" || config === "old_skill";
+        badge.textContent = config.replace(/_/g, " ");
+        badge.className = "config-badge " + (isBaseline ? "config-baseline" : "config-primary");
+        badge.style.display = "inline-block";
+      } else {
+        badge.style.display = "none";
+      }
+
+      // Outputs
+      renderOutputs(run);
+
+      // Previous outputs
+      renderPrevOutputs(run);
+
+      // Grades
+      renderGrades(run);
+
+      // Previous feedback
+      const prevFb = (EMBEDDED_DATA.previous_feedback || {})[run.id];
+      const prevEl = document.getElementById("prev-feedback");
+      if (prevFb) {
+        document.getElementById("prev-feedback-text").textContent = prevFb;
+        prevEl.style.display = "block";
+      } else {
+        prevEl.style.display = "none";
+      }
+
+      // Feedback
+      document.getElementById("feedback").value = feedbackMap[run.id] || "";
+      document.getElementById("feedback-status").textContent = "";
+
+      updateNavButtons();
+
+      // Track visited runs and promote done button when all visited
+      visitedRuns.add(index);
+      const doneBtn = document.getElementById("done-btn");
+      if (visitedRuns.size >= EMBEDDED_DATA.runs.length) {
+        doneBtn.classList.add("ready");
+      }
+
+      // Scroll main content to top
+      document.querySelector(".main").scrollTop = 0;
+    }
+
+    // ---- Render outputs ----
+    function renderOutputs(run) {
+      const container = document.getElementById("outputs-body");
+      container.innerHTML = "";
+
+      const outputs = run.outputs || [];
+      if (outputs.length === 0) {
+        container.innerHTML = '<div class="empty-state">No output files</div>';
+        return;
+      }
+
+      for (const file of outputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        // Always show file header with download link
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const content = document.createElement("div");
+        content.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          content.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          content.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          content.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(content, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          content.appendChild(a);
+        } else if (file.type === "error") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          pre.style.color = "var(--red)";
+          content.appendChild(pre);
+        }
+
+        fileDiv.appendChild(content);
+        container.appendChild(fileDiv);
+      }
+    }
+
+    // ---- XLSX rendering via SheetJS ----
+    function renderXlsx(container, b64Data) {
+      try {
+        const raw = Uint8Array.from(atob(b64Data), c => c.charCodeAt(0));
+        const wb = XLSX.read(raw, { type: "array" });
+
+        for (let i = 0; i < wb.SheetNames.length; i++) {
+          const sheetName = wb.SheetNames[i];
+          const ws = wb.Sheets[sheetName];
+
+          if (wb.SheetNames.length > 1) {
+            const sheetLabel = document.createElement("div");
+            sheetLabel.style.cssText =
+              "font-weight:600; font-size:0.8rem; color:#b0aea5; margin-top:0.5rem; margin-bottom:0.25rem;";
+            sheetLabel.textContent = "Sheet: " + sheetName;
+            container.appendChild(sheetLabel);
+          }
+
+          const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false });
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = htmlStr;
+          container.appendChild(wrapper);
+        }
+      } catch (err) {
+        container.textContent = "Error rendering spreadsheet: " + err.message;
+      }
+    }
+
+    // ---- Grades ----
+    function renderGrades(run) {
+      const section = document.getElementById("grades-section");
+      const content = document.getElementById("grades-content");
+
+      if (!run.grading) {
+        section.style.display = "none";
+        return;
+      }
+
+      const grading = run.grading;
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("grades-arrow").classList.remove("open");
+
+      const summary = grading.summary || {};
+      const expectations = grading.expectations || [];
+
+      let html = '<div style="padding: 1rem;">';
+
+      // Summary line
+      const passRate = summary.pass_rate != null
+        ? Math.round(summary.pass_rate * 100) + "%"
+        : "?";
+      const badgeClass = summary.pass_rate >= 0.8 ? "grade-pass" : summary.pass_rate >= 0.5 ? "" : "grade-fail";
+      html += '<div class="grades-summary">';
+      html += '<span class="grade-badge ' + badgeClass + '">' + passRate + '</span>';
+      html += '<span>' + (summary.passed || 0) + ' passed, ' + (summary.failed || 0) + ' failed of ' + (summary.total || 0) + '</span>';
+      html += '</div>';
+
+      // Assertions list
+      html += '<ul class="assertion-list">';
+      for (const exp of expectations) {
+        const statusClass = exp.passed ? "pass" : "fail";
+        const statusIcon = exp.passed ? "\u2713" : "\u2717";
+        html += '<li class="assertion-item">';
+        html += '<span class="assertion-status ' + statusClass + '">' + statusIcon + '</span>';
+        html += '<span>' + escapeHtml(exp.text) + '</span>';
+        if (exp.evidence) {
+          html += '<div class="assertion-evidence">' + escapeHtml(exp.evidence) + '</div>';
+        }
+        html += '</li>';
+      }
+      html += '</ul>';
+
+      html += '</div>';
+      content.innerHTML = html;
+    }
+
+    function toggleGrades() {
+      const content = document.getElementById("grades-content");
+      const arrow = document.getElementById("grades-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Previous outputs (collapsible) ----
+    function renderPrevOutputs(run) {
+      const section = document.getElementById("prev-outputs-section");
+      const content = document.getElementById("prev-outputs-content");
+      const prevOutputs = (EMBEDDED_DATA.previous_outputs || {})[run.id];
+
+      if (!prevOutputs || prevOutputs.length === 0) {
+        section.style.display = "none";
+        return;
+      }
+
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("prev-outputs-arrow").classList.remove("open");
+
+      // Render the files into the content area
+      content.innerHTML = "";
+      const wrapper = document.createElement("div");
+      wrapper.style.padding = "1rem";
+
+      for (const file of prevOutputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const fc = document.createElement("div");
+        fc.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          fc.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          fc.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          fc.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(fc, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          fc.appendChild(a);
+        }
+
+        fileDiv.appendChild(fc);
+        wrapper.appendChild(fileDiv);
+      }
+
+      content.appendChild(wrapper);
+    }
+
+    function togglePrevOutputs() {
+      const content = document.getElementById("prev-outputs-content");
+      const arrow = document.getElementById("prev-outputs-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Feedback (saved to server -> feedback.json) ----
+    function saveCurrentFeedback() {
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // Build reviews array from map
+      const reviews = [];
+      for (const [run_id, feedback] of Object.entries(feedbackMap)) {
+        if (feedback.trim()) {
+          reviews.push({ run_id, feedback, timestamp: new Date().toISOString() });
+        }
+      }
+
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ reviews, status: "in_progress" }),
+      }).then(() => {
+        document.getElementById("feedback-status").textContent = "Saved";
+      }).catch(() => {
+        // Static mode or server unavailable — no-op on auto-save,
+        // feedback will be downloaded on final submit
+        document.getElementById("feedback-status").textContent = "Will download on submit";
+      });
+    }
+
+    // ---- Done ----
+    function showDoneDialog() {
+      // Save current textarea to feedbackMap (but don't POST yet)
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // POST once with status: complete — include ALL runs so the model
+      // can distinguish "no feedback" (looks good) from "not reviewed"
+      const reviews = [];
+      const ts = new Date().toISOString();
+      for (const r of EMBEDDED_DATA.runs) {
+        reviews.push({ run_id: r.id, feedback: feedbackMap[r.id] || "", timestamp: ts });
+      }
+      const payload = JSON.stringify({ reviews, status: "complete" }, null, 2);
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: payload,
+      }).then(() => {
+        document.getElementById("done-overlay").classList.add("visible");
+      }).catch(() => {
+        // Server not available (static mode) — download as file
+        const blob = new Blob([payload], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "feedback.json";
+        a.click();
+        URL.revokeObjectURL(url);
+        document.getElementById("done-overlay").classList.add("visible");
+      });
+    }
+
+    function closeDoneDialog() {
+      // Reset status back to in_progress
+      saveCurrentFeedback();
+      document.getElementById("done-overlay").classList.remove("visible");
+    }
+
+    // ---- Toast ----
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("visible");
+      setTimeout(() => toast.classList.remove("visible"), 2000);
+    }
+
+    // ---- Keyboard nav ----
+    document.addEventListener("keydown", (e) => {
+      // Don't capture when typing in textarea
+      if (e.target.tagName === "TEXTAREA") return;
+
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        navigate(-1);
+      } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        navigate(1);
+      }
+    });
+
+    // ---- Util ----
+    function getDownloadUri(file) {
+      if (file.data_uri) return file.data_uri;
+      if (file.data_b64) return "data:application/octet-stream;base64," + file.data_b64;
+      if (file.type === "text") return "data:text/plain;charset=utf-8," + encodeURIComponent(file.content);
+      return "#";
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // ---- View switching ----
+    function switchView(view) {
+      document.querySelectorAll(".view-tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".view-panel").forEach(p => p.classList.remove("active"));
+      document.querySelector(`[onclick="switchView('${view}')"]`).classList.add("active");
+      document.getElementById("panel-" + view).classList.add("active");
+    }
+
+    // ---- Benchmark rendering ----
+    function renderBenchmark() {
+      const data = EMBEDDED_DATA.benchmark;
+      if (!data) return;
+
+      // Show the tabs
+      document.getElementById("view-tabs").style.display = "flex";
+
+      const container = document.getElementById("benchmark-content");
+      const summary = data.run_summary || {};
+      const metadata = data.metadata || {};
+      const notes = data.notes || [];
+
+      let html = "";
+
+      // Header
+      html += "<h2 style='font-family: Poppins, sans-serif; margin-bottom: 0.5rem;'>Benchmark Results</h2>";
+      html += "<p style='color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;'>";
+      if (metadata.skill_name) html += "<strong>" + escapeHtml(metadata.skill_name) + "</strong> &mdash; ";
+      if (metadata.timestamp) html += metadata.timestamp + " &mdash; ";
+      if (metadata.evals_run) html += "Evals: " + metadata.evals_run.join(", ") + " &mdash; ";
+      html += (metadata.runs_per_configuration || "?") + " runs per configuration";
+      html += "</p>";
+
+      // Summary table
+      html += '<table class="benchmark-table">';
+
+      function fmtStat(stat, pct) {
+        if (!stat) return "—";
+        const suffix = pct ? "%" : "";
+        const m = pct ? (stat.mean * 100).toFixed(0) : stat.mean.toFixed(1);
+        const s = pct ? (stat.stddev * 100).toFixed(0) : stat.stddev.toFixed(1);
+        return m + suffix + " ± " + s + suffix;
+      }
+
+      function deltaClass(val) {
+        if (!val) return "";
+        const n = parseFloat(val);
+        if (n > 0) return "benchmark-delta-positive";
+        if (n < 0) return "benchmark-delta-negative";
+        return "";
+      }
+
+      // Discover config names dynamically (everything except "delta")
+      const configs = Object.keys(summary).filter(k => k !== "delta");
+      const configA = configs[0] || "config_a";
+      const configB = configs[1] || "config_b";
+      const labelA = configA.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const labelB = configB.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const a = summary[configA] || {};
+      const b = summary[configB] || {};
+      const delta = summary.delta || {};
+
+      html += "<thead><tr><th>Metric</th><th>" + escapeHtml(labelA) + "</th><th>" + escapeHtml(labelB) + "</th><th>Delta</th></tr></thead>";
+      html += "<tbody>";
+
+      html += "<tr><td><strong>Pass Rate</strong></td>";
+      html += "<td>" + fmtStat(a.pass_rate, true) + "</td>";
+      html += "<td>" + fmtStat(b.pass_rate, true) + "</td>";
+      html += '<td class="' + deltaClass(delta.pass_rate) + '">' + (delta.pass_rate || "—") + "</td></tr>";
+
+      // Time (only show row if data exists)
+      if (a.time_seconds || b.time_seconds) {
+        html += "<tr><td><strong>Time (s)</strong></td>";
+        html += "<td>" + fmtStat(a.time_seconds, false) + "</td>";
+        html += "<td>" + fmtStat(b.time_seconds, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.time_seconds) + '">' + (delta.time_seconds ? delta.time_seconds + "s" : "—") + "</td></tr>";
+      }
+
+      // Tokens (only show row if data exists)
+      if (a.tokens || b.tokens) {
+        html += "<tr><td><strong>Tokens</strong></td>";
+        html += "<td>" + fmtStat(a.tokens, false) + "</td>";
+        html += "<td>" + fmtStat(b.tokens, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.tokens) + '">' + (delta.tokens || "—") + "</td></tr>";
+      }
+
+      html += "</tbody></table>";
+
+      // Per-eval breakdown (if runs data available)
+      const runs = data.runs || [];
+      if (runs.length > 0) {
+        const evalIds = [...new Set(runs.map(r => r.eval_id))].sort((a, b) => a - b);
+
+        html += "<h3 style='font-family: Poppins, sans-serif; margin-bottom: 0.75rem;'>Per-Eval Breakdown</h3>";
+
+        const hasTime = runs.some(r => r.result && r.result.time_seconds != null);
+        const hasErrors = runs.some(r => r.result && r.result.errors > 0);
+
+        for (const evalId of evalIds) {
+          const evalRuns = runs.filter(r => r.eval_id === evalId);
+          const evalName = evalRuns[0] && evalRuns[0].eval_name ? evalRuns[0].eval_name : "Eval " + evalId;
+
+          html += "<h4 style='font-family: Poppins, sans-serif; margin: 1rem 0 0.5rem; color: var(--text);'>" + escapeHtml(evalName) + "</h4>";
+          html += '<table class="benchmark-table">';
+          html += "<thead><tr><th>Config</th><th>Run</th><th>Pass Rate</th>";
+          if (hasTime) html += "<th>Time (s)</th>";
+          if (hasErrors) html += "<th>Crashes During Execution</th>";
+          html += "</tr></thead>";
+          html += "<tbody>";
+
+          // Group by config and render with average rows
+          const configGroups = [...new Set(evalRuns.map(r => r.configuration))];
+          for (let ci = 0; ci < configGroups.length; ci++) {
+            const config = configGroups[ci];
+            const configRuns = evalRuns.filter(r => r.configuration === config);
+            if (configRuns.length === 0) continue;
+
+            const rowClass = ci === 0 ? "benchmark-row-with" : "benchmark-row-without";
+            const configLabel = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+
+            for (const run of configRuns) {
+              const r = run.result || {};
+              const prClass = r.pass_rate >= 0.8 ? "benchmark-delta-positive" : r.pass_rate < 0.5 ? "benchmark-delta-negative" : "";
+              html += '<tr class="' + rowClass + '">';
+              html += "<td>" + configLabel + "</td>";
+              html += "<td>" + run.run_number + "</td>";
+              html += '<td class="' + prClass + '">' + ((r.pass_rate || 0) * 100).toFixed(0) + "% (" + (r.passed || 0) + "/" + (r.total || 0) + ")</td>";
+              if (hasTime) html += "<td>" + (r.time_seconds != null ? r.time_seconds.toFixed(1) : "—") + "</td>";
+              if (hasErrors) html += "<td>" + (r.errors || 0) + "</td>";
+              html += "</tr>";
+            }
+
+            // Average row
+            const rates = configRuns.map(r => (r.result || {}).pass_rate || 0);
+            const avgRate = rates.reduce((a, b) => a + b, 0) / rates.length;
+            const avgPrClass = avgRate >= 0.8 ? "benchmark-delta-positive" : avgRate < 0.5 ? "benchmark-delta-negative" : "";
+            html += '<tr class="benchmark-row-avg ' + rowClass + '">';
+            html += "<td>" + configLabel + "</td>";
+            html += "<td>Avg</td>";
+            html += '<td class="' + avgPrClass + '">' + (avgRate * 100).toFixed(0) + "%</td>";
+            if (hasTime) {
+              const times = configRuns.map(r => (r.result || {}).time_seconds).filter(t => t != null);
+              html += "<td>" + (times.length ? (times.reduce((a, b) => a + b, 0) / times.length).toFixed(1) : "—") + "</td>";
+            }
+            if (hasErrors) html += "<td></td>";
+            html += "</tr>";
+          }
+          html += "</tbody></table>";
+
+          // Per-assertion detail for this eval
+          const runsWithExpectations = {};
+          for (const config of configGroups) {
+            runsWithExpectations[config] = evalRuns.filter(r => r.configuration === config && r.expectations && r.expectations.length > 0);
+          }
+          const hasAnyExpectations = Object.values(runsWithExpectations).some(runs => runs.length > 0);
+          if (hasAnyExpectations) {
+            // Collect all unique assertion texts across all configs
+            const allAssertions = [];
+            const seen = new Set();
+            for (const config of configGroups) {
+              for (const run of runsWithExpectations[config]) {
+                for (const exp of (run.expectations || [])) {
+                  if (!seen.has(exp.text)) {
+                    seen.add(exp.text);
+                    allAssertions.push(exp.text);
+                  }
+                }
+              }
+            }
+
+            html += '<table class="benchmark-table" style="margin-top: 0.5rem;">';
+            html += "<thead><tr><th>Assertion</th>";
+            for (const config of configGroups) {
+              const label = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+              html += "<th>" + escapeHtml(label) + "</th>";
+            }
+            html += "</tr></thead><tbody>";
+
+            for (const assertionText of allAssertions) {
+              html += "<tr><td>" + escapeHtml(assertionText) + "</td>";
+
+              for (const config of configGroups) {
+                html += "<td>";
+                for (const run of runsWithExpectations[config]) {
+                  const exp = (run.expectations || []).find(e => e.text === assertionText);
+                  if (exp) {
+                    const cls = exp.passed ? "benchmark-delta-positive" : "benchmark-delta-negative";
+                    const icon = exp.passed ? "\u2713" : "\u2717";
+                    html += '<span class="' + cls + '" title="Run ' + run.run_number + ': ' + escapeHtml(exp.evidence || "") + '">' + icon + "</span> ";
+                  } else {
+                    html += "— ";
+                  }
+                }
+                html += "</td>";
+              }
+              html += "</tr>";
+            }
+            html += "</tbody></table>";
+          }
+        }
+      }
+
+      // Notes
+      if (notes.length > 0) {
+        html += '<div class="benchmark-notes">';
+        html += "<h3>Analysis Notes</h3>";
+        html += "<ul>";
+        for (const note of notes) {
+          html += "<li>" + escapeHtml(note) + "</li>";
+        }
+        html += "</ul></div>";
+      }
+
+      container.innerHTML = html;
+    }
+
+    // ---- Start ----
+    init();
+    renderBenchmark();
+  </script>
+</body>
+</html>

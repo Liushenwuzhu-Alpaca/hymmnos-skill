@@ -1,0 +1,194 @@
+================================================================================
+BASELINE TRANSLATION (WITHOUT SKILL)
+================================================================================
+Sentence: "xE rre cloche cEzE hymmnos/."
+================================================================================
+
+## TRANSLATION
+
+"With the emotion of happiness, Cloche sings a song."
+
+(Alternative reading: "Cloche happily sings a song.")
+
+================================================================================
+## BREAKDOWN OF THE SENTENCE
+================================================================================
+
+### 1. xE — Emotion Sound (想音, Emotion Sound Prefix)
+
+This is a Neopact Pastalie emotion sound, consisting of a lowercase consonant
+"x" and an uppercase vowel "E".
+
+- E (uppercase vowel) = happiness / the desire to be happy. This is one of the
+  core emotion vowels in Hymmnos. The uppercase E indicates the singer/speaker
+  is experiencing or wishes to express happiness.
+- x (lowercase consonant) = The exact semantic contribution of the consonant
+  "x" in the Pastalie emotion sound system is uncertain to me. In the Pastalie
+  system, the consonant may serve as an intensity modifier or a sub-type
+  classifier for the emotion, but I cannot state its precise meaning with
+  confidence.
+
+In Neopact Pastalie, emotion sounds are condensed into compact single syllables
+(consonant + vowel), unlike Standard Hymmnos which uses three-word emotion
+phrases (e.g., "Was yea ra"). The emotion sound at the start of the sentence
+sets the overall emotional tone for the entire utterance.
+
+### 2. rre cloche — Subject Phrase
+
+- rre = subject marker particle. In Hymmnos, the default grammatical subject is
+  the first person (the singer/speaker themself). The particle "rre" is used to
+  explicitly mark a different subject — a third person. Without "rre", the
+  sentence would be about the speaker; with "rre", the subject shifts to the
+  noun that follows.
+- cloche = proper noun, almost certainly referring to Cloche, a major character
+  from the video game Ar tonelico II (Cloche Leythal Pastalie, the Holy Maiden
+  of Metafalss). The name is written in lowercase per Hymmnos orthographic
+  convention (proper nouns are typically lowercase in Hymmnos script).
+
+So "rre cloche" establishes Cloche as the subject performing the action.
+
+### 3. cEzE — Emotion Verb (Pastalie Verb with Embedded Emotion)
+
+This is the core verb of the sentence, rendered in the Neopact Pastalie style
+with embedded emotion markers.
+
+- The verb root is "cze" (with lowercase vowels in its plain form).
+- In Neopact Pastalie, the vowels within a verb can be capitalized to embed
+  the speaker's emotional state directly into the action being described.
+- Here, both vowels are capitalized as "E", embedding the emotion of happiness
+  (E = happiness / wanting to be happy) into the verb.
+- The base verb "cze" most likely means "to sing" — this is inferred from
+  context, since the object of the sentence is "hymmnos" (song). However, I
+  am not fully certain of this lexical meaning from my own knowledge alone.
+
+The capitalization pattern c-E-z-E shows that the emotion of happiness is
+woven through the entire verb, coloring the action itself with the speaker's
+emotional state.
+
+### 4. hymmnos — Object
+
+- hymmnos = "song" or "hymn." This is one of the most fundamental words in the
+  Hymmnos language. In the game lore, "Hymmnos" also refers to the language
+  itself and to the magical songs sung by Reyvateils. Here it functions as the
+  direct object — the thing being sung.
+
+### 5. /. — Sentence Terminator
+
+- The forward slash "/" is a Neopact Pastalie sentence-ending marker. It
+  signals the end of a complete Hymmnos sentence, analogous to a period in
+  English. The "." that follows appears to be standard punctuation (or part of
+  the terminator notation). This is a hallmark of the Pastalie dialect, as
+  Standard Hymmnos does not typically use this terminator.
+
+================================================================================
+## EMOTION VERB CONSTRUCTION — DETAILED EXPLANATION
+================================================================================
+
+### Overview of the Pastalie Emotion Verb System
+
+Neopact Pastalie introduces a powerful feature not found (or found in a
+different form) in Standard Hymmnos: the ability to embed emotion sounds
+directly into verbs through capitalization. This allows a single verb to
+express both an action AND the emotional state associated with that action,
+making Pastalie a highly compact and emotionally expressive dialect.
+
+### How It Works
+
+1. VERB ROOT: Every Pastalie verb has a base root form written entirely in
+   lowercase (e.g., "cze"). This root carries the lexical meaning of the
+   action.
+
+2. EMOTION EMBEDDING: To embed an emotion, one or more vowels in the verb root
+   are changed from lowercase to uppercase. The uppercase vowel is no longer
+   just a phonetic vowel — it now functions as an emotion sound (想音).
+
+3. EMOTION VOWEL MEANINGS: Each uppercase vowel maps to a specific emotion:
+   - A = power, the desire to be strong
+   - I = pain, the desire to escape from pain
+   - U = hatred, the desire to destroy
+   - E = happiness, the desire to be happy
+   - O = sadness, the desire to be released from sadness
+   - N = nervousness / anxiety
+
+4. MULTIPLE EMBEDDINGS: A verb can have more than one vowel capitalized,
+   allowing the same emotion (or different emotions) to be emphasized at
+   multiple points within the verb. In "cEzE", both vowels are "E", so the
+   emotion of happiness permeates the entire verb.
+
+### Applied to "cEzE"
+
+- Root verb: cze (lowercase) — the plain action verb, likely "to sing"
+- Emotion-embedded form: cEzE — the same verb, now infused with happiness
+- The two uppercase E's indicate that the singer feels happiness in relation
+  to the action of singing. The emotion is not stated separately — it is
+  structurally part of the verb itself.
+- This is more than an adverb ("happily sings"); the emotion is grammatically
+  fused with the verb, reflecting the Pastalie philosophy that emotion and
+  action are inseparable in the Song Magic of Ar tonelico.
+
+### Relationship to the Initial Emotion Sound (xE)
+
+The sentence has two layers of emotion expression:
+
+1. SENTENCE-LEVEL EMOTION: The prefix "xE" sets the overall emotional tone
+   for the entire sentence. This is the general emotional context.
+
+2. VERB-LEVEL EMOTION: The embedded "E"s in "cEzE" provide emotion specific
+   to the action of the verb. This can reinforce, nuance, or even contrast
+   with the sentence-level emotion.
+
+In this sentence, both layers use the "E" (happiness) emotion, creating a
+consistent emotional tone: the singer is happy, and the action of Cloche
+singing is also associated with happiness.
+
+### Contrast with Standard Hymmnos
+
+In Standard Hymmnos (Central Standard Note), emotion is expressed through a
+three-word emotion phrase at the beginning of the sentence (e.g., "Was yea ra"
+= "I want to be happy to want to do this"). The verb itself does not carry
+embedded emotion. Pastalie's innovation is the ability to embed emotion
+directly into the verb through capitalization, making the language more
+compact and allowing finer-grained emotional expression tied to specific
+actions within a sentence.
+
+================================================================================
+## OVERALL SENTENCE STRUCTURE
+================================================================================
+
+xE        rre cloche      cEzE         hymmnos     /.
+[emotion] [subject marker] [emotion    [object]    [terminator]
+           + subject noun]  verb]
+
+Word order: Emotion prefix → Subject (rre + noun) → Verb → Object → Terminator
+
+This follows the typical Hymmnos sentence pattern where emotion sounds come
+first, followed by the subject (if explicitly marked with "rre"), then the
+verb, and finally the object. The Pastalie terminator "/" marks the end.
+
+================================================================================
+## SUMMARY
+
+The sentence "xE rre cloche cEzE hymmnos/." translates approximately to:
+
+  "With happiness, Cloche sings a song."
+
+The key feature is the Pastalie emotion verb "cEzE", where the root verb
+"cze" (to sing) has its vowels capitalized to "E" to embed the emotion of
+happiness directly into the action. This, combined with the initial emotion
+sound "xE", creates a sentence where the emotional state of happiness is
+expressed at both the sentence level and the verb level, illustrating the
+Pastalie dialect's characteristic fusion of emotion and action.
+
+================================================================================
+## CONFIDENCE NOTES
+================================================================================
+
+- HIGH CONFIDENCE: rre = subject marker; hymmnos = song; E = happiness emotion;
+  / = Pastalie sentence terminator; cloche = proper noun (character name);
+  the general Pastalie structure of emotion-embedded verbs via capitalization.
+
+- MEDIUM CONFIDENCE: The verb root "cze" meaning "to sing" (inferred from
+  context — the object is "song"); the overall translation.
+
+- LOW CONFIDENCE: The precise meaning of the consonant "x" in the emotion
+  sound "xE"; the exact lexical entry for "cze" from my own knowledge.
