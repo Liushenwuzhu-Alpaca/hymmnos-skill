@@ -158,11 +158,11 @@ The planet's own language, predating all Hymmnos. Each sound carries a feeling; 
 1. **Public Ar Ciela**: 26 symbols for human-audible sounds (lossy)
 2. **Compartment Ar Ciela**: adds diacritics for inaudible properties
    - FMCL (frequency): `!` `#` `$` `%` for sounds OVER 20,000 Hz (sub-dividing the 20k-600k Hz inaudible range into sessions 0-4)
-   - AMCL (amplitude): `&` `(` `)` for waveform shapes above 20,000 Hz
+   - AMCL (amplitude): `&` `(` `)` plus an unwritten fourth (single) for waveform shapes above 20,000 Hz
 
 ### Letter Meanings (by frequency range)
 
-Vowels have umbrella categories: A=[Scale], I=[Pray], U=[Experience], E=[Neighbour], O=[Karma], N=[Mandala]
+Vowels have umbrella categories: A=[Scalar], I=[Pray], U=[Experience], E=[Neighbour], O=[Karma], N=[Mandala]
 
 Consonants shift meaning across frequency ranges I-IX. Every letter converges on "love" at the spectrum's far end. See the full table in the culture reference file.
 
@@ -170,5 +170,5 @@ Consonants shift meaning across frequency ranges I-IX. Every letter converges on
 
 - Basis of Carmena Foreluna (Preformalized Lunar Chant)
 - No arbitrary word-crafting; words are emotion syntheses
-- Cannot express concrete nouns (a word for "A" must contain U or N)
+- Cannot express concrete nouns (reported: a word for "A" must contain U or N; not confirmed in official sources)
 - Like Hymmnos Emotion Sounds, but at the planetary scale

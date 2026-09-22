@@ -1,7 +1,0 @@
-{"eval_id": 3, "eval_name": "translate-pastalie", "prompt": "Translate this Neopact Pastalie sentence: xE rre cloche cEzE hymmnos/. and explain the emotion verb construction", "assertions": [
-  {"text": "Translation includes Cloche as the subject"}
-, {"text": "Correctly explains x. as subject definer"}
-, {"text": "Correctly explains E as joy/happiness emotion vowel"}
-, {"text": "Correctly explains c.z. as become/transform template"}
-, {"text": "Correctly explains /. as invoke terminator"}
-]}

@@ -1,7 +1,0 @@
-{"eval_id": 2, "eval_name": "compose-lonely", "prompt": "Compose an original Hymmnos sentence that means 'I am lonely and want to sing to the world'", "assertions": [
-  {"text": "Uses jyel (lonely) as emotion sound"}
-, {"text": "Uses sonwe or hymme (sing) as verb"}
-, {"text": "Uses ciel or sphaela (world) as object"}
-, {"text": "Sentence starts with valid 3-word emotion sound structure"}
-, {"text": "Provides word-by-word breakdown with grammar explanation"}
-]}

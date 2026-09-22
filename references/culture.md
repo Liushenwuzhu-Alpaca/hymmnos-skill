@@ -21,7 +21,8 @@ Other forms:
 
 - A.D. 348: First Hymmnos word "chs" born from Carmena Foreluna
 - A.D. 421: First complete sentence "Was yea ra chs hymmnos mea"
-- A.D. 1919: Metafalss creates powerful dialect (Ancient Metafalss Note)
+- A.D. 1919: Metafalss creates powerful dialect (Ancient Metafalss Note) [early setting]
+- A.D. 2771: Ancient Metafalss Note finalized (canon development via 讴掌術 lineage)
 - A.D. 2934: Moon Chanters nearly extinct
 - A.D. 2973: Sound science researchers discover Hymmnos effects on Sound Stone
 - A.D. 3018: El Elemia standardizes 62 characters into current form (Central Standard Note)
@@ -33,7 +34,7 @@ Other forms:
 
 | Form | Users | Nature |
 |------|-------|--------|
-| Hymmnos Extract | Reyvateils (beta safe; gamma risky) | Tower control chants; fixed patterns; Hymn Code gated; EXEC_ prefix |
+| Hymmnos Extract | Reyvateils holding a Hymn Code (Origins/beta-Types; Third-Generation lack one and cannot safely sing it) | Tower control chants; fixed patterns; Hymn Code gated; EXEC_ prefix |
 | Hymmnos Words | Reyvateils | From singer's heart; limitless; can work without Tower via Sound Stones |
 | Hymmnos Spells | Humans AND Reyvateils | Pre-defined strings; fixed function; tower-registered; no H-waves |
 
@@ -114,8 +115,8 @@ The planet Ar Ciel's own language, predating all Hymmnos. Each sound carries a f
 
 - Two notation layers: Public (26 symbols, lossy) and Compartment (adds diacritics for inaudible properties)
 - FMCL (frequency compartments): `!` `#` `$` `%` for sounds OVER 20,000 Hz (sub-dividing the 20k-600k Hz inaudible range)
-- AMCL (amplitude compartments): `&` `(` `)` for waveform shapes
-- Vowels have umbrella categories: A=[Scale], I=[Pray], U=[Experience], E=[Neighbour], O=[Karma], N=[Mandala]
+- AMCL (amplitude compartments): `&` `(` `)` plus an unwritten fourth (single) for waveform shapes
+- Vowels have umbrella categories: A=[Scalar], I=[Pray], U=[Experience], E=[Neighbour], O=[Karma], N=[Mandala]
 - Every letter converges on "love" at the spectrum's far end
 - Basis of Carmena Foreluna, which is the basis of Hymmnos
 

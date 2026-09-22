@@ -84,12 +84,13 @@ Example: `Wee ki ra hyma rre walasye pagle wart` = I listen to the person speaki
 
 **Full-non-self** (subject is main actor):
 ```
-[ES] + rre + [subject] + [verb] + [object] + [compound]
+[ES] + rre + [subject] + [verb] + [verb/object]
 ```
 Example: `Was yea ra rre hyma hymme` = I happily listen to the singing/resonance
 
 Rules:
 - `rre` marks the following word as subject; appears at most ONCE per sentence
+- Full external-perspective form places the SPEAKER's verb BEFORE `rre` ([ES] + [speaker verb] + rre + [subject] + [verb] + [object] + [compound]); omitting it yields the song-corpus variant above
 - Emotion Sound always expresses the SPEAKER's feelings
 - Subject-form pronouns (yorr, herr, harr) may omit `rre`
 
@@ -146,11 +147,11 @@ Emotion Sounds cannot be negated.
 
 **Juxtaposition**: `sarla mea` = my song; `hyzik yor` = your body
 **Using oz**: `hymmnos oz faura` = song of the bird
-**Hyphenated**: `Aceku-sasye` = this girl's friend
+**Hyphenated**: `faura-sarla` = bird's song
 
 ## Adjectives
 
-Precede the noun/verb: `tyui frawr` = small flower; `bautifal faura` = beautiful bird
+Precede the noun/verb: `titilia frawr` = small flower; `bautifal faura` = beautiful bird
 
 ## Particles and Prepositions
 
