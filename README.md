@@ -26,26 +26,33 @@
 │   ├── grammar-standard.md          # 标准语法：想音、句法、被动、否定、所有格
 │   ├── grammar-pastalie.md          # 新约帕斯塔利埃语法：感音动词、库句点、想母音
 │   ├── grammar-advanced.md          # 高级语法：Binasphere、契约咒文、律史前月读、Ar Ciela
-│   ├── lexicon.md                   # 核心高频词表（~300词）
-│   ├── lexicon-full.json            # 全量词典数据库（506条）
-│   ├── examples.md                  # 45+真实歌曲例句（含逐词注释）
+│   ├── lexicon.md                   # 核心高频词表（~320词）
+│   ├── lexicon-full.json            # 全量词典数据库（1,335条）
+│   ├── examples.md                  # 70+标注例句（含逐词注释）
 │   ├── culture.md                   # 方言、歌曲类型、服务器、文字系统、历史
 │   ├── wiki-hymmnos-lang-zh.txt     # 歌颂之丘wiki中文语法原文
 │   ├── wiki-pastalie-grammar-zh.txt # 歌颂之丘wiki Pastalie语法原文
-│   └── wiki-unofficial-vocab-zh.txt # 300+非官方词汇（歌颂之丘wiki）
+│   └── wiki-unofficial-vocab-zh.txt # 歌颂之丘wiki非官方词汇原文
 └── evals/
     └── evals.json                   # 技能评估测试用例
 ```
 
 ### 词汇覆盖
 
-| 来源 | 词数 |
-|------|------|
-| 官方词汇（EXA_PICO Wiki / Hymmnoserver） | ~1,050 |
-| 非官方词汇（歌颂之丘wiki，出自歌曲但未收入官方词典） | ~560 |
-| **合计去重** | **~1,500** |
+`references/lexicon-full.json` 收录 **1,335 条**词条，`references/lexicon.md` 精选其中 ~320 条核心高频词。
 
-覆盖六大方言：中央正纯律、库尔特谢尔律、克拉斯塔律、阿尔法律、古梅塔法尔斯律、新约帕斯塔利埃。
+| 方言 | 词条数 |
+|------|--------|
+| 中央正纯律 (Central Standard Note) | 853 |
+| 新约帕斯塔利埃 (Neopact Pastalie) | 224 |
+| 库尔特谢尔律 (Kurt Ciel) | 108 |
+| 古梅塔法尔斯律 (Ancient Metafalss) | 87 |
+| 克拉斯塔律 (Cluster) | 15 |
+| 阿尔法律 (Alpha) | 14 |
+| 未标注 / 混合 | 34 |
+| **合计** | **1,335** |
+
+词条来源：EXA_PICO Wiki、Hymmnoserver（官方词汇），歌颂之丘 wiki（非官方补充，含仅见于歌曲的词），另有 115 条来自歌词挖掘并带来源标注。词典自首版 506 条起，经三轮子代理交叉审计扩充至 1,335 条。
 
 ### 正确性保障
 
@@ -120,7 +127,19 @@ npx skills add Liushenwuzhu-Alpaca/hymmnos-skill
 
 ### Vocabulary Coverage
 
-~1,500 total entries: ~1,050 official (EXA_PICO Wiki / Hymmnoserver) + ~560 unofficial (歌颂之丘 wiki). Covers 6 dialects.
+**1,335 entries** in `references/lexicon-full.json` (~320 of them curated as core vocabulary in `references/lexicon.md`), sourced from EXA_PICO Wiki and Hymmnoserver (official) plus 歌颂之丘 wiki (unofficial, including words attested only in songs).
+
+| Dialect | Entries |
+|---------|---------|
+| Central Standard Note | 853 |
+| Neopact Pastalie | 224 |
+| Kurt Ciel | 108 |
+| Ancient Metafalss | 87 |
+| Cluster | 15 |
+| Alpha | 14 |
+| Unlabelled / mixed | 34 |
+
+The lexicon grew from 506 entries in the first release to 1,335 across three rounds of sub-agent cross-checking.
 
 ### Accuracy
 
@@ -162,7 +181,9 @@ npx skills add Liushenwuzhu-Alpaca/hymmnos-skill
 
 ### 語彙規模
 
-約1,500語：公式語彙約1,050語（EXA_PICO Wiki / Hymmnoserver）＋非公式語彙約560語（歌頌之丘wiki）。6つの音律をカバー。
+`references/lexicon-full.json` に **1,335語**を収録（うち約320語を `references/lexicon.md` に中核語彙として抜粋）。出典は EXA_PICO Wiki・Hymmnoserver（公式）と歌頌之丘wiki（非公式、歌詞にのみ見られる語を含む）。
+
+音律別内訳：中央正純律853、新約パスタリエ224、クルトシエール108、古メタファルス87、クラスター15、アルファ14、未分類34。初版506語から3ラウンドの子エージェント交叉検証を経て1,335語に拡充。
 
 ### 正確性
 
